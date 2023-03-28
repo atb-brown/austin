@@ -5,12 +5,14 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Austin's React website.<br />
-          <a className='App-link' href="https://github.com/atb-brown/austin">(see the source code)</a>
-        </p>
+      <header className="App-header" >
+        <div style={{ display: 'flex', alignItems: 'flex-start', width: '100%' }}>
+          <img src={logo} className="App-logo" alt="logo" />
+          <p>
+            Austin's React website.<br />
+            <a className='App-link' href="https://github.com/atb-brown/austin">(see the source code)</a>
+          </p>
+        </div>
         <p>
           <h3>
             Links
