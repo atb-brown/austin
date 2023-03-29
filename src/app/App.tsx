@@ -50,6 +50,16 @@ function App() {
             issuerLink="https://scaledagile.com/"
           />
         </p>
+        <p className="App-soft-text" style={{ fontSize: 20 }}>
+          This website is deployed by borrowing the incredible efforts of the{" "}
+          <a
+            className="App-link"
+            href="https://github.com/gitname/react-gh-pages"
+          >
+            react-gh-pages contributors
+          </a>
+          .
+        </p>
       </header>
     </div>
   );
