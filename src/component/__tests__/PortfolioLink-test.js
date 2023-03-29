@@ -1,14 +1,16 @@
-import { render, screen } from "@testing-library/react";
 import PortfolioLink from "../PortfolioLink";
+import renderer from "react-test-renderer";
 
-it("renders description and linkIds", () => {
-  render(
-    <PortfolioLink
-      description="description Field"
-      link="https://example.com"
-      linkId="linkId Field"
-    />
-  );
-  expect(screen.getByText(/description field/i)).toBeInTheDocument();
-  expect(screen.getByText(/linkId field/i)).toBeInTheDocument();
+it("renders to match snapshot", () => {
+  const tree = renderer
+    .create(
+      <PortfolioLink
+        description="description Field"
+        link="https://example.com"
+        linkId="linkId Field"
+      />
+    )
+    .toJSON();
+
+  expect(tree).toMatchSnapshot();
 });

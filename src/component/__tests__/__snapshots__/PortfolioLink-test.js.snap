@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders to match snapshot 1`] = `
+<div>
+  <div>
+    description Field
+  </div>
+  <div>
+    <a
+      className="App-link"
+      href="https://example.com"
+    >
+      linkId Field
+    </a>
+  </div>
+  <br />
+</div>
+`;
