@@ -26,6 +26,11 @@ function App() {
             linkId="atb-brown"
           />
           <PortfolioLink
+            description="StackOverflow"
+            link="https://stackoverflow.com/users/5476186/austin-brown"
+            linkId="5476186/austin-brown"
+          />
+          <PortfolioLink
             description="LinkedIn"
             link="https://www.linkedin.com/in/austin-brown-06382a12a/"
             linkId="austin-brown-06382a12a"

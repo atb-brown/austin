@@ -52,6 +52,20 @@ exports[`renders to match snapshot 1`] = `
       </div>
       <div>
         <div>
+          StackOverflow
+        </div>
+        <div>
+          <a
+            className="App-link"
+            href="https://stackoverflow.com/users/5476186/austin-brown"
+          >
+            5476186/austin-brown
+          </a>
+        </div>
+        <br />
+      </div>
+      <div>
+        <div>
           LinkedIn
         </div>
         <div>
