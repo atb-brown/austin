@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import PortfolioLink from "../PortfolioLink";
 
-test("renders description and linkIds", () => {
+it("renders description and linkIds", () => {
   render(
     <PortfolioLink
       description="description Field"
