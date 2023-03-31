@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function Link(props: LinkProps) {
   return (
     <a className="App-link" href={props.url}>
