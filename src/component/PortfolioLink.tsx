@@ -1,4 +1,5 @@
 import Link from "./Link";
+import React from "react";
 
 export default function PortfolioLink(props: LinkProps) {
   if (props.issuerDescription && props.issuerUrl) {

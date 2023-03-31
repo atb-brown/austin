@@ -2,6 +2,7 @@ import Link from "../component/Link";
 import PortfolioLink from "../component/PortfolioLink";
 import logo from "../logo.svg";
 import "./App.css";
+import React from "react";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         >
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Austin's React website.
+            Austin&apos;s React website.
             <br />
             <Link
               description="(see the source code)"
