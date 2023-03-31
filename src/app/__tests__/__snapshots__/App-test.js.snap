@@ -169,11 +169,10 @@ exports[`renders to match snapshot 1`] = `
        
       <a
         className="App-link"
-        href="https://github.com/gitname/react-gh-pages"
+        href="https://github.com/gitname/react-gh-pages/graphs/contributors"
       >
         react-gh-pages contributors
       </a>
-       
       .
     </p>
   </header>
