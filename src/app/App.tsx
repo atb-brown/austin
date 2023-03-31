@@ -50,6 +50,18 @@ function App() {
             issuerLink="https://scaledagile.com/"
           />
         </p>
+        <p className="App-soft-text" style={{ fontSize: 20, paddingLeft: 50 }}>
+          <a
+            className="App-link"
+            href="https://github.com/atb-brown/austin/commit/5c8514a96194e6271d4e8e7f234499ee4e95ab3d"
+          >
+            Initialized
+          </a>{" "}
+          using{" "}
+          <a className="App-link" href="https://create-react-app.dev/">
+            create-react-app
+          </a>
+        </p>
         <p className="App-soft-text" style={{ fontSize: 20 }}>
           This website is deployed by borrowing the incredible efforts of the{" "}
           <a
