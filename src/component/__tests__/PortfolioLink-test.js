@@ -6,8 +6,8 @@ it("renders to match snapshot", () => {
     .create(
       <PortfolioLink
         description="description Field"
-        link="https://example.com"
-        linkId="linkId Field"
+        url="https://example.com"
+        urlId="linkId Field"
       />
     )
     .toJSON();
