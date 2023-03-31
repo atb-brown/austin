@@ -1,0 +1,31 @@
+name: Build
+on: [push]
+
+jobs:
+  sca:
+    name: SCA
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Node
+        run: |
+          npm install -g yarn
+      - name: Install Yarn Dependencies
+        run: yarn install
+      - name: Lint Check
+        run: yarn lint
+      - name: Check Formatting
+        run: yarn prettier --check .
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Node
+        run: |
+          npm install -g react-scripts
+          npm install -g yarn
+      - name: Install Yarn Dependencies
+        run: yarn install
+      - name: Unit Tests
+        run: yarn test
