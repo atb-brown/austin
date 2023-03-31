@@ -67,8 +67,8 @@ function App() {
           This website is deployed by borrowing the incredible efforts of the{" "}
           <Link
             description="react-gh-pages contributors"
-            url="https://github.com/gitname/react-gh-pages"
-          />{" "}
+            url="https://github.com/gitname/react-gh-pages/graphs/contributors"
+          />
           .
         </p>
       </header>
