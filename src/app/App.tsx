@@ -1,3 +1,4 @@
+import Link from "../component/Link";
 import PortfolioLink from "../component/PortfolioLink";
 import logo from "../logo.svg";
 import "./App.css";
@@ -13,63 +14,61 @@ function App() {
           <p>
             Austin's React website.
             <br />
-            <a className="App-link" href="https://github.com/atb-brown/austin">
-              (see the source code)
-            </a>
+            <Link
+              description="(see the source code)"
+              url="https://github.com/atb-brown/austin"
+            />
           </p>
         </div>
         <p>
           <h3>Links</h3>
           <PortfolioLink
             description="GitHub"
-            link="https://github.com/atb-brown"
-            linkId="atb-brown"
+            url="https://github.com/atb-brown"
+            urlId="atb-brown"
           />
           <PortfolioLink
             description="StackOverflow"
-            link="https://stackoverflow.com/users/5476186/austin-brown"
-            linkId="5476186/austin-brown"
+            url="https://stackoverflow.com/users/5476186/austin-brown"
+            urlId="5476186/austin-brown"
           />
           <PortfolioLink
             description="LinkedIn"
-            link="https://www.linkedin.com/in/austin-brown-06382a12a/"
-            linkId="austin-brown-06382a12a"
+            url="https://www.linkedin.com/in/austin-brown-06382a12a/"
+            urlId="austin-brown-06382a12a"
           />
           <PortfolioLink
             description="Scrum Master Certification"
-            link="https://bcert.me/sixkczuof"
-            linkId="sixkczuof"
+            url="https://bcert.me/sixkczuof"
+            urlId="sixkczuof"
             issuerDescription="Scrum Alliance, Inc."
-            issuerLink="https://www.scrumalliance.org/"
+            issuerUrl="https://www.scrumalliance.org/"
           />
           <PortfolioLink
             description="SAFe 5 Scrum Master Certification"
-            link="https://www.credly.com/badges/18e3c923-956c-4525-b857-5f9c0dfb9713/public_url"
-            linkId="18e3c923-956c-4525-b857-5f9c0dfb9713"
+            url="https://www.credly.com/badges/18e3c923-956c-4525-b857-5f9c0dfb9713/public_url"
+            urlId="18e3c923-956c-4525-b857-5f9c0dfb9713"
             issuerDescription="Scaled Agile, Inc."
-            issuerLink="https://scaledagile.com/"
+            issuerUrl="https://scaledagile.com/"
           />
         </p>
         <p className="App-soft-text" style={{ fontSize: 20, paddingLeft: 50 }}>
-          <a
-            className="App-link"
-            href="https://github.com/atb-brown/austin/commit/5c8514a96194e6271d4e8e7f234499ee4e95ab3d"
-          >
-            Initialized
-          </a>{" "}
+          <Link
+            description="Initialized"
+            url="https://github.com/atb-brown/austin/commit/5c8514a96194e6271d4e8e7f234499ee4e95ab3d"
+          />{" "}
           using{" "}
-          <a className="App-link" href="https://create-react-app.dev/">
-            create-react-app
-          </a>
+          <Link
+            description="create-react-app"
+            url="https://create-react-app.dev/"
+          />{" "}
         </p>
         <p className="App-soft-text" style={{ fontSize: 20 }}>
           This website is deployed by borrowing the incredible efforts of the{" "}
-          <a
-            className="App-link"
-            href="https://github.com/gitname/react-gh-pages"
-          >
-            react-gh-pages contributors
-          </a>
+          <Link
+            description="react-gh-pages contributors"
+            url="https://github.com/gitname/react-gh-pages"
+          />{" "}
           .
         </p>
       </header>

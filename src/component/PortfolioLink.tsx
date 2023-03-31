@@ -1,20 +1,22 @@
+import Link from "./Link";
+
 export default function PortfolioLink(props: LinkProps) {
-  if (props.issuerDescription && props.issuerLink) {
+  if (props.issuerDescription && props.issuerUrl) {
     return (
       <LinkWithIssuer
         description={props.description}
-        link={props.link}
-        linkId={props.linkId}
+        url={props.url}
+        urlId={props.urlId}
         issuerDescription={props.issuerDescription}
-        issuerLink={props.issuerLink}
+        issuerUrl={props.issuerUrl}
       />
     );
   }
   return (
     <LinkWithoutIssuer
       description={props.description}
-      link={props.link}
-      linkId={props.linkId}
+      url={props.url}
+      urlId={props.urlId}
     />
   );
 }
@@ -25,9 +27,7 @@ function LinkWithoutIssuer(props: LinkProps) {
     <div>
       <div>{props.description}</div>
       <div>
-        <a className="App-link" href={props.link}>
-          {props.linkId}
-        </a>
+        <Link description={props.urlId} url={props.url} />
       </div>
       <br />
     </div>
@@ -39,15 +39,14 @@ function LinkWithIssuer(props: LinkProps) {
     <div>
       <div>{props.description}</div>
       <div>
-        <a className="App-link" href={props.link}>
-          {props.linkId}
-        </a>
+        <Link description={props.urlId} url={props.url} />
       </div>
       <div className="App-soft-text">
         Issued by:{" "}
-        <a className="App-soft-text" href={props.issuerLink}>
-          {props.issuerDescription}
-        </a>
+        <Link
+          description={props.issuerDescription ?? ""}
+          url={props.issuerUrl ?? ""}
+        />
       </div>
       <br />
     </div>
@@ -56,8 +55,8 @@ function LinkWithIssuer(props: LinkProps) {
 
 type LinkProps = {
   description: string;
-  link: string;
-  linkId: string;
+  url: string;
+  urlId: string;
   issuerDescription?: string;
-  issuerLink?: string;
+  issuerUrl?: string;
 };
