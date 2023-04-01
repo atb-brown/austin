@@ -1,0 +1,22 @@
+name: Site Deploy
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Deploy to github.io
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🏗 Setup repo
+        uses: actions/checkout@v2
+      - name: 🏗 Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 19.x
+          cache: yarn
+      - name: 📦 Install dependencies
+        run: yarn install
+      - name: 🚀 Publish app
+        run: yarn siteDeploy
