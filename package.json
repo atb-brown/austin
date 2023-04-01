@@ -7,6 +7,7 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^13.5.0",
+    "@types/babel__generator": "^7.6.4",
     "@types/jest": "^29.5.0",
     "@types/node": "^16.18.21",
     "@types/react": "^18.0.30",
@@ -18,13 +19,17 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "lint": "yarn eslint src --ext .ts,.tsx",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "yarn jest",
-    "eject": "react-scripts eject"
+    "lint": "eslint src --ext .ts,.tsx",
+    "prettyCheck": "prettier --check .",
+    "prettyFix": "prettier --write .",
+    "sca": "yarn prettyCheck && yarn lint",
+    "siteBuild": "react-scripts build",
+    "siteDeploy": "gh-pages -d build",
+    "siteEject": "react-scripts eject",
+    "sitePredeploy": "npm run build",
+    "siteStart": "react-scripts start",
+    "test": "jest",
+    "verify": "yarn sca && yarn test"
   },
   "browserslist": {
     "production": [

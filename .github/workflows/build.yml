@@ -22,9 +22,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Set up Node
-        run: |
-          npm install -g react-scripts
-          npm install -g yarn
+        run: npm install -g yarn
       - name: Install Yarn Dependencies
         run: yarn install
       - name: Unit Tests
