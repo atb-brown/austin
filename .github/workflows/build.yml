@@ -12,10 +12,12 @@ jobs:
           npm install -g yarn
       - name: Install Yarn Dependencies
         run: yarn install
-      - name: Lint Check
-        run: yarn lint
       - name: Check Formatting
         run: yarn prettier --check .
+      - name: Compile Check
+        run: yarn tsc
+      - name: Lint Check
+        run: yarn lint
   test:
     name: Test
     runs-on: ubuntu-latest

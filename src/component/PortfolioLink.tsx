@@ -1,6 +1,12 @@
 import Link from "./Link";
 import React from "react";
 
+/**
+ * A link to some sort of portolio item.
+ *
+ * @param {LinkProps} props Properties.
+ * @return {ReactElement} The portfolio link component.
+ */
 export default function PortfolioLink(props: LinkProps) {
   if (props.issuerDescription && props.issuerUrl) {
     return (
@@ -22,6 +28,12 @@ export default function PortfolioLink(props: LinkProps) {
   );
 }
 
+/**
+ * A link to some sort of portolio item that is not issued by an organization.
+ *
+ * @param {LinkProps} props Properties.
+ * @return {ReactElement} The portfolio link component.
+ */
 function LinkWithoutIssuer(props: LinkProps) {
   // TODO: it's a bad idea to have <div/> elements that are children of <p/> elements
   return (
@@ -35,6 +47,12 @@ function LinkWithoutIssuer(props: LinkProps) {
   );
 }
 
+/**
+ * A link to some sort of portolio item that was issued by an organization, such as a certification.
+ *
+ * @param {LinkProps} props Properties.
+ * @return {ReactElement} The portfolio link component.
+ */
 function LinkWithIssuer(props: LinkProps) {
   return (
     <div>
