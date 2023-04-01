@@ -1,22 +1,14 @@
-name: Site Deploy
+# https://github.com/marketplace/actions/deploy-react-app-to-github-pages
+name: React app deployement
+
 on:
   push:
-    branches:
-      - main
+    branches: [master]
 
 jobs:
   deploy:
-    name: Deploy to github.io
     runs-on: ubuntu-latest
     steps:
-      - name: 🏗 Setup repo
-        uses: actions/checkout@v2
-      - name: 🏗 Setup Node
-        uses: actions/setup-node@v2
-        with:
-          node-version: 19.x
-          cache: yarn
-      - name: 📦 Install dependencies
-        run: yarn install
-      - name: 🚀 Publish app
-        run: yarn siteDeploy
+      - uses: actions/checkout@v2
+      - name: Deploy react app to github pages
+        uses: tanwanimohit/deploy-react-to-ghpages@v1.0.1
