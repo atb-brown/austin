@@ -6,6 +6,8 @@ extends:
   - eslint:recommended
   - plugin:react/recommended
   - plugin:@typescript-eslint/recommended
+  - google
+  - prettier
 overrides: []
 parser: "@typescript-eslint/parser"
 parserOptions:
@@ -14,4 +16,16 @@ parserOptions:
 plugins:
   - react
   - "@typescript-eslint"
-rules: {}
+ignorePatterns: ["**/*.d.ts"]
+rules:
+  quotes:
+    - error
+    - double
+  no-unused-vars:
+    - error
+  no-console:
+    - error
+settings:
+  react:
+    pragma: React
+    version: detect

@@ -4,6 +4,11 @@ import logo from "../logo.svg";
 import "./App.css";
 import React from "react";
 
+/**
+ * The main component for the site application.
+ *
+ * @return {ReactElement} React Component
+ */
 function App() {
   return (
     <div className="App">
