@@ -22,7 +22,7 @@ exports[`renders to match snapshot 1`] = `
         src={{}}
       />
       <div>
-        Austin's React website.
+        Austin's React Website.
         <br />
         <a
           className="App-link"
@@ -93,8 +93,7 @@ exports[`renders to match snapshot 1`] = `
         <div
           className="App-soft-text"
         >
-          Issued by:
-           
+          Issued by: 
           <a
             className="App-link"
             href="https://www.scrumalliance.org/"
@@ -119,8 +118,7 @@ exports[`renders to match snapshot 1`] = `
         <div
           className="App-soft-text"
         >
-          Issued by:
-           
+          Issued by: 
           <a
             className="App-link"
             href="https://scaledagile.com/"
@@ -146,9 +144,7 @@ exports[`renders to match snapshot 1`] = `
       >
         Initialized
       </a>
-       
-      using
-       
+       using 
       <a
         className="App-link"
         href="https://create-react-app.dev/"
@@ -165,8 +161,7 @@ exports[`renders to match snapshot 1`] = `
         }
       }
     >
-      This website is deployed by borrowing the incredible efforts of the
-       
+      This website is deployed by borrowing the incredible efforts of the 
       <a
         className="App-link"
         href="https://github.com/gitname/react-gh-pages/graphs/contributors"
