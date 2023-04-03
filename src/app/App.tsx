@@ -17,16 +17,16 @@ function App() {
           style={{ display: "flex", alignItems: "flex-start", width: "100%" }}
         >
           <img src={logo} className="App-logo" alt="logo" />
-          <p>
+          <div>
             Austin&apos;s React website.
             <br />
             <Link
               description="(see the source code)"
               url="https://github.com/atb-brown/austin"
             />
-          </p>
+          </div>
         </div>
-        <p>
+        <div>
           <h3>Links</h3>
           <PortfolioLink
             description="GitHub"
@@ -57,8 +57,11 @@ function App() {
             issuerDescription="Scaled Agile, Inc."
             issuerUrl="https://scaledagile.com/"
           />
-        </p>
-        <p className="App-soft-text" style={{ fontSize: 20, paddingLeft: 50 }}>
+        </div>
+        <div
+          className="App-soft-text"
+          style={{ fontSize: 20, paddingLeft: 50 }}
+        >
           <Link
             description="Initialized"
             url="https://github.com/atb-brown/austin/commit/5c8514a96194e6271d4e8e7f234499ee4e95ab3d"
@@ -68,15 +71,15 @@ function App() {
             description="create-react-app"
             url="https://create-react-app.dev/"
           />{" "}
-        </p>
-        <p className="App-soft-text" style={{ fontSize: 20 }}>
+        </div>
+        <div className="App-soft-text" style={{ fontSize: 20 }}>
           This website is deployed by borrowing the incredible efforts of the{" "}
           <Link
             description="react-gh-pages contributors"
             url="https://github.com/gitname/react-gh-pages/graphs/contributors"
           />
           .
-        </p>
+        </div>
       </header>
     </div>
   );

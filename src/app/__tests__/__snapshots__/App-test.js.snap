@@ -21,7 +21,7 @@ exports[`renders to match snapshot 1`] = `
         className="App-logo"
         src={{}}
       />
-      <p>
+      <div>
         Austin's React website.
         <br />
         <a
@@ -30,9 +30,9 @@ exports[`renders to match snapshot 1`] = `
         >
           (see the source code)
         </a>
-      </p>
+      </div>
     </div>
-    <p>
+    <div>
       <h3>
         Links
       </h3>
@@ -130,8 +130,8 @@ exports[`renders to match snapshot 1`] = `
         </div>
         <br />
       </div>
-    </p>
-    <p
+    </div>
+    <div
       className="App-soft-text"
       style={
         {
@@ -156,8 +156,8 @@ exports[`renders to match snapshot 1`] = `
         create-react-app
       </a>
        
-    </p>
-    <p
+    </div>
+    <div
       className="App-soft-text"
       style={
         {
@@ -174,7 +174,7 @@ exports[`renders to match snapshot 1`] = `
         react-gh-pages contributors
       </a>
       .
-    </p>
+    </div>
   </header>
 </div>
 `;
