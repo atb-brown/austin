@@ -11,6 +11,8 @@ extends:
 overrides: []
 parser: "@typescript-eslint/parser"
 parserOptions:
+  ecmaFeatures:
+    jsx: true
   ecmaVersion: latest
   sourceType: module
 plugins:
@@ -25,6 +27,12 @@ rules:
     - error
   no-console:
     - error
+  react/jsx-filename-extension:
+    - error
+    - extensions: [".tsx"]
+  react/require-default-props:
+    # https://stackoverflow.com/a/69746922/5476186
+    - off
 settings:
   react:
     pragma: React

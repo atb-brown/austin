@@ -6,10 +6,10 @@ import React from "react";
  * @param {LinkProps} props Properties.
  * @return {ReactElement} The link component.
  */
-export default function Link(props: LinkProps) {
+export default function Link({ description, url }: LinkProps) {
   return (
-    <a className="App-link" href={props.url}>
-      {props.description}
+    <a className="App-link" href={url}>
+      {description}
     </a>
   );
 }

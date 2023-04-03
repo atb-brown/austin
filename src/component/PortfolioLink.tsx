@@ -7,24 +7,26 @@ import React from "react";
  * @param {LinkProps} props Properties.
  * @return {ReactElement} The portfolio link component.
  */
-export default function PortfolioLink(props: LinkProps) {
-  if (props.issuerDescription && props.issuerUrl) {
+export default function PortfolioLink({
+  description,
+  url,
+  urlId,
+  issuerDescription,
+  issuerUrl,
+}: LinkProps) {
+  if (issuerDescription && issuerUrl) {
     return (
       <LinkWithIssuer
-        description={props.description}
-        url={props.url}
-        urlId={props.urlId}
-        issuerDescription={props.issuerDescription}
-        issuerUrl={props.issuerUrl}
+        description={description}
+        issuerDescription={issuerDescription}
+        issuerUrl={issuerUrl}
+        url={url}
+        urlId={urlId}
       />
     );
   }
   return (
-    <LinkWithoutIssuer
-      description={props.description}
-      url={props.url}
-      urlId={props.urlId}
-    />
+    <LinkWithoutIssuer description={description} url={url} urlId={urlId} />
   );
 }
 
@@ -34,12 +36,12 @@ export default function PortfolioLink(props: LinkProps) {
  * @param {LinkProps} props Properties.
  * @return {ReactElement} The portfolio link component.
  */
-function LinkWithoutIssuer(props: LinkProps) {
+function LinkWithoutIssuer({ description, urlId, url }: LinkProps) {
   return (
     <div>
-      <div>{props.description}</div>
+      <div>{description}</div>
       <div>
-        <Link description={props.urlId} url={props.url} />
+        <Link description={urlId} url={url} />
       </div>
       <br />
     </div>
@@ -52,19 +54,22 @@ function LinkWithoutIssuer(props: LinkProps) {
  * @param {LinkProps} props Properties.
  * @return {ReactElement} The portfolio link component.
  */
-function LinkWithIssuer(props: LinkProps) {
+function LinkWithIssuer({
+  description,
+  url,
+  urlId,
+  issuerDescription = "",
+  issuerUrl = "",
+}: LinkProps) {
   return (
     <div>
-      <div>{props.description}</div>
+      <div>{description}</div>
       <div>
-        <Link description={props.urlId} url={props.url} />
+        <Link description={urlId} url={url} />
       </div>
       <div className="App-soft-text">
-        Issued by:{" "}
-        <Link
-          description={props.issuerDescription ?? ""}
-          url={props.issuerUrl ?? ""}
-        />
+        {"Issued by: "}
+        <Link description={issuerDescription} url={issuerUrl} />
       </div>
       <br />
     </div>
