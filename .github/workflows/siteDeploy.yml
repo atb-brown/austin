@@ -1,5 +1,5 @@
 # https://github.com/marketplace/actions/deploy-react-app-to-github-pages
-name: React app deployement
+name: React App Deployment
 
 on:
   push:
@@ -11,4 +11,5 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Deploy react app to github pages
-        uses: tanwanimohit/deploy-react-to-ghpages@v1.0.1
+        # Use commit until v.1.0.2 is released: https://github.com/tanwanimohit/deploy-react-to-ghpages/issues/6
+        uses: tanwanimohit/deploy-react-to-ghpages@c3fd37aa52fe2c6365bd9cc35d88c912cae5e34f

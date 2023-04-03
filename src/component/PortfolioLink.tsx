@@ -35,7 +35,6 @@ export default function PortfolioLink(props: LinkProps) {
  * @return {ReactElement} The portfolio link component.
  */
 function LinkWithoutIssuer(props: LinkProps) {
-  // TODO: it's a bad idea to have <div/> elements that are children of <p/> elements
   return (
     <div>
       <div>{props.description}</div>
