@@ -1,5 +1,5 @@
 import Link from "../component/Link";
-import PortfolioLink from "../component/PortfolioLink";
+import PortfolioLink from "../component/portfoliolink/PortfolioLink";
 import logo from "../logo.svg";
 import "./App.css";
 import React from "react";
