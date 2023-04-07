@@ -1,5 +1,5 @@
-import React from "react";
 import Link from "../component/Link";
+import React from "react";
 
 /**
  * Acknowledgements for individuals and projects that made this app possible.
