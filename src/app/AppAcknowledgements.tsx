@@ -10,7 +10,16 @@ export default function AppAcknowledgements() {
   const period = ".";
 
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "flex-end",
+        alignItems: "flex-end",
+        width: "100%",
+        marginRight: "3%",
+      }}
+    >
       <div className="App-soft-text" style={{ fontSize: 20, paddingLeft: 50 }}>
         <Link
           description="Initialized"

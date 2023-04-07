@@ -8,10 +8,10 @@ import React from "react";
  * @return {ReactElement}
  */
 export default function AppTitle() {
-  const title = "Austin's React Website.";
+  const title = "Austin's React Website";
 
   return (
-    <div style={{ display: "flex", alignItems: "flex-start", width: "100%" }}>
+    <div style={{ display: "flex", width: "100%" }}>
       <img alt="logo" className="App-logo" src={logo} />
       <div>
         {title}

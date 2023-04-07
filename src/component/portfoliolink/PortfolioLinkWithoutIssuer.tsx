@@ -8,7 +8,7 @@ import React from "react";
  * @param {PortfolioLinkProps} props Properties.
  * @return {ReactElement} The portfolio link component.
  */
-export default function LinkWithIssuer({
+export default function PortfolioLinkWithIssuer({
   description,
   url,
   urlId,
@@ -16,7 +16,7 @@ export default function LinkWithIssuer({
   issuerUrl = "",
 }: PortfolioLinkProps) {
   return (
-    <div>
+    <div className="App-text">
       <div>{description}</div>
       <div>
         <Link description={urlId} url={url} />
