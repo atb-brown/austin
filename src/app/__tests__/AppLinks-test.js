@@ -1,5 +1,5 @@
-import renderer from "react-test-renderer";
 import AppLinks from "../AppLinks";
+import renderer from "react-test-renderer";
 
 it("renders to match snapshot", () => {
   const tree = renderer.create(<AppLinks />);

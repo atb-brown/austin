@@ -1,6 +1,6 @@
-import React from "react";
 import Link from "../Link";
 import { PortfolioLinkProps } from "./PortfolioLinkProps";
+import React from "react";
 
 /**
  * A link to some sort of portolio item that is not issued by an organization.

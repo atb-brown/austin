@@ -1,8 +1,8 @@
 import "./App.css";
-import React from "react";
-import AppTitle from "./AppTitle";
-import AppLinks from "./AppLinks";
 import AppAcknowledgements from "./AppAcknowledgements";
+import AppLinks from "./AppLinks";
+import AppTitle from "./AppTitle";
+import React from "react";
 
 /**
  * The main component for the site application.

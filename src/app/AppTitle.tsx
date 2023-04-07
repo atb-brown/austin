@@ -1,6 +1,6 @@
-import React from "react";
-import logo from "../logo.svg";
 import Link from "../component/Link";
+import logo from "../logo.svg";
+import React from "react";
 
 /**
  * The title block of the app, complete with logo.

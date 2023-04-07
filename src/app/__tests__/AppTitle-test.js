@@ -1,5 +1,5 @@
-import renderer from "react-test-renderer";
 import AppTitle from "../AppTitle";
+import renderer from "react-test-renderer";
 
 it("renders to match snapshot", () => {
   const tree = renderer.create(<AppTitle />);

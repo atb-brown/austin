@@ -1,7 +1,7 @@
-import React from "react";
 import { PortfolioLinkProps } from "./PortfolioLinkProps";
-import LinkWithIssuer from "./PortfolioLinkWithoutIssuer";
 import LinkWithoutIssuer from "./PortfolioLinkWithIssuer";
+import LinkWithIssuer from "./PortfolioLinkWithoutIssuer";
+import React from "react";
 
 /**
  * A link to some sort of portolio item.
