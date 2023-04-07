@@ -11,7 +11,7 @@ export default function AppLinks() {
 
   return (
     <div>
-      <h3>{linksHdr}</h3>
+      <h1>{linksHdr}</h1>
       <PortfolioLink
         description="GitHub"
         url="https://github.com/atb-brown"

@@ -2,10 +2,12 @@
 
 exports[`renders to match snapshot 1`] = `
 <div>
-  <h3>
+  <h1>
     Links
-  </h3>
-  <div>
+  </h1>
+  <div
+    className="App-text"
+  >
     <div>
       GitHub
     </div>
@@ -19,7 +21,9 @@ exports[`renders to match snapshot 1`] = `
     </div>
     <br />
   </div>
-  <div>
+  <div
+    className="App-text"
+  >
     <div>
       StackOverflow
     </div>
@@ -33,7 +37,9 @@ exports[`renders to match snapshot 1`] = `
     </div>
     <br />
   </div>
-  <div>
+  <div
+    className="App-text"
+  >
     <div>
       LinkedIn
     </div>
@@ -47,7 +53,9 @@ exports[`renders to match snapshot 1`] = `
     </div>
     <br />
   </div>
-  <div>
+  <div
+    className="App-text"
+  >
     <div>
       Scrum Master Certification
     </div>
@@ -72,7 +80,9 @@ exports[`renders to match snapshot 1`] = `
     </div>
     <br />
   </div>
-  <div>
+  <div
+    className="App-text"
+  >
     <div>
       SAFe 5 Scrum Master Certification
     </div>

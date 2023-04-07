@@ -1,7 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders to match snapshot 1`] = `
-<div>
+<div
+  style={
+    {
+      "alignItems": "flex-end",
+      "display": "flex",
+      "flexDirection": "column",
+      "justifyContent": "flex-end",
+      "marginRight": "3%",
+      "width": "100%",
+    }
+  }
+>
   <div
     className="App-soft-text"
     style={

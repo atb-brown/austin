@@ -10,7 +10,6 @@ exports[`renders to match snapshot 1`] = `
     <div
       style={
         {
-          "alignItems": "flex-start",
           "display": "flex",
           "width": "100%",
         }
@@ -22,7 +21,7 @@ exports[`renders to match snapshot 1`] = `
         src={{}}
       />
       <div>
-        Austin's React Website.
+        Austin's React Website
         <br />
         <a
           className="App-link"
@@ -33,10 +32,12 @@ exports[`renders to match snapshot 1`] = `
       </div>
     </div>
     <div>
-      <h3>
+      <h1>
         Links
-      </h3>
-      <div>
+      </h1>
+      <div
+        className="App-text"
+      >
         <div>
           GitHub
         </div>
@@ -50,7 +51,9 @@ exports[`renders to match snapshot 1`] = `
         </div>
         <br />
       </div>
-      <div>
+      <div
+        className="App-text"
+      >
         <div>
           StackOverflow
         </div>
@@ -64,7 +67,9 @@ exports[`renders to match snapshot 1`] = `
         </div>
         <br />
       </div>
-      <div>
+      <div
+        className="App-text"
+      >
         <div>
           LinkedIn
         </div>
@@ -78,7 +83,9 @@ exports[`renders to match snapshot 1`] = `
         </div>
         <br />
       </div>
-      <div>
+      <div
+        className="App-text"
+      >
         <div>
           Scrum Master Certification
         </div>
@@ -103,7 +110,9 @@ exports[`renders to match snapshot 1`] = `
         </div>
         <br />
       </div>
-      <div>
+      <div
+        className="App-text"
+      >
         <div>
           SAFe 5 Scrum Master Certification
         </div>
@@ -129,7 +138,18 @@ exports[`renders to match snapshot 1`] = `
         <br />
       </div>
     </div>
-    <div>
+    <div
+      style={
+        {
+          "alignItems": "flex-end",
+          "display": "flex",
+          "flexDirection": "column",
+          "justifyContent": "flex-end",
+          "marginRight": "3%",
+          "width": "100%",
+        }
+      }
+    >
       <div
         className="App-soft-text"
         style={

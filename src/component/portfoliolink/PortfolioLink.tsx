@@ -1,6 +1,6 @@
 import { PortfolioLinkProps } from "./PortfolioLinkProps";
-import LinkWithoutIssuer from "./PortfolioLinkWithIssuer";
-import LinkWithIssuer from "./PortfolioLinkWithoutIssuer";
+import PortfolioLinkWithoutIssuer from "./PortfolioLinkWithIssuer";
+import PortfolioLinkWithIssuer from "./PortfolioLinkWithoutIssuer";
 import React from "react";
 
 /**
@@ -18,7 +18,7 @@ export default function PortfolioLink({
 }: PortfolioLinkProps) {
   if (issuerDescription && issuerUrl) {
     return (
-      <LinkWithIssuer
+      <PortfolioLinkWithIssuer
         description={description}
         issuerDescription={issuerDescription}
         issuerUrl={issuerUrl}
@@ -28,6 +28,10 @@ export default function PortfolioLink({
     );
   }
   return (
-    <LinkWithoutIssuer description={description} url={url} urlId={urlId} />
+    <PortfolioLinkWithoutIssuer
+      description={description}
+      url={url}
+      urlId={urlId}
+    />
   );
 }
