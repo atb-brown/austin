@@ -18,6 +18,8 @@ jobs:
         run: yarn tsc
       - name: Lint Check
         run: yarn lint
+      - name: Dependency Audit
+        run: yarn audit
   test:
     name: Test
     runs-on: ubuntu-latest
