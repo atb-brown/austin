@@ -31,3 +31,6 @@ jobs:
         run: yarn install
       - name: Unit Tests
         run: yarn test
+        # Run coverage separately; longer build, but when there's a failure it'll be easier to understand why.
+      - name: Unit Test Coverage
+        run: yarn test --coverage
