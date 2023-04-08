@@ -18,4 +18,18 @@ module.exports = {
   },
 
   testEnvironment: "jsdom",
+
+  collectCoverageFrom: [
+    "**/*.{ts,tsx}",
+    "!**/index.tsx",
+    "!**/reportWebVitals.ts",
+    "!**/react-app-env.d.ts",
+    "!**/node_modules/**",
+  ],
+
+  coverageThreshold: {
+    global: {
+      lines: 99,
+    },
+  },
 };

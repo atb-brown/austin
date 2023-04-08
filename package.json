@@ -29,7 +29,7 @@
     "sitePredeploy": "npm run build",
     "siteStart": "react-scripts start",
     "test": "jest",
-    "verify": "yarn sca && yarn test"
+    "verify": "yarn sca && yarn test --coverage"
   },
   "browserslist": {
     "production": [
