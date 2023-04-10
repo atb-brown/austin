@@ -1,7 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders to match snapshot 1`] = `
-<div>
+<div
+  style={
+    {
+      "alignItems": "center",
+      "display": "flex",
+      "flex": 1,
+      "flexDirection": "column",
+    }
+  }
+>
   <h1>
     Links
   </h1>

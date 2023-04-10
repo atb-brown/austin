@@ -1,6 +1,6 @@
 import "./App.css";
 import AppAcknowledgements from "./AppAcknowledgements";
-import AppLinks from "./AppLinks";
+import AppBody from "./AppBody";
 import AppTitle from "./AppTitle";
 import React from "react";
 
@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <AppTitle />
-        <AppLinks />
+        <AppBody />
         <AppAcknowledgements />
       </header>
     </div>

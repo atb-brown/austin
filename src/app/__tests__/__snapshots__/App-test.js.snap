@@ -31,111 +31,160 @@ exports[`renders to match snapshot 1`] = `
         </a>
       </div>
     </div>
-    <div>
-      <h1>
-        Links
-      </h1>
+    <div
+      style={
+        {
+          "display": "flex",
+          "justifyContent": "space-around",
+          "width": "100%",
+        }
+      }
+    >
       <div
-        className="App-text"
+        style={
+          {
+            "alignItems": "center",
+            "display": "flex",
+            "flex": 1,
+            "flexDirection": "column",
+          }
+        }
       >
-        <div>
-          GitHub
-        </div>
-        <div>
-          <a
-            className="App-link"
-            href="https://github.com/atb-brown"
-          >
-            atb-brown
-          </a>
-        </div>
-        <br />
-      </div>
-      <div
-        className="App-text"
-      >
-        <div>
-          StackOverflow
-        </div>
-        <div>
-          <a
-            className="App-link"
-            href="https://stackoverflow.com/users/5476186/austin-brown"
-          >
-            5476186/austin-brown
-          </a>
-        </div>
-        <br />
-      </div>
-      <div
-        className="App-text"
-      >
-        <div>
-          LinkedIn
-        </div>
-        <div>
-          <a
-            className="App-link"
-            href="https://www.linkedin.com/in/austin-brown-06382a12a/"
-          >
-            austin-brown-06382a12a
-          </a>
-        </div>
-        <br />
-      </div>
-      <div
-        className="App-text"
-      >
-        <div>
-          Scrum Master Certification
-        </div>
-        <div>
-          <a
-            className="App-link"
-            href="https://bcert.me/sixkczuof"
-          >
-            sixkczuof
-          </a>
+        <h1>
+          Links
+        </h1>
+        <div
+          className="App-text"
+        >
+          <div>
+            GitHub
+          </div>
+          <div>
+            <a
+              className="App-link"
+              href="https://github.com/atb-brown"
+            >
+              atb-brown
+            </a>
+          </div>
+          <br />
         </div>
         <div
-          className="App-soft-text"
+          className="App-text"
         >
-          Issued by: 
-          <a
-            className="App-link"
-            href="https://www.scrumalliance.org/"
-          >
-            Scrum Alliance, Inc.
-          </a>
-        </div>
-        <br />
-      </div>
-      <div
-        className="App-text"
-      >
-        <div>
-          SAFe 5 Scrum Master Certification
-        </div>
-        <div>
-          <a
-            className="App-link"
-            href="https://www.credly.com/badges/18e3c923-956c-4525-b857-5f9c0dfb9713/public_url"
-          >
-            18e3c923-956c-4525-b857-5f9c0dfb9713
-          </a>
+          <div>
+            StackOverflow
+          </div>
+          <div>
+            <a
+              className="App-link"
+              href="https://stackoverflow.com/users/5476186/austin-brown"
+            >
+              5476186/austin-brown
+            </a>
+          </div>
+          <br />
         </div>
         <div
-          className="App-soft-text"
+          className="App-text"
         >
-          Issued by: 
-          <a
-            className="App-link"
-            href="https://scaledagile.com/"
-          >
-            Scaled Agile, Inc.
-          </a>
+          <div>
+            LinkedIn
+          </div>
+          <div>
+            <a
+              className="App-link"
+              href="https://www.linkedin.com/in/austin-brown-06382a12a/"
+            >
+              austin-brown-06382a12a
+            </a>
+          </div>
+          <br />
         </div>
-        <br />
+        <div
+          className="App-text"
+        >
+          <div>
+            Scrum Master Certification
+          </div>
+          <div>
+            <a
+              className="App-link"
+              href="https://bcert.me/sixkczuof"
+            >
+              sixkczuof
+            </a>
+          </div>
+          <div
+            className="App-soft-text"
+          >
+            Issued by: 
+            <a
+              className="App-link"
+              href="https://www.scrumalliance.org/"
+            >
+              Scrum Alliance, Inc.
+            </a>
+          </div>
+          <br />
+        </div>
+        <div
+          className="App-text"
+        >
+          <div>
+            SAFe 5 Scrum Master Certification
+          </div>
+          <div>
+            <a
+              className="App-link"
+              href="https://www.credly.com/badges/18e3c923-956c-4525-b857-5f9c0dfb9713/public_url"
+            >
+              18e3c923-956c-4525-b857-5f9c0dfb9713
+            </a>
+          </div>
+          <div
+            className="App-soft-text"
+          >
+            Issued by: 
+            <a
+              className="App-link"
+              href="https://scaledagile.com/"
+            >
+              Scaled Agile, Inc.
+            </a>
+          </div>
+          <br />
+        </div>
+      </div>
+      <div
+        style={
+          {
+            "alignItems": "center",
+            "display": "flex",
+            "flex": 1,
+            "flexDirection": "column",
+            "justifyContent": "center",
+            "width": "100%",
+          }
+        }
+      >
+        <div
+          style={
+            {
+              "alignItems": "center",
+              "backgroundColor": "steelblue",
+              "borderRadius": 10,
+              "display": "flex",
+              "fontSize": 20,
+              "height": 60,
+              "justifyContent": "center",
+              "width": "25%",
+            }
+          }
+          title="This component is a work-in-progress! I'm currently iterating on it."
+        >
+          work in progress
+        </div>
       </div>
     </div>
     <div
