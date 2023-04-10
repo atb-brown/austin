@@ -10,7 +10,14 @@ export default function AppLinks() {
   const linksHdr = "Links";
 
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        flex: 1,
+        flexDirection: "column",
+        alignItems: "center",
+      }}
+    >
       <h1>{linksHdr}</h1>
       <PortfolioLink
         description="GitHub"
