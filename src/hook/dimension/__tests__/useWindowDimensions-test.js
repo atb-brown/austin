@@ -4,15 +4,19 @@ import { render } from "@testing-library/react";
 it("Test window width and height.", () => {
   // Set the size
   setScreenSize(1000, 800);
-  var { asFragment } = render(<TestComponentUseWindowDimension />);
+  const initialFragment = render(
+    <TestComponentUseWindowDimension />
+  ).asFragment;
 
-  expect(asFragment()).toMatchSnapshot();
+  expect(initialFragment()).toMatchSnapshot();
 
   // Set a new size and re-render
   setScreenSize(500, 400);
-  var { asFragment } = render(<TestComponentUseWindowDimension />);
+  const reRenderedFragment = render(
+    <TestComponentUseWindowDimension />
+  ).asFragment;
 
-  expect(asFragment()).toMatchSnapshot();
+  expect(reRenderedFragment()).toMatchSnapshot();
 });
 
 function setScreenSize(width, height) {
