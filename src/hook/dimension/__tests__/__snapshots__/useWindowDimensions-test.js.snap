@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test window width and height. 1`] = `
+<DocumentFragment>
+  <div>
+    width: 1000 / height: 800
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Test window width and height. 2`] = `
+<DocumentFragment>
+  <div>
+    width: 500 / height: 400
+  </div>
+</DocumentFragment>
+`;
