@@ -4,20 +4,48 @@ env:
   node: true
 extends:
   - eslint:recommended
-  - plugin:react/all
-  - plugin:@typescript-eslint/recommended
   - google
   - prettier
-overrides: []
+overrides:
+  [
+    {
+      "files": ["**/__tests__/**"],
+      "plugins": ["jest"],
+      "extends": ["plugin:jest/recommended", "prettier"],
+      "rules":
+        { "require-jsdoc": "off", "jest/prefer-expect-assertions": "off" },
+    },
+    {
+      "files": ["**/*.tsx", "**/*.ts"],
+      "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"],
+      "extends":
+        [
+          "eslint:recommended",
+          "plugin:react/all",
+          "plugin:react-hooks/recommended",
+          "plugin:@typescript-eslint/recommended",
+        ],
+      "rules": {
+          "react/jsx-filename-extension": ["error", { "extensions": [".tsx"] }],
+          # Style rule, unneeded with Prettier
+          "react/jsx-indent": "off",
+          # Style rule, unneeded with Prettier
+          "react/jsx-indent-props": "off",
+          # Style rule, unneeded with Prettier
+          "react/jsx-one-expression-per-line": "off",
+          # Style rule, unneeded with Prettier
+          "react/jsx-max-props-per-line": "off",
+          # Style rule, unneeded with Prettier
+          "react/jsx-newline": "off",
+        },
+    },
+  ]
 parser: "@typescript-eslint/parser"
 parserOptions:
   ecmaFeatures:
     jsx: true
   ecmaVersion: latest
   sourceType: module
-plugins:
-  - react
-  - "@typescript-eslint"
 ignorePatterns: ["**/*.d.ts"]
 rules:
   quotes:
@@ -27,12 +55,6 @@ rules:
     - error
   no-console:
     - error
-  react/jsx-filename-extension:
-    - error
-    - extensions: [".tsx"]
-  react/require-default-props:
-    # https://stackoverflow.com/a/69746922/5476186
-    - off
 settings:
   react:
     pragma: React
