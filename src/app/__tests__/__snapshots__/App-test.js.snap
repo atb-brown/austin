@@ -1,246 +1,211 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders to match snapshot 1`] = `
-<div
-  className="App"
->
-  <header
-    className="App-header"
+<DocumentFragment>
+  <div
+    class="App"
+    style="min-width: 1024px; max-width: 1024px; min-height: 768px; max-height: 768px;"
   >
-    <div
-      style={
-        {
-          "display": "flex",
-          "width": "100%",
-        }
-      }
-    >
-      <img
-        alt="logo"
-        className="App-logo"
-        src={{}}
-      />
-      <div>
-        Austin's React Website
-        <br />
-        <a
-          className="App-link"
-          href="https://github.com/atb-brown/austin"
-        >
-          (see the source code)
-        </a>
-      </div>
-    </div>
-    <div
-      style={
-        {
-          "display": "flex",
-          "justifyContent": "space-around",
-          "width": "100%",
-        }
-      }
+    <header
+      class="App-header"
     >
       <div
-        style={
-          {
-            "alignItems": "center",
-            "display": "flex",
-            "flex": 1,
-            "flexDirection": "column",
-          }
-        }
+        style="width: 99%; border-radius: 10px; background-color: rebeccapurple;"
       >
-        <h1>
-          Links
-        </h1>
         <div
-          className="App-text"
+          style="display: flex; width: 97%; height: 100%; flex-direction: row-reverse;"
         >
-          <div>
-            GitHub
+          <div
+            style="font-size: 10.24px; display: flex; flex-direction: column;"
+          >
+            <div>
+              Window Size
+            </div>
+            <div>
+              1024 x 768
+            </div>
           </div>
-          <div>
-            <a
-              className="App-link"
-              href="https://github.com/atb-brown"
-            >
-              atb-brown
-            </a>
-          </div>
-          <br />
         </div>
-        <div
-          className="App-text"
-        >
-          <div>
-            StackOverflow
-          </div>
-          <div>
-            <a
-              className="App-link"
-              href="https://stackoverflow.com/users/5476186/austin-brown"
-            >
-              5476186/austin-brown
-            </a>
-          </div>
+      </div>
+      <div
+        style="display: flex; width: 100%;"
+      >
+        <img
+          alt="logo"
+          class="App-logo"
+          src="[object Object]"
+        />
+        <div>
+          Austin's React Website
           <br />
+          <a
+            class="App-link"
+            href="https://github.com/atb-brown/austin"
+          >
+            (see the source code)
+          </a>
         </div>
+      </div>
+      <div
+        style="display: flex; width: 100%; justify-content: space-around;"
+      >
         <div
-          className="App-text"
+          style="display: flex; flex: 1; flex-direction: column; align-items: center;"
         >
-          <div>
-            LinkedIn
-          </div>
-          <div>
-            <a
-              className="App-link"
-              href="https://www.linkedin.com/in/austin-brown-06382a12a/"
-            >
-              austin-brown-06382a12a
-            </a>
-          </div>
-          <br />
-        </div>
-        <div
-          className="App-text"
-        >
-          <div>
-            Scrum Master Certification
-          </div>
-          <div>
-            <a
-              className="App-link"
-              href="https://bcert.me/sixkczuof"
-            >
-              sixkczuof
-            </a>
+          <h1>
+            Links
+          </h1>
+          <div
+            class="App-text"
+          >
+            <div>
+              GitHub
+            </div>
+            <div>
+              <a
+                class="App-link"
+                href="https://github.com/atb-brown"
+              >
+                atb-brown
+              </a>
+            </div>
+            <br />
           </div>
           <div
-            className="App-soft-text"
+            class="App-text"
           >
-            Issued by: 
-            <a
-              className="App-link"
-              href="https://www.scrumalliance.org/"
-            >
-              Scrum Alliance, Inc.
-            </a>
-          </div>
-          <br />
-        </div>
-        <div
-          className="App-text"
-        >
-          <div>
-            SAFe 5 Scrum Master Certification
-          </div>
-          <div>
-            <a
-              className="App-link"
-              href="https://www.credly.com/badges/18e3c923-956c-4525-b857-5f9c0dfb9713/public_url"
-            >
-              18e3c923-956c-4525-b857-5f9c0dfb9713
-            </a>
+            <div>
+              StackOverflow
+            </div>
+            <div>
+              <a
+                class="App-link"
+                href="https://stackoverflow.com/users/5476186/austin-brown"
+              >
+                5476186/austin-brown
+              </a>
+            </div>
+            <br />
           </div>
           <div
-            className="App-soft-text"
+            class="App-text"
           >
-            Issued by: 
-            <a
-              className="App-link"
-              href="https://scaledagile.com/"
-            >
-              Scaled Agile, Inc.
-            </a>
+            <div>
+              LinkedIn
+            </div>
+            <div>
+              <a
+                class="App-link"
+                href="https://www.linkedin.com/in/austin-brown-06382a12a/"
+              >
+                austin-brown-06382a12a
+              </a>
+            </div>
+            <br />
           </div>
-          <br />
+          <div
+            class="App-text"
+          >
+            <div>
+              Scrum Master Certification
+            </div>
+            <div>
+              <a
+                class="App-link"
+                href="https://bcert.me/sixkczuof"
+              >
+                sixkczuof
+              </a>
+            </div>
+            <div
+              class="App-soft-text"
+            >
+              Issued by: 
+              <a
+                class="App-link"
+                href="https://www.scrumalliance.org/"
+              >
+                Scrum Alliance, Inc.
+              </a>
+            </div>
+            <br />
+          </div>
+          <div
+            class="App-text"
+          >
+            <div>
+              SAFe 5 Scrum Master Certification
+            </div>
+            <div>
+              <a
+                class="App-link"
+                href="https://www.credly.com/badges/18e3c923-956c-4525-b857-5f9c0dfb9713/public_url"
+              >
+                18e3c923-956c-4525-b857-5f9c0dfb9713
+              </a>
+            </div>
+            <div
+              class="App-soft-text"
+            >
+              Issued by: 
+              <a
+                class="App-link"
+                href="https://scaledagile.com/"
+              >
+                Scaled Agile, Inc.
+              </a>
+            </div>
+            <br />
+          </div>
+        </div>
+        <div
+          style="width: 100%; flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;"
+        >
+          <div
+            style="display: flex; font-size: 20px; background-color: steelblue; align-items: center; justify-content: center; width: 25%; height: 60px; border-radius: 10px;"
+            title="This component is a work-in-progress! I'm currently iterating on it."
+          >
+            work in progress
+          </div>
         </div>
       </div>
       <div
-        style={
-          {
-            "alignItems": "center",
-            "display": "flex",
-            "flex": 1,
-            "flexDirection": "column",
-            "justifyContent": "center",
-            "width": "100%",
-          }
-        }
+        style="display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-end; width: 100%; margin-right: 3%;"
       >
         <div
-          style={
-            {
-              "alignItems": "center",
-              "backgroundColor": "steelblue",
-              "borderRadius": 10,
-              "display": "flex",
-              "fontSize": 20,
-              "height": 60,
-              "justifyContent": "center",
-              "width": "25%",
-            }
-          }
-          title="This component is a work-in-progress! I'm currently iterating on it."
+          class="App-soft-text"
+          style="font-size: 20px; padding-left: 50px;"
         >
-          work in progress
+          <a
+            class="App-link"
+            href="https://github.com/atb-brown/austin/commit/5c8514a96194e6271d4e8e7f234499ee4e95ab3d"
+          >
+            Initialized
+          </a>
+           using 
+          <a
+            class="App-link"
+            href="https://create-react-app.dev/"
+          >
+            create-react-app
+          </a>
+           
+        </div>
+        <div
+          class="App-soft-text"
+          style="font-size: 20px;"
+        >
+          This website is deployed by borrowing the incredible efforts of the 
+          <a
+            class="App-link"
+            href="https://github.com/gitname/react-gh-pages/graphs/contributors"
+          >
+            react-gh-pages contributors
+          </a>
+          .
         </div>
       </div>
-    </div>
-    <div
-      style={
-        {
-          "alignItems": "flex-end",
-          "display": "flex",
-          "flexDirection": "column",
-          "justifyContent": "flex-end",
-          "marginRight": "3%",
-          "width": "100%",
-        }
-      }
-    >
-      <div
-        className="App-soft-text"
-        style={
-          {
-            "fontSize": 20,
-            "paddingLeft": 50,
-          }
-        }
-      >
-        <a
-          className="App-link"
-          href="https://github.com/atb-brown/austin/commit/5c8514a96194e6271d4e8e7f234499ee4e95ab3d"
-        >
-          Initialized
-        </a>
-         using 
-        <a
-          className="App-link"
-          href="https://create-react-app.dev/"
-        >
-          create-react-app
-        </a>
-         
-      </div>
-      <div
-        className="App-soft-text"
-        style={
-          {
-            "fontSize": 20,
-          }
-        }
-      >
-        This website is deployed by borrowing the incredible efforts of the 
-        <a
-          className="App-link"
-          href="https://github.com/gitname/react-gh-pages/graphs/contributors"
-        >
-          react-gh-pages contributors
-        </a>
-        .
-      </div>
-    </div>
-  </header>
-</div>
+    </header>
+  </div>
+</DocumentFragment>
 `;
