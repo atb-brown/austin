@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders to match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    style="width: 99%; border-radius: 10px; background-color: rebeccapurple;"
+  >
+    <div
+      style="display: flex; width: 97%; height: 100%; flex-direction: row-reverse;"
+    >
+      <div
+        style="font-size: 10.24px; display: flex; flex-direction: column;"
+      >
+        <div>
+          Window Size
+        </div>
+        <div>
+          1024 x 768
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
