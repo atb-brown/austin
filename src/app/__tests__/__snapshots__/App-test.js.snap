@@ -10,11 +10,12 @@ exports[`renders to match snapshot 1`] = `
       class="App-header"
     >
       <div
+        class="Stats Stats-Visual Stats-Container"
         data-testid="stats-ribbon"
-        style="height: 5vh; display: flex; width: 97%; align-items: center; flex-direction: row-reverse; background-color: rebeccapurple; border-radius: 10px;"
       >
         <div
-          style="display: flex; height: 100%; width: 10%; align-items: center;"
+          class="Stats"
+          style="width: 10%;"
         >
           <div
             style="font-size: 10px; display: flex; flex-direction: column;"
