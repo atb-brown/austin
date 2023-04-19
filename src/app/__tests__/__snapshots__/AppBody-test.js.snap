@@ -139,6 +139,8 @@ exports[`renders to match snapshot 1`] = `
     }
   >
     <div
+      data-testid="counter"
+      onClick={[Function]}
       style={
         {
           "alignItems": "center",
@@ -151,9 +153,9 @@ exports[`renders to match snapshot 1`] = `
           "width": "25%",
         }
       }
-      title="This component is a work-in-progress! I'm currently iterating on it."
+      title="This component counts the number of times it has been clicked. It's an exercise in handling clicks and component state!"
     >
-      work in progress
+      0
     </div>
   </div>
 </div>

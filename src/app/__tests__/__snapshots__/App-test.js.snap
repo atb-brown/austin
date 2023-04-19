@@ -164,10 +164,11 @@ exports[`renders to match snapshot 1`] = `
           style="width: 100%; flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;"
         >
           <div
+            data-testid="counter"
             style="display: flex; font-size: 20px; background-color: steelblue; align-items: center; justify-content: center; width: 25%; height: 60px; border-radius: 10px;"
-            title="This component is a work-in-progress! I'm currently iterating on it."
+            title="This component counts the number of times it has been clicked. It's an exercise in handling clicks and component state!"
           >
-            work in progress
+            0
           </div>
         </div>
       </div>
