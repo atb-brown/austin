@@ -1,15 +1,20 @@
-import React from "react";
+import React, { useCallback } from "react";
 
 /**
- * This button is intended to count the number of times the user clicks it.
+ * This button is counts the number of times the user clicks it.
  *
  * @return {ReactElement}
  */
 export default function Counter() {
-  const counterButtonText = "work in progress";
+  const [count, setCount] = React.useState(0);
+  const onClick = useCallback(() => {
+    setCount(count + 1);
+  }, [count, setCount]);
 
   return (
     <div
+      data-testid="counter"
+      onClick={onClick}
       style={{
         display: "flex",
         fontSize: 20,
@@ -20,9 +25,9 @@ export default function Counter() {
         height: 60,
         borderRadius: 10,
       }}
-      title="This component is a work-in-progress! I'm currently iterating on it."
+      title="This component counts the number of times it has been clicked. It's an exercise in handling clicks and component state!"
     >
-      {counterButtonText}
+      {count}
     </div>
   );
 }
