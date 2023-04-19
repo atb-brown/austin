@@ -1,6 +1,6 @@
 .Stats {
-  display: flex;
   align-items: center;
+  display: flex;
 }
 
 .Stats-Visual {
@@ -10,8 +10,8 @@
 }
 
 .Stats-Container {
+  flex-direction: row-reverse;
   height: 5vh;
   /* 96% is kind of a magic number that helps prevent drawing under a scroll bar. */
   width: 96%;
-  flex-direction: row-reverse;
 }
