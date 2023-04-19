@@ -9,7 +9,7 @@ import React from "react";
 export default function WindowSize() {
   const { width, height } = useWindowDimensions();
   const title = "Window Size";
-  const fontSize = Math.max(10, width / 100);
+  const fontSize = Math.max(10, width / 130);
   return (
     <div
       style={{ fontSize: fontSize, display: "flex", flexDirection: "column" }}

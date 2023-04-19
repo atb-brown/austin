@@ -1,15 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders to match snapshot 1`] = `
+exports[`hidden view renders to match snapshot 1`] = `
 <DocumentFragment>
   <div
-    style="width: 99%; border-radius: 10px; background-color: rebeccapurple;"
+    style="height: 5vh; display: flex; width: 96%; flex-direction: row-reverse; border-radius: 10px;"
   >
     <div
-      style="display: flex; width: 97%; height: 100%; flex-direction: row-reverse;"
+      data-testid="stats-ribbon-hidden"
+      style="display: flex; height: 100%; align-items: center; flex-direction: row-reverse; background-color: rebeccapurple; justify-content: center; border-radius: 10px;"
+    >
+      ◀
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`initial view renders to match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    data-testid="stats-ribbon"
+    style="height: 5vh; display: flex; width: 97%; align-items: center; flex-direction: row-reverse; background-color: rebeccapurple; border-radius: 10px;"
+  >
+    <div
+      style="display: flex; height: 100%; width: 10%; align-items: center;"
     >
       <div
-        style="font-size: 10.24px; display: flex; flex-direction: column;"
+        style="font-size: 10px; display: flex; flex-direction: column;"
       >
         <div>
           Window Size
