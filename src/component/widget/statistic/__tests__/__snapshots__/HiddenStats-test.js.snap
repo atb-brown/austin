@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`initial view renders to match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="Stats Stats-Container"
+  >
+    <div
+      class="Stats Stats-Visual"
+      data-testid="stats-ribbon-hidden"
+      style="justify-content: center;"
+    >
+      ◀
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`onClick is invoked when component is clicked 1`] = `
+<DocumentFragment>
+  <div
+    class="Stats Stats-Container"
+  >
+    <div
+      class="Stats Stats-Visual"
+      data-testid="stats-ribbon-hidden"
+      style="justify-content: center;"
+    >
+      ◀
+    </div>
+  </div>
+</DocumentFragment>
+`;
