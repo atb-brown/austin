@@ -1,3 +1,4 @@
+import "../../../common.css";
 import React, { useCallback } from "react";
 
 /**
@@ -13,6 +14,7 @@ export default function Counter() {
 
   return (
     <div
+      className="disable-text-selection"
       data-testid="counter"
       onClick={onClick}
       style={{
