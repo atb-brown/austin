@@ -1,3 +1,4 @@
+import "../../../common.css";
 import "./Stats.css";
 import React from "react";
 
@@ -10,7 +11,7 @@ import React from "react";
 export default function Stats({ onClick }: HiddenStatsProps) {
   const leftArrow = "◀";
   return (
-    <div className="Stats Stats-Container">
+    <div className="Stats Stats-Container disable-text-selection">
       <div
         className="Stats Stats-Visual"
         data-testid="stats-ribbon-hidden"

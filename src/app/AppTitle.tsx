@@ -1,3 +1,4 @@
+import "../common.css";
 import Link from "../component/Link";
 import logo from "../logo.svg";
 import React from "react";
@@ -12,7 +13,7 @@ export default function AppTitle() {
 
   return (
     <div style={{ display: "flex", width: "100%" }}>
-      <img alt="logo" className="App-logo" src={logo} />
+      <img alt="logo" className="App-logo disable-text-selection" src={logo} />
       <div>
         {title}
         <br />

@@ -11,7 +11,7 @@ exports[`renders to match snapshot 1`] = `
 >
   <img
     alt="logo"
-    className="App-logo"
+    className="App-logo disable-text-selection"
     src={{}}
   />
   <div>

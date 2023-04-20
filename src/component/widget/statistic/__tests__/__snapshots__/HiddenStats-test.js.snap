@@ -3,7 +3,7 @@
 exports[`initial view renders to match snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="Stats Stats-Container"
+    class="Stats Stats-Container disable-text-selection"
   >
     <div
       class="Stats Stats-Visual"
@@ -19,7 +19,7 @@ exports[`initial view renders to match snapshot 1`] = `
 exports[`onClick is invoked when component is clicked 1`] = `
 <DocumentFragment>
   <div
-    class="Stats Stats-Container"
+    class="Stats Stats-Container disable-text-selection"
   >
     <div
       class="Stats Stats-Visual"

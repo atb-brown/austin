@@ -2,6 +2,7 @@
 
 exports[`renders to match snapshot 1`] = `
 <div
+  className="disable-text-selection"
   data-testid="counter"
   onClick={[Function]}
   style={
