@@ -15,6 +15,6 @@ export default function Link({ description, url }: LinkProps) {
 }
 
 type LinkProps = {
-  description: string;
-  url: string;
+  readonly description: string;
+  readonly url: string;
 };
