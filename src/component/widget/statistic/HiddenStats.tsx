@@ -31,5 +31,5 @@ export default function Stats({ onClick }: HiddenStatsProps) {
  * Properties for the HiddenStats component.
  */
 type HiddenStatsProps = {
-  onClick: () => void;
+  readonly onClick: () => void;
 };
