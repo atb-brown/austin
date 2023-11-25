@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Basic Render 1`] = `
+<DocumentFragment>
+  <div>
+    <div>
+      guestCount: 1
+    </div>
+    <div>
+      all guests: [{"name":"austin","message":"info loaded","visitDate":"2023","website":"www.example.com"}]
+    </div>
+    <div>
+      name: austin
+    </div>
+    <div>
+      message: info loaded
+    </div>
+    <div>
+      visitDate: 2023
+    </div>
+    <div>
+      website: www.example.com
+    </div>
+  </div>
+</DocumentFragment>
+`;
