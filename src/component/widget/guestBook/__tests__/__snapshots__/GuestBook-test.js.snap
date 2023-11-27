@@ -1,0 +1,286 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render NO guest info to match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    data-testid="guest-book"
+    style="display: flex; min-height: 50%; width: 99%; flex-direction: column; gap: 3px;"
+  />
+</DocumentFragment>
+`;
+
+exports[`render multiple guest info to match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    data-testid="guest-book"
+    style="display: flex; min-height: 50%; width: 99%; flex-direction: column; gap: 3px;"
+  >
+    <div
+      style="display: flex; width: 95%; height: 85px;"
+    >
+      <div
+        style="flex: 2; flex-direction: column; display: flex; background-color: SteelBlue; border-top-left-radius: 15px; border-bottom-left-radius: 15px; justify-content: space-evenly;"
+      >
+        <div
+          style="font-size: 75%; justify-content: center;"
+        >
+          austin
+        </div>
+        <div
+          style="justify-content: center; font-size: 50%;"
+        >
+          www.example.com
+        </div>
+      </div>
+      <div
+        style="flex: 7; display: flex; justify-content: center; background-color: SteelBlue; margin-left: 3px; margin-right: 3px;"
+      >
+        <div
+          style="font-size: 75%; display: flex; align-items: center; height: 100%; width: 98%;"
+        >
+          info loaded
+        </div>
+      </div>
+      <div
+        style="flex: 1; background-color: SteelBlue; font-size: 60%; display: flex; align-items: center; justify-content: center; border-top-right-radius: 15px; border-bottom-right-radius: 15px;"
+      >
+        2023
+      </div>
+    </div>
+    <div
+      style="display: flex; width: 95%; height: 85px;"
+    >
+      <div
+        style="flex: 2; flex-direction: column; display: flex; background-color: SteelBlue; border-top-left-radius: 15px; border-bottom-left-radius: 15px; justify-content: space-evenly;"
+      >
+        <div
+          style="font-size: 75%; justify-content: center;"
+        >
+          person2
+        </div>
+        <div
+          style="justify-content: center; font-size: 50%;"
+        >
+          website2.com
+        </div>
+      </div>
+      <div
+        style="flex: 7; display: flex; justify-content: center; background-color: SteelBlue; margin-left: 3px; margin-right: 3px;"
+      >
+        <div
+          style="font-size: 75%; display: flex; align-items: center; height: 100%; width: 98%;"
+        >
+          my message 2
+        </div>
+      </div>
+      <div
+        style="flex: 1; background-color: SteelBlue; font-size: 60%; display: flex; align-items: center; justify-content: center; border-top-right-radius: 15px; border-bottom-right-radius: 15px;"
+      >
+        2023-01-02
+      </div>
+    </div>
+    <div
+      style="display: flex; width: 95%; height: 85px;"
+    >
+      <div
+        style="flex: 2; flex-direction: column; display: flex; background-color: SteelBlue; border-top-left-radius: 15px; border-bottom-left-radius: 15px; justify-content: space-evenly;"
+      >
+        <div
+          style="font-size: 75%; justify-content: center;"
+        >
+          person3
+        </div>
+        <div
+          style="justify-content: center; font-size: 50%;"
+        >
+          website3.com
+        </div>
+      </div>
+      <div
+        style="flex: 7; display: flex; justify-content: center; background-color: SteelBlue; margin-left: 3px; margin-right: 3px;"
+      >
+        <div
+          style="font-size: 75%; display: flex; align-items: center; height: 100%; width: 98%;"
+        >
+          my message 3
+        </div>
+      </div>
+      <div
+        style="flex: 1; background-color: SteelBlue; font-size: 60%; display: flex; align-items: center; justify-content: center; border-top-right-radius: 15px; border-bottom-right-radius: 15px;"
+      >
+        2023-01-03
+      </div>
+    </div>
+    <div
+      style="display: flex; width: 95%; height: 85px;"
+    >
+      <div
+        style="flex: 2; flex-direction: column; display: flex; background-color: SteelBlue; border-top-left-radius: 15px; border-bottom-left-radius: 15px; justify-content: space-evenly;"
+      >
+        <div
+          style="font-size: 75%; justify-content: center;"
+        >
+          person4
+        </div>
+        <div
+          style="justify-content: center; font-size: 50%;"
+        >
+          website4.com
+        </div>
+      </div>
+      <div
+        style="flex: 7; display: flex; justify-content: center; background-color: SteelBlue; margin-left: 3px; margin-right: 3px;"
+      >
+        <div
+          style="font-size: 75%; display: flex; align-items: center; height: 100%; width: 98%;"
+        >
+          my message 4
+        </div>
+      </div>
+      <div
+        style="flex: 1; background-color: SteelBlue; font-size: 60%; display: flex; align-items: center; justify-content: center; border-top-right-radius: 15px; border-bottom-right-radius: 15px;"
+      >
+        2023-01-04
+      </div>
+    </div>
+    <div
+      style="display: flex; width: 95%; height: 85px;"
+    >
+      <div
+        style="flex: 2; flex-direction: column; display: flex; background-color: SteelBlue; border-top-left-radius: 15px; border-bottom-left-radius: 15px; justify-content: space-evenly;"
+      >
+        <div
+          style="font-size: 75%; justify-content: center;"
+        >
+          person5
+        </div>
+        <div
+          style="justify-content: center; font-size: 50%;"
+        >
+          website5.com
+        </div>
+      </div>
+      <div
+        style="flex: 7; display: flex; justify-content: center; background-color: SteelBlue; margin-left: 3px; margin-right: 3px;"
+      >
+        <div
+          style="font-size: 75%; display: flex; align-items: center; height: 100%; width: 98%;"
+        >
+          my message 5
+        </div>
+      </div>
+      <div
+        style="flex: 1; background-color: SteelBlue; font-size: 60%; display: flex; align-items: center; justify-content: center; border-top-right-radius: 15px; border-bottom-right-radius: 15px;"
+      >
+        2023-01-05
+      </div>
+    </div>
+    <div
+      style="display: flex; width: 95%; height: 85px;"
+    >
+      <div
+        style="flex: 2; flex-direction: column; display: flex; background-color: SteelBlue; border-top-left-radius: 15px; border-bottom-left-radius: 15px; justify-content: space-evenly;"
+      >
+        <div
+          style="font-size: 75%; justify-content: center;"
+        >
+          person6
+        </div>
+        <div
+          style="justify-content: center; font-size: 50%;"
+        >
+          website6.com
+        </div>
+      </div>
+      <div
+        style="flex: 7; display: flex; justify-content: center; background-color: SteelBlue; margin-left: 3px; margin-right: 3px;"
+      >
+        <div
+          style="font-size: 75%; display: flex; align-items: center; height: 100%; width: 98%;"
+        >
+          my message 6
+        </div>
+      </div>
+      <div
+        style="flex: 1; background-color: SteelBlue; font-size: 60%; display: flex; align-items: center; justify-content: center; border-top-right-radius: 15px; border-bottom-right-radius: 15px;"
+      >
+        2023-01-06
+      </div>
+    </div>
+    <div
+      style="display: flex; width: 95%; height: 85px;"
+    >
+      <div
+        style="flex: 2; flex-direction: column; display: flex; background-color: SteelBlue; border-top-left-radius: 15px; border-bottom-left-radius: 15px; justify-content: space-evenly;"
+      >
+        <div
+          style="font-size: 75%; justify-content: center;"
+        >
+          person7
+        </div>
+        <div
+          style="justify-content: center; font-size: 50%;"
+        >
+          website7.com
+        </div>
+      </div>
+      <div
+        style="flex: 7; display: flex; justify-content: center; background-color: SteelBlue; margin-left: 3px; margin-right: 3px;"
+      >
+        <div
+          style="font-size: 75%; display: flex; align-items: center; height: 100%; width: 98%;"
+        >
+          my message 7
+        </div>
+      </div>
+      <div
+        style="flex: 1; background-color: SteelBlue; font-size: 60%; display: flex; align-items: center; justify-content: center; border-top-right-radius: 15px; border-bottom-right-radius: 15px;"
+      >
+        2023-01-07
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`render single guest info to match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    data-testid="guest-book"
+    style="display: flex; min-height: 50%; width: 99%; flex-direction: column; gap: 3px;"
+  >
+    <div
+      style="display: flex; width: 95%; height: 85px;"
+    >
+      <div
+        style="flex: 2; flex-direction: column; display: flex; background-color: SteelBlue; border-top-left-radius: 15px; border-bottom-left-radius: 15px; justify-content: space-evenly;"
+      >
+        <div
+          style="font-size: 75%; justify-content: center;"
+        >
+          austin
+        </div>
+        <div
+          style="justify-content: center; font-size: 50%;"
+        >
+          www.example.com
+        </div>
+      </div>
+      <div
+        style="flex: 7; display: flex; justify-content: center; background-color: SteelBlue; margin-left: 3px; margin-right: 3px;"
+      >
+        <div
+          style="font-size: 75%; display: flex; align-items: center; height: 100%; width: 98%;"
+        >
+          info loaded
+        </div>
+      </div>
+      <div
+        style="flex: 1; background-color: SteelBlue; font-size: 60%; display: flex; align-items: center; justify-content: center; border-top-right-radius: 15px; border-bottom-right-radius: 15px;"
+      >
+        2023
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

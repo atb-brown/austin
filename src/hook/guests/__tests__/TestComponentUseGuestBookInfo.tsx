@@ -1,30 +1,20 @@
 import useGuestBookInfo, { Provider } from "../useGuestBookInfo";
 import React from "react";
 
-export const fakeImpl: Provider = jest.fn(
-  () =>
-    new Promise((resolve) => {
-      resolve({
-        guests: [
-          {
-            name: "austin",
-            message: "info loaded",
-            visitDate: "2023",
-            website: "www.example.com",
-          },
-        ],
-      });
-    })
-);
+type CompProps = {
+  readonly provider: Provider;
+};
 
 /**
  * This component is intended for test use only. It's just used to test the useGuestBookInfo hook.
  *
  * @return {ReactElement}
  */
-export default function TestComponentUseWindowDimension() {
-  // If needed, remove the fakeImpl parameter to test the real implementation.
-  const { guests } = useGuestBookInfo(fakeImpl);
+export default function TestComponentUseWindowDimension({
+  provider,
+}: CompProps) {
+  // If needed, remove the provider parameter to test the real implementation.
+  const { guests } = useGuestBookInfo(provider);
 
   return (
     <div>

@@ -2,16 +2,19 @@ import Stats from "../component/widget/statistic/Stats";
 import useWindowDimensions from "../hook/dimension/useWindowDimensions";
 import "./App.css";
 import AppAcknowledgements from "./AppAcknowledgements";
-import AppBody from "./AppBody";
+import AppBody, { AppBodyProviders } from "./AppBody";
 import AppTitle from "./AppTitle";
 import React from "react";
+
+// TODO: Come up with a more elegant solution for injection.
+export type AppProviders = AppBodyProviders; // ... & OtherComponentProviders & AnotherComponentProviders; <- union with other providers, if the need arises.
 
 /**
  * The main component for the site application.
  *
  * @return {ReactElement} React Component
  */
-function App() {
+function App({ guestProvider }: AppProviders) {
   const { width, height } = useWindowDimensions();
   return (
     <div
@@ -26,7 +29,7 @@ function App() {
       <header className="App-header">
         <Stats />
         <AppTitle />
-        <AppBody />
+        <AppBody guestProvider={guestProvider} />
         <AppAcknowledgements />
       </header>
     </div>

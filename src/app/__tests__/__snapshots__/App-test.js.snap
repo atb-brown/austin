@@ -49,127 +49,180 @@ exports[`renders to match snapshot 1`] = `
         </div>
       </div>
       <div
-        style="display: flex; width: 100%; justify-content: space-around;"
+        style="display: flex; width: 100%;"
       >
         <div
-          style="display: flex; flex: 1; flex-direction: column; align-items: center;"
+          style="display: flex; flex: 1;"
         >
-          <h1>
-            Links
-          </h1>
           <div
-            class="App-text"
+            style="display: flex; flex: 1; flex-direction: column; align-items: center;"
           >
-            <div>
-              GitHub
-            </div>
-            <div>
-              <a
-                class="App-link"
-                href="https://github.com/atb-brown"
-              >
-                atb-brown
-              </a>
-            </div>
-            <br />
-          </div>
-          <div
-            class="App-text"
-          >
-            <div>
-              StackOverflow
-            </div>
-            <div>
-              <a
-                class="App-link"
-                href="https://stackoverflow.com/users/5476186/austin-brown"
-              >
-                5476186/austin-brown
-              </a>
-            </div>
-            <br />
-          </div>
-          <div
-            class="App-text"
-          >
-            <div>
-              LinkedIn
-            </div>
-            <div>
-              <a
-                class="App-link"
-                href="https://www.linkedin.com/in/austin-brown-06382a12a/"
-              >
-                austin-brown-06382a12a
-              </a>
-            </div>
-            <br />
-          </div>
-          <div
-            class="App-text"
-          >
-            <div>
-              Scrum Master Certification
-            </div>
-            <div>
-              <a
-                class="App-link"
-                href="https://bcert.me/sixkczuof"
-              >
-                sixkczuof
-              </a>
+            <h1>
+              Links
+            </h1>
+            <div
+              class="App-text"
+            >
+              <div>
+                GitHub
+              </div>
+              <div>
+                <a
+                  class="App-link"
+                  href="https://github.com/atb-brown"
+                >
+                  atb-brown
+                </a>
+              </div>
+              <br />
             </div>
             <div
-              class="App-soft-text"
+              class="App-text"
             >
-              Issued by: 
-              <a
-                class="App-link"
-                href="https://www.scrumalliance.org/"
-              >
-                Scrum Alliance, Inc.
-              </a>
-            </div>
-            <br />
-          </div>
-          <div
-            class="App-text"
-          >
-            <div>
-              SAFe 5 Scrum Master Certification
-            </div>
-            <div>
-              <a
-                class="App-link"
-                href="https://www.credly.com/badges/18e3c923-956c-4525-b857-5f9c0dfb9713/public_url"
-              >
-                18e3c923-956c-4525-b857-5f9c0dfb9713
-              </a>
+              <div>
+                StackOverflow
+              </div>
+              <div>
+                <a
+                  class="App-link"
+                  href="https://stackoverflow.com/users/5476186/austin-brown"
+                >
+                  5476186/austin-brown
+                </a>
+              </div>
+              <br />
             </div>
             <div
-              class="App-soft-text"
+              class="App-text"
             >
-              Issued by: 
-              <a
-                class="App-link"
-                href="https://scaledagile.com/"
-              >
-                Scaled Agile, Inc.
-              </a>
+              <div>
+                LinkedIn
+              </div>
+              <div>
+                <a
+                  class="App-link"
+                  href="https://www.linkedin.com/in/austin-brown-06382a12a/"
+                >
+                  austin-brown-06382a12a
+                </a>
+              </div>
+              <br />
             </div>
-            <br />
+            <div
+              class="App-text"
+            >
+              <div>
+                Scrum Master Certification
+              </div>
+              <div>
+                <a
+                  class="App-link"
+                  href="https://bcert.me/sixkczuof"
+                >
+                  sixkczuof
+                </a>
+              </div>
+              <div
+                class="App-soft-text"
+              >
+                Issued by: 
+                <a
+                  class="App-link"
+                  href="https://www.scrumalliance.org/"
+                >
+                  Scrum Alliance, Inc.
+                </a>
+              </div>
+              <br />
+            </div>
+            <div
+              class="App-text"
+            >
+              <div>
+                SAFe 5 Scrum Master Certification
+              </div>
+              <div>
+                <a
+                  class="App-link"
+                  href="https://www.credly.com/badges/18e3c923-956c-4525-b857-5f9c0dfb9713/public_url"
+                >
+                  18e3c923-956c-4525-b857-5f9c0dfb9713
+                </a>
+              </div>
+              <div
+                class="App-soft-text"
+              >
+                Issued by: 
+                <a
+                  class="App-link"
+                  href="https://scaledagile.com/"
+                >
+                  Scaled Agile, Inc.
+                </a>
+              </div>
+              <br />
+            </div>
           </div>
         </div>
         <div
-          style="width: 100%; flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;"
+          style="display: flex; flex: 3;"
         >
           <div
-            class="disable-text-selection"
-            data-testid="counter"
-            style="display: flex; font-size: 20px; background-color: steelblue; align-items: center; justify-content: center; width: 25%; height: 60px; border-radius: 10px;"
-            title="This component counts the number of times it has been clicked. It's an exercise in handling clicks and component state!"
+            style="width: 100%; flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px;"
           >
-            0
+            <div
+              style="width: 100%; flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;"
+            >
+              <div
+                class="disable-text-selection"
+                data-testid="counter"
+                style="display: flex; font-size: 20px; background-color: steelblue; align-items: center; justify-content: center; width: 25%; height: 60px; border-radius: 10px;"
+                title="This component counts the number of times it has been clicked. It's an exercise in handling clicks and component state!"
+              >
+                0
+              </div>
+            </div>
+            <div
+              style="width: 100%; flex: 8; display: flex; flex-direction: column; align-items: center; justify-content: center;"
+            >
+              <div
+                data-testid="guest-book"
+                style="display: flex; min-height: 50%; width: 99%; flex-direction: column; gap: 3px;"
+              >
+                <div
+                  style="display: flex; width: 95%; height: 85px;"
+                >
+                  <div
+                    style="flex: 2; flex-direction: column; display: flex; background-color: SteelBlue; border-top-left-radius: 15px; border-bottom-left-radius: 15px; justify-content: space-evenly;"
+                  >
+                    <div
+                      style="font-size: 75%; justify-content: center;"
+                    >
+                      austin
+                    </div>
+                    <div
+                      style="justify-content: center; font-size: 50%;"
+                    >
+                      www.example.com
+                    </div>
+                  </div>
+                  <div
+                    style="flex: 7; display: flex; justify-content: center; background-color: SteelBlue; margin-left: 3px; margin-right: 3px;"
+                  >
+                    <div
+                      style="font-size: 75%; display: flex; align-items: center; height: 100%; width: 98%;"
+                    >
+                      info loaded
+                    </div>
+                  </div>
+                  <div
+                    style="flex: 1; background-color: SteelBlue; font-size: 60%; display: flex; align-items: center; justify-content: center; border-top-right-radius: 15px; border-bottom-right-radius: 15px;"
+                  >
+                    2023
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

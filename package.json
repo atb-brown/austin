@@ -29,6 +29,7 @@
     "siteEject": "react-scripts eject",
     "sitePredeploy": "npm run build",
     "siteStart": "react-scripts start",
+    "siteStartDev": "DISABLE_ESLINT_PLUGIN=true yarn siteStart",
     "test": "jest",
     "verify": "yarn sca && yarn test --coverage"
   },
