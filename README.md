@@ -33,9 +33,9 @@ This script does what it says. Our test runner is [jest](https://github.com/face
 
 Check the formatting. Will fail if formatting does not conform.
 
-### `yarn prettyFix`
+### `yarn pretty`
 
-Automatically fix all formatting so that it conforms to the configured style. After running `prettyFix`, `prettyCheck` should pass.
+Automatically fix all formatting so that it conforms to the configured style. After running `pretty`, the `prettyCheck` script should pass.
 
 ### `yarn lint`
 
@@ -52,6 +52,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
+
+### `yarn siteStartDev`
+
+Runs `siteStart` but disables `eslint` rules. This should make prototyping easier during development.
 
 ### `yarn siteBuild`
 

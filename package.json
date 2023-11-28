@@ -22,7 +22,7 @@
   "scripts": {
     "lint": "eslint src --ext .ts,.tsx,.js",
     "prettyCheck": "prettier --check .",
-    "prettyFix": "prettier --write .",
+    "pretty": "prettier --write .",
     "sca": "yarn prettyCheck && yarn tsc && yarn lint && yarn audit",
     "siteBuild": "react-scripts build",
     "siteDeploy": "gh-pages -d build",
