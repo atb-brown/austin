@@ -1,37 +1,32 @@
-import { useGuestBookInfoMockProvider } from "../../../../test/mock/hook/mockUseGuestBookInfo";
+import { wait as guestBook } from "../../../../test/component/GuestBookTestUtils";
+import { registerMockProvider } from "../../../../test/mock/hook/mockUseGuestBookInfo";
 import GuestBook from "../GuestBook";
 import "@testing-library/jest-dom";
-import { render, waitFor } from "@testing-library/react";
+import { render } from "@testing-library/react";
 
 it("render single guest info to match snapshot", async () => {
-  const renderResult = render(
-    <GuestBook guestProvider={useGuestBookInfoMockProvider()} />
-  );
+  registerMockProvider();
+  const renderResult = render(<GuestBook />);
 
-  // Wait for the underlying promise to resolve.
-  await waitFor(() => renderResult.getByText("info loaded"));
+  await guestBook(renderResult);
 
   expect(renderResult.asFragment()).toMatchSnapshot();
 });
 
 it("render multiple guest info to match snapshot", async () => {
-  const renderResult = render(
-    <GuestBook guestProvider={useGuestBookInfoMockProvider(7)} />
-  );
+  registerMockProvider(7);
+  const renderResult = render(<GuestBook />);
 
-  // Wait for the underlying promise to resolve.
-  await waitFor(() => renderResult.getByText("info loaded"));
+  await guestBook(renderResult);
 
   expect(renderResult.asFragment()).toMatchSnapshot();
 });
 
 it("render NO guest info to match snapshot", async () => {
-  const renderResult = render(
-    <GuestBook guestProvider={useGuestBookInfoMockProvider(0)} />
-  );
+  registerMockProvider(0);
+  const renderResult = render(<GuestBook />);
 
-  // Wait for the underlying promise to resolve.
-  await waitFor(() => renderResult.getByTestId("guest-book"));
+  await guestBook(renderResult);
 
   expect(renderResult.asFragment()).toMatchSnapshot();
 });

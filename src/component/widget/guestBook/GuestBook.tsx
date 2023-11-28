@@ -1,7 +1,5 @@
 import { GuestInfo } from "../../../hook/guests/guestBookInfo";
-import useGuestBookInfo, {
-  Provider,
-} from "../../../hook/guests/useGuestBookInfo";
+import useGuestBookInfo from "../../../hook/guests/useGuestBookInfo";
 import GuestEntry, { guestEntryGap } from "./GuestEntry";
 import React from "react";
 
@@ -23,18 +21,13 @@ function mapComponent(guestInfo: GuestInfo) {
   );
 }
 
-// TODO: Come up with a more elegant solution for injection.
-export type GuestBookProviders = {
-  readonly guestProvider?: Provider | undefined | null;
-};
-
 /**
  * This component is a "guest book" that displays people that have visited my website and have signed the guest book.
  *
  * @return {ReactElement}
  */
-export default function GuestBook({ guestProvider }: GuestBookProviders) {
-  const { guests } = useGuestBookInfo(guestProvider);
+export default function GuestBook() {
+  const { guests } = useGuestBookInfo();
 
   // TODO: Add a button to "sign my guest book"
   // TODO: Add logic so that only the top row and the bottom row have rounded corners.

@@ -1,20 +1,13 @@
-import useGuestBookInfo, { Provider } from "../useGuestBookInfo";
+import useGuestBookInfo from "../useGuestBookInfo";
 import React from "react";
-
-type CompProps = {
-  readonly provider: Provider;
-};
 
 /**
  * This component is intended for test use only. It's just used to test the useGuestBookInfo hook.
  *
  * @return {ReactElement}
  */
-export default function TestComponentUseWindowDimension({
-  provider,
-}: CompProps) {
-  // If needed, remove the provider parameter to test the real implementation.
-  const { guests } = useGuestBookInfo(provider);
+export default function TestComponentUseWindowDimension() {
+  const { guests } = useGuestBookInfo();
 
   return (
     <div>
