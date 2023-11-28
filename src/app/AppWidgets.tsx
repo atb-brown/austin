@@ -1,18 +1,13 @@
 import Counter from "../component/widget/count/Counter";
-import GuestBook, {
-  GuestBookProviders,
-} from "../component/widget/guestBook/GuestBook";
+import GuestBook from "../component/widget/guestBook/GuestBook";
 import React from "react";
-
-// TODO: Come up with a more elegant solution for injection.
-export type AppWidgetsProviders = GuestBookProviders; // ... & OtherComponentProviders & AnotherComponentProviders; <- union with other providers, if the need arises.
 
 /**
  * This component holds widgets with which I'm experimenting with React.
  *
  * @return {ReactElement}
  */
-export default function AppWidgets({ guestProvider }: AppWidgetsProviders) {
+export default function AppWidgets() {
   return (
     <div
       style={{
@@ -47,7 +42,7 @@ export default function AppWidgets({ guestProvider }: AppWidgetsProviders) {
           justifyContent: "center",
         }}
       >
-        <GuestBook guestProvider={guestProvider} />
+        <GuestBook />
       </div>
     </div>
   );

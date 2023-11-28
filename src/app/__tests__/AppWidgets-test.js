@@ -1,15 +1,13 @@
-// import renderer from "react-test-renderer";
-import { useGuestBookInfoMockProvider } from "../../test/mock/hook/mockUseGuestBookInfo";
+import { wait as guestBook } from "../../test/component/GuestBookTestUtils";
+import { registerMockProvider as mockGuestBookProvider } from "../../test/mock/hook/mockUseGuestBookInfo";
 import AppWidgets from "../AppWidgets";
-import { render, waitFor } from "@testing-library/react";
+import { render } from "@testing-library/react";
 
 it("renders to match snapshot", async () => {
-  const renderResult = render(
-    <AppWidgets guestProvider={useGuestBookInfoMockProvider()} />
-  );
+  mockGuestBookProvider();
+  const renderResult = render(<AppWidgets />);
 
-  // Wait for the underlying promise to resolve.
-  await waitFor(() => renderResult.getByText("info loaded"));
+  await guestBook(renderResult);
 
   expect(renderResult.asFragment()).toMatchSnapshot();
 });
