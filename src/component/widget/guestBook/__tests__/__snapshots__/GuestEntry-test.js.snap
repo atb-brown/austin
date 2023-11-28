@@ -1,0 +1,171 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders to match snapshot 1`] = `
+<div
+  style={
+    {
+      "display": "flex",
+      "height": "85px",
+      "width": "95%",
+    }
+  }
+>
+  <div
+    style={
+      {
+        "backgroundColor": "SteelBlue",
+        "borderBottomLeftRadius": 15,
+        "borderTopLeftRadius": 15,
+        "display": "flex",
+        "flex": 2,
+        "flexDirection": "column",
+        "justifyContent": "space-evenly",
+      }
+    }
+  >
+    <div
+      style={
+        {
+          "fontSize": "75%",
+          "justifyContent": "center",
+        }
+      }
+    >
+      austin
+    </div>
+    <div
+      style={
+        {
+          "fontSize": "50%",
+          "justifyContent": "center",
+        }
+      }
+    >
+      https://atb-brown.github.io/austin/
+    </div>
+  </div>
+  <div
+    style={
+      {
+        "backgroundColor": "SteelBlue",
+        "display": "flex",
+        "flex": 7,
+        "justifyContent": "center",
+        "marginLeft": 3,
+        "marginRight": 3,
+      }
+    }
+  >
+    <div
+      style={
+        {
+          "alignItems": "center",
+          "display": "flex",
+          "fontSize": "75%",
+          "height": "100%",
+          "width": "98%",
+        }
+      }
+    >
+      Hello World!
+    </div>
+  </div>
+  <div
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "SteelBlue",
+        "borderBottomRightRadius": 15,
+        "borderTopRightRadius": 15,
+        "display": "flex",
+        "flex": 1,
+        "fontSize": "60%",
+        "justifyContent": "center",
+      }
+    }
+  >
+    2023-11-26
+  </div>
+</div>
+`;
+
+exports[`renders without properties 1`] = `
+<div
+  style={
+    {
+      "display": "flex",
+      "height": "85px",
+      "width": "95%",
+    }
+  }
+>
+  <div
+    style={
+      {
+        "backgroundColor": "SteelBlue",
+        "borderBottomLeftRadius": 15,
+        "borderTopLeftRadius": 15,
+        "display": "flex",
+        "flex": 2,
+        "flexDirection": "column",
+        "justifyContent": "space-evenly",
+      }
+    }
+  >
+    <div
+      style={
+        {
+          "fontSize": "75%",
+          "justifyContent": "center",
+        }
+      }
+    />
+    <div
+      style={
+        {
+          "fontSize": "50%",
+          "justifyContent": "center",
+        }
+      }
+    />
+  </div>
+  <div
+    style={
+      {
+        "backgroundColor": "SteelBlue",
+        "display": "flex",
+        "flex": 7,
+        "justifyContent": "center",
+        "marginLeft": 3,
+        "marginRight": 3,
+      }
+    }
+  >
+    <div
+      style={
+        {
+          "alignItems": "center",
+          "display": "flex",
+          "fontSize": "75%",
+          "height": "100%",
+          "width": "98%",
+        }
+      }
+    />
+  </div>
+  <div
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "SteelBlue",
+        "borderBottomRightRadius": 15,
+        "borderTopRightRadius": 15,
+        "display": "flex",
+        "flex": 1,
+        "fontSize": "60%",
+        "justifyContent": "center",
+      }
+    }
+  />
+</div>
+`;

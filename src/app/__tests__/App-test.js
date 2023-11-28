@@ -1,8 +1,14 @@
+import { useGuestBookInfoMockProvider } from "../../test/mock/hook/mockUseGuestBookInfo";
 import App from "../App";
-import { render } from "@testing-library/react";
+import { render, waitFor } from "@testing-library/react";
 
-it("renders to match snapshot", () => {
-  const { asFragment } = render(<App />);
+it("renders to match snapshot", async () => {
+  const renderResult = render(
+    <App guestProvider={useGuestBookInfoMockProvider()} />
+  );
 
-  expect(asFragment()).toMatchSnapshot();
+  // Wait for the underlying promise to resolve.
+  await waitFor(() => renderResult.getByText("info loaded"));
+
+  expect(renderResult.asFragment()).toMatchSnapshot();
 });

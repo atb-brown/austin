@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 export type Provider = () => Promise<GuestBookInfo>;
 
 /**
+ * TODO: Come up with a more elegant solution for injection.
  * The real implementation. No logic should go here; any necessary logic should be put in testable elements.
  *
  * @return {Provider}
@@ -19,14 +20,16 @@ const providerImpl: Provider = () => {
  * @param {GuestBookInfo} provider The provider of the data. Optional. Should not be provided except for testing.
  * @return {GuestBookInfo}
  */
-const useGuestBookInfo = (provider: Provider = providerImpl): GuestBookInfo => {
+const useGuestBookInfo = (provider: Provider | null = null): GuestBookInfo => {
   const [guestBookInfo, setGuestBookInfo] = useState<GuestBookInfo>({
     guests: [],
   });
 
+  const prov: Provider = provider ? provider : providerImpl;
+
   useEffect(() => {
-    provider().then((d) => setGuestBookInfo(d));
-  }, [provider]);
+    prov().then((d) => setGuestBookInfo(d));
+  }, [prov]);
 
   return guestBookInfo;
 };
