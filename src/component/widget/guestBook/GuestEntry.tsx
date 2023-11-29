@@ -14,7 +14,6 @@ export default function GuestEntry(guestEntry: GuestEntryProps) {
   const bRadius = 15;
   const { name, website, message, visitDate } = guestEntry;
 
-  // TODO: Create a CSS class for the common style options.
   return (
     <div
       style={{
