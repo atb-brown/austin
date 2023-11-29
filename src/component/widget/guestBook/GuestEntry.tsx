@@ -1,4 +1,5 @@
 import { GuestEntryProps } from "./GuestEntryProps";
+import "./Guests.css";
 import React from "react";
 
 export const guestEntryGap = 3;
@@ -10,7 +11,6 @@ export const guestEntryGap = 3;
  * @return {GuestEntry}
  */
 export default function GuestEntry(guestEntry: GuestEntryProps) {
-  const bgColor = "SteelBlue";
   const bRadius = 15;
   const { name, website, message, visitDate } = guestEntry;
 
@@ -24,27 +24,26 @@ export default function GuestEntry(guestEntry: GuestEntryProps) {
       }}
     >
       <div
+        className="Guests-Visual"
         style={{
           flex: 2,
           flexDirection: "column",
-          display: "flex",
-          backgroundColor: bgColor,
           borderTopLeftRadius: bRadius,
           borderBottomLeftRadius: bRadius,
           justifyContent: "space-evenly",
         }}
       >
         <div
+          className="Guests-Text-container"
           style={{
             fontSize: "75%",
-            justifyContent: "center",
           }}
         >
           {name}
         </div>
         <div
+          className="Guests-Text-container"
           style={{
-            justifyContent: "center",
             fontSize: "50%",
           }}
         >
@@ -52,20 +51,17 @@ export default function GuestEntry(guestEntry: GuestEntryProps) {
         </div>
       </div>
       <div
+        className="Guests-Visual Guests-Text-Container"
         style={{
           flex: 7,
-          display: "flex",
-          justifyContent: "center",
-          backgroundColor: bgColor,
           marginLeft: guestEntryGap,
           marginRight: guestEntryGap,
         }}
       >
         <div
+          className="Guests-Text-Container"
           style={{
             fontSize: "75%",
-            display: "flex",
-            alignItems: "center",
             height: "100%",
             width: "98%",
           }}
@@ -74,13 +70,10 @@ export default function GuestEntry(guestEntry: GuestEntryProps) {
         </div>
       </div>
       <div
+        className="Guests-Visual Guests-Text-Container"
         style={{
           flex: 1,
-          backgroundColor: bgColor,
           fontSize: "60%",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
           borderTopRightRadius: bRadius,
           borderBottomRightRadius: bRadius,
         }}

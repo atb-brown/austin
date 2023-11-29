@@ -147,30 +147,36 @@ exports[`renders to match snapshot 1`] = `
               style="display: flex; width: 95%; height: 85px;"
             >
               <div
-                style="flex: 2; flex-direction: column; display: flex; background-color: SteelBlue; border-top-left-radius: 15px; border-bottom-left-radius: 15px; justify-content: space-evenly;"
+                class="Guests-Visual"
+                style="flex: 2; flex-direction: column; border-top-left-radius: 15px; border-bottom-left-radius: 15px; justify-content: space-evenly;"
               >
                 <div
-                  style="font-size: 75%; justify-content: center;"
+                  class="Guests-Text-container"
+                  style="font-size: 75%;"
                 >
                   austin
                 </div>
                 <div
-                  style="justify-content: center; font-size: 50%;"
+                  class="Guests-Text-container"
+                  style="font-size: 50%;"
                 >
                   www.example.com
                 </div>
               </div>
               <div
-                style="flex: 7; display: flex; justify-content: center; background-color: SteelBlue; margin-left: 3px; margin-right: 3px;"
+                class="Guests-Visual Guests-Text-Container"
+                style="flex: 7; margin-left: 3px; margin-right: 3px;"
               >
                 <div
-                  style="font-size: 75%; display: flex; align-items: center; height: 100%; width: 98%;"
+                  class="Guests-Text-Container"
+                  style="font-size: 75%; height: 100%; width: 98%;"
                 >
                   info loaded
                 </div>
               </div>
               <div
-                style="flex: 1; background-color: SteelBlue; font-size: 60%; display: flex; align-items: center; justify-content: center; border-top-right-radius: 15px; border-bottom-right-radius: 15px;"
+                class="Guests-Visual Guests-Text-Container"
+                style="flex: 1; font-size: 60%; border-top-right-radius: 15px; border-bottom-right-radius: 15px;"
               >
                 2023
               </div>
