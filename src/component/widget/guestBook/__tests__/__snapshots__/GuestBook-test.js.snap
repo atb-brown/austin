@@ -19,30 +19,36 @@ exports[`render multiple guest info to match snapshot 1`] = `
       style="display: flex; width: 95%; height: 85px;"
     >
       <div
-        style="flex: 2; flex-direction: column; display: flex; background-color: SteelBlue; border-top-left-radius: 15px; border-bottom-left-radius: 15px; justify-content: space-evenly;"
+        class="Guests-Visual"
+        style="flex: 2; flex-direction: column; border-top-left-radius: 15px; border-bottom-left-radius: 15px; justify-content: space-evenly;"
       >
         <div
-          style="font-size: 75%; justify-content: center;"
+          class="Guests-Text-container"
+          style="font-size: 75%;"
         >
           austin
         </div>
         <div
-          style="justify-content: center; font-size: 50%;"
+          class="Guests-Text-container"
+          style="font-size: 50%;"
         >
           www.example.com
         </div>
       </div>
       <div
-        style="flex: 7; display: flex; justify-content: center; background-color: SteelBlue; margin-left: 3px; margin-right: 3px;"
+        class="Guests-Visual Guests-Text-Container"
+        style="flex: 7; margin-left: 3px; margin-right: 3px;"
       >
         <div
-          style="font-size: 75%; display: flex; align-items: center; height: 100%; width: 98%;"
+          class="Guests-Text-Container"
+          style="font-size: 75%; height: 100%; width: 98%;"
         >
           info loaded
         </div>
       </div>
       <div
-        style="flex: 1; background-color: SteelBlue; font-size: 60%; display: flex; align-items: center; justify-content: center; border-top-right-radius: 15px; border-bottom-right-radius: 15px;"
+        class="Guests-Visual Guests-Text-Container"
+        style="flex: 1; font-size: 60%; border-top-right-radius: 15px; border-bottom-right-radius: 15px;"
       >
         2023
       </div>
@@ -51,30 +57,36 @@ exports[`render multiple guest info to match snapshot 1`] = `
       style="display: flex; width: 95%; height: 85px;"
     >
       <div
-        style="flex: 2; flex-direction: column; display: flex; background-color: SteelBlue; border-top-left-radius: 15px; border-bottom-left-radius: 15px; justify-content: space-evenly;"
+        class="Guests-Visual"
+        style="flex: 2; flex-direction: column; border-top-left-radius: 15px; border-bottom-left-radius: 15px; justify-content: space-evenly;"
       >
         <div
-          style="font-size: 75%; justify-content: center;"
+          class="Guests-Text-container"
+          style="font-size: 75%;"
         >
           person2
         </div>
         <div
-          style="justify-content: center; font-size: 50%;"
+          class="Guests-Text-container"
+          style="font-size: 50%;"
         >
           website2.com
         </div>
       </div>
       <div
-        style="flex: 7; display: flex; justify-content: center; background-color: SteelBlue; margin-left: 3px; margin-right: 3px;"
+        class="Guests-Visual Guests-Text-Container"
+        style="flex: 7; margin-left: 3px; margin-right: 3px;"
       >
         <div
-          style="font-size: 75%; display: flex; align-items: center; height: 100%; width: 98%;"
+          class="Guests-Text-Container"
+          style="font-size: 75%; height: 100%; width: 98%;"
         >
           my message 2
         </div>
       </div>
       <div
-        style="flex: 1; background-color: SteelBlue; font-size: 60%; display: flex; align-items: center; justify-content: center; border-top-right-radius: 15px; border-bottom-right-radius: 15px;"
+        class="Guests-Visual Guests-Text-Container"
+        style="flex: 1; font-size: 60%; border-top-right-radius: 15px; border-bottom-right-radius: 15px;"
       >
         2023-01-02
       </div>
@@ -83,30 +95,36 @@ exports[`render multiple guest info to match snapshot 1`] = `
       style="display: flex; width: 95%; height: 85px;"
     >
       <div
-        style="flex: 2; flex-direction: column; display: flex; background-color: SteelBlue; border-top-left-radius: 15px; border-bottom-left-radius: 15px; justify-content: space-evenly;"
+        class="Guests-Visual"
+        style="flex: 2; flex-direction: column; border-top-left-radius: 15px; border-bottom-left-radius: 15px; justify-content: space-evenly;"
       >
         <div
-          style="font-size: 75%; justify-content: center;"
+          class="Guests-Text-container"
+          style="font-size: 75%;"
         >
           person3
         </div>
         <div
-          style="justify-content: center; font-size: 50%;"
+          class="Guests-Text-container"
+          style="font-size: 50%;"
         >
           website3.com
         </div>
       </div>
       <div
-        style="flex: 7; display: flex; justify-content: center; background-color: SteelBlue; margin-left: 3px; margin-right: 3px;"
+        class="Guests-Visual Guests-Text-Container"
+        style="flex: 7; margin-left: 3px; margin-right: 3px;"
       >
         <div
-          style="font-size: 75%; display: flex; align-items: center; height: 100%; width: 98%;"
+          class="Guests-Text-Container"
+          style="font-size: 75%; height: 100%; width: 98%;"
         >
           my message 3
         </div>
       </div>
       <div
-        style="flex: 1; background-color: SteelBlue; font-size: 60%; display: flex; align-items: center; justify-content: center; border-top-right-radius: 15px; border-bottom-right-radius: 15px;"
+        class="Guests-Visual Guests-Text-Container"
+        style="flex: 1; font-size: 60%; border-top-right-radius: 15px; border-bottom-right-radius: 15px;"
       >
         2023-01-03
       </div>
@@ -115,30 +133,36 @@ exports[`render multiple guest info to match snapshot 1`] = `
       style="display: flex; width: 95%; height: 85px;"
     >
       <div
-        style="flex: 2; flex-direction: column; display: flex; background-color: SteelBlue; border-top-left-radius: 15px; border-bottom-left-radius: 15px; justify-content: space-evenly;"
+        class="Guests-Visual"
+        style="flex: 2; flex-direction: column; border-top-left-radius: 15px; border-bottom-left-radius: 15px; justify-content: space-evenly;"
       >
         <div
-          style="font-size: 75%; justify-content: center;"
+          class="Guests-Text-container"
+          style="font-size: 75%;"
         >
           person4
         </div>
         <div
-          style="justify-content: center; font-size: 50%;"
+          class="Guests-Text-container"
+          style="font-size: 50%;"
         >
           website4.com
         </div>
       </div>
       <div
-        style="flex: 7; display: flex; justify-content: center; background-color: SteelBlue; margin-left: 3px; margin-right: 3px;"
+        class="Guests-Visual Guests-Text-Container"
+        style="flex: 7; margin-left: 3px; margin-right: 3px;"
       >
         <div
-          style="font-size: 75%; display: flex; align-items: center; height: 100%; width: 98%;"
+          class="Guests-Text-Container"
+          style="font-size: 75%; height: 100%; width: 98%;"
         >
           my message 4
         </div>
       </div>
       <div
-        style="flex: 1; background-color: SteelBlue; font-size: 60%; display: flex; align-items: center; justify-content: center; border-top-right-radius: 15px; border-bottom-right-radius: 15px;"
+        class="Guests-Visual Guests-Text-Container"
+        style="flex: 1; font-size: 60%; border-top-right-radius: 15px; border-bottom-right-radius: 15px;"
       >
         2023-01-04
       </div>
@@ -147,30 +171,36 @@ exports[`render multiple guest info to match snapshot 1`] = `
       style="display: flex; width: 95%; height: 85px;"
     >
       <div
-        style="flex: 2; flex-direction: column; display: flex; background-color: SteelBlue; border-top-left-radius: 15px; border-bottom-left-radius: 15px; justify-content: space-evenly;"
+        class="Guests-Visual"
+        style="flex: 2; flex-direction: column; border-top-left-radius: 15px; border-bottom-left-radius: 15px; justify-content: space-evenly;"
       >
         <div
-          style="font-size: 75%; justify-content: center;"
+          class="Guests-Text-container"
+          style="font-size: 75%;"
         >
           person5
         </div>
         <div
-          style="justify-content: center; font-size: 50%;"
+          class="Guests-Text-container"
+          style="font-size: 50%;"
         >
           website5.com
         </div>
       </div>
       <div
-        style="flex: 7; display: flex; justify-content: center; background-color: SteelBlue; margin-left: 3px; margin-right: 3px;"
+        class="Guests-Visual Guests-Text-Container"
+        style="flex: 7; margin-left: 3px; margin-right: 3px;"
       >
         <div
-          style="font-size: 75%; display: flex; align-items: center; height: 100%; width: 98%;"
+          class="Guests-Text-Container"
+          style="font-size: 75%; height: 100%; width: 98%;"
         >
           my message 5
         </div>
       </div>
       <div
-        style="flex: 1; background-color: SteelBlue; font-size: 60%; display: flex; align-items: center; justify-content: center; border-top-right-radius: 15px; border-bottom-right-radius: 15px;"
+        class="Guests-Visual Guests-Text-Container"
+        style="flex: 1; font-size: 60%; border-top-right-radius: 15px; border-bottom-right-radius: 15px;"
       >
         2023-01-05
       </div>
@@ -179,30 +209,36 @@ exports[`render multiple guest info to match snapshot 1`] = `
       style="display: flex; width: 95%; height: 85px;"
     >
       <div
-        style="flex: 2; flex-direction: column; display: flex; background-color: SteelBlue; border-top-left-radius: 15px; border-bottom-left-radius: 15px; justify-content: space-evenly;"
+        class="Guests-Visual"
+        style="flex: 2; flex-direction: column; border-top-left-radius: 15px; border-bottom-left-radius: 15px; justify-content: space-evenly;"
       >
         <div
-          style="font-size: 75%; justify-content: center;"
+          class="Guests-Text-container"
+          style="font-size: 75%;"
         >
           person6
         </div>
         <div
-          style="justify-content: center; font-size: 50%;"
+          class="Guests-Text-container"
+          style="font-size: 50%;"
         >
           website6.com
         </div>
       </div>
       <div
-        style="flex: 7; display: flex; justify-content: center; background-color: SteelBlue; margin-left: 3px; margin-right: 3px;"
+        class="Guests-Visual Guests-Text-Container"
+        style="flex: 7; margin-left: 3px; margin-right: 3px;"
       >
         <div
-          style="font-size: 75%; display: flex; align-items: center; height: 100%; width: 98%;"
+          class="Guests-Text-Container"
+          style="font-size: 75%; height: 100%; width: 98%;"
         >
           my message 6
         </div>
       </div>
       <div
-        style="flex: 1; background-color: SteelBlue; font-size: 60%; display: flex; align-items: center; justify-content: center; border-top-right-radius: 15px; border-bottom-right-radius: 15px;"
+        class="Guests-Visual Guests-Text-Container"
+        style="flex: 1; font-size: 60%; border-top-right-radius: 15px; border-bottom-right-radius: 15px;"
       >
         2023-01-06
       </div>
@@ -211,30 +247,36 @@ exports[`render multiple guest info to match snapshot 1`] = `
       style="display: flex; width: 95%; height: 85px;"
     >
       <div
-        style="flex: 2; flex-direction: column; display: flex; background-color: SteelBlue; border-top-left-radius: 15px; border-bottom-left-radius: 15px; justify-content: space-evenly;"
+        class="Guests-Visual"
+        style="flex: 2; flex-direction: column; border-top-left-radius: 15px; border-bottom-left-radius: 15px; justify-content: space-evenly;"
       >
         <div
-          style="font-size: 75%; justify-content: center;"
+          class="Guests-Text-container"
+          style="font-size: 75%;"
         >
           person7
         </div>
         <div
-          style="justify-content: center; font-size: 50%;"
+          class="Guests-Text-container"
+          style="font-size: 50%;"
         >
           website7.com
         </div>
       </div>
       <div
-        style="flex: 7; display: flex; justify-content: center; background-color: SteelBlue; margin-left: 3px; margin-right: 3px;"
+        class="Guests-Visual Guests-Text-Container"
+        style="flex: 7; margin-left: 3px; margin-right: 3px;"
       >
         <div
-          style="font-size: 75%; display: flex; align-items: center; height: 100%; width: 98%;"
+          class="Guests-Text-Container"
+          style="font-size: 75%; height: 100%; width: 98%;"
         >
           my message 7
         </div>
       </div>
       <div
-        style="flex: 1; background-color: SteelBlue; font-size: 60%; display: flex; align-items: center; justify-content: center; border-top-right-radius: 15px; border-bottom-right-radius: 15px;"
+        class="Guests-Visual Guests-Text-Container"
+        style="flex: 1; font-size: 60%; border-top-right-radius: 15px; border-bottom-right-radius: 15px;"
       >
         2023-01-07
       </div>
@@ -253,30 +295,36 @@ exports[`render single guest info to match snapshot 1`] = `
       style="display: flex; width: 95%; height: 85px;"
     >
       <div
-        style="flex: 2; flex-direction: column; display: flex; background-color: SteelBlue; border-top-left-radius: 15px; border-bottom-left-radius: 15px; justify-content: space-evenly;"
+        class="Guests-Visual"
+        style="flex: 2; flex-direction: column; border-top-left-radius: 15px; border-bottom-left-radius: 15px; justify-content: space-evenly;"
       >
         <div
-          style="font-size: 75%; justify-content: center;"
+          class="Guests-Text-container"
+          style="font-size: 75%;"
         >
           austin
         </div>
         <div
-          style="justify-content: center; font-size: 50%;"
+          class="Guests-Text-container"
+          style="font-size: 50%;"
         >
           www.example.com
         </div>
       </div>
       <div
-        style="flex: 7; display: flex; justify-content: center; background-color: SteelBlue; margin-left: 3px; margin-right: 3px;"
+        class="Guests-Visual Guests-Text-Container"
+        style="flex: 7; margin-left: 3px; margin-right: 3px;"
       >
         <div
-          style="font-size: 75%; display: flex; align-items: center; height: 100%; width: 98%;"
+          class="Guests-Text-Container"
+          style="font-size: 75%; height: 100%; width: 98%;"
         >
           info loaded
         </div>
       </div>
       <div
-        style="flex: 1; background-color: SteelBlue; font-size: 60%; display: flex; align-items: center; justify-content: center; border-top-right-radius: 15px; border-bottom-right-radius: 15px;"
+        class="Guests-Visual Guests-Text-Container"
+        style="flex: 1; font-size: 60%; border-top-right-radius: 15px; border-bottom-right-radius: 15px;"
       >
         2023
       </div>

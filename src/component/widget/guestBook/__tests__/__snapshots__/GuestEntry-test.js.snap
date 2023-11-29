@@ -11,12 +11,11 @@ exports[`renders to match snapshot 1`] = `
   }
 >
   <div
+    className="Guests-Visual"
     style={
       {
-        "backgroundColor": "SteelBlue",
         "borderBottomLeftRadius": 15,
         "borderTopLeftRadius": 15,
-        "display": "flex",
         "flex": 2,
         "flexDirection": "column",
         "justifyContent": "space-evenly",
@@ -24,20 +23,20 @@ exports[`renders to match snapshot 1`] = `
     }
   >
     <div
+      className="Guests-Text-container"
       style={
         {
           "fontSize": "75%",
-          "justifyContent": "center",
         }
       }
     >
       austin
     </div>
     <div
+      className="Guests-Text-container"
       style={
         {
           "fontSize": "50%",
-          "justifyContent": "center",
         }
       }
     >
@@ -45,22 +44,19 @@ exports[`renders to match snapshot 1`] = `
     </div>
   </div>
   <div
+    className="Guests-Visual Guests-Text-Container"
     style={
       {
-        "backgroundColor": "SteelBlue",
-        "display": "flex",
         "flex": 7,
-        "justifyContent": "center",
         "marginLeft": 3,
         "marginRight": 3,
       }
     }
   >
     <div
+      className="Guests-Text-Container"
       style={
         {
-          "alignItems": "center",
-          "display": "flex",
           "fontSize": "75%",
           "height": "100%",
           "width": "98%",
@@ -71,16 +67,13 @@ exports[`renders to match snapshot 1`] = `
     </div>
   </div>
   <div
+    className="Guests-Visual Guests-Text-Container"
     style={
       {
-        "alignItems": "center",
-        "backgroundColor": "SteelBlue",
         "borderBottomRightRadius": 15,
         "borderTopRightRadius": 15,
-        "display": "flex",
         "flex": 1,
         "fontSize": "60%",
-        "justifyContent": "center",
       }
     }
   >
@@ -100,12 +93,11 @@ exports[`renders without properties 1`] = `
   }
 >
   <div
+    className="Guests-Visual"
     style={
       {
-        "backgroundColor": "SteelBlue",
         "borderBottomLeftRadius": 15,
         "borderTopLeftRadius": 15,
-        "display": "flex",
         "flex": 2,
         "flexDirection": "column",
         "justifyContent": "space-evenly",
@@ -113,39 +105,36 @@ exports[`renders without properties 1`] = `
     }
   >
     <div
+      className="Guests-Text-container"
       style={
         {
           "fontSize": "75%",
-          "justifyContent": "center",
         }
       }
     />
     <div
+      className="Guests-Text-container"
       style={
         {
           "fontSize": "50%",
-          "justifyContent": "center",
         }
       }
     />
   </div>
   <div
+    className="Guests-Visual Guests-Text-Container"
     style={
       {
-        "backgroundColor": "SteelBlue",
-        "display": "flex",
         "flex": 7,
-        "justifyContent": "center",
         "marginLeft": 3,
         "marginRight": 3,
       }
     }
   >
     <div
+      className="Guests-Text-Container"
       style={
         {
-          "alignItems": "center",
-          "display": "flex",
           "fontSize": "75%",
           "height": "100%",
           "width": "98%",
@@ -154,16 +143,13 @@ exports[`renders without properties 1`] = `
     />
   </div>
   <div
+    className="Guests-Visual Guests-Text-Container"
     style={
       {
-        "alignItems": "center",
-        "backgroundColor": "SteelBlue",
         "borderBottomRightRadius": 15,
         "borderTopRightRadius": 15,
-        "display": "flex",
         "flex": 1,
         "fontSize": "60%",
-        "justifyContent": "center",
       }
     }
   />
