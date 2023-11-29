@@ -142,13 +142,14 @@ exports[`renders to match snapshot 1`] = `
           <div
             data-testid="guest-book"
             style="display: flex; min-height: 50%; width: 99%; flex-direction: column; gap: 3px;"
+            title="This component displays everyone who has signed my guest book. It's an exercise in HTTP requests and dependency injection!"
           >
             <div
-              style="display: flex; width: 95%; height: 85px;"
+              style="border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; overflow: hidden; display: flex; width: 95%; height: 85px;"
             >
               <div
                 class="Guests-Visual"
-                style="flex: 2; flex-direction: column; border-top-left-radius: 15px; border-bottom-left-radius: 15px; justify-content: space-evenly;"
+                style="flex: 2; flex-direction: column; justify-content: space-evenly;"
               >
                 <div
                   class="Guests-Text-container"
@@ -176,7 +177,7 @@ exports[`renders to match snapshot 1`] = `
               </div>
               <div
                 class="Guests-Visual Guests-Text-Container"
-                style="flex: 1; font-size: 60%; border-top-right-radius: 15px; border-bottom-right-radius: 15px;"
+                style="flex: 1; font-size: 60%;"
               >
                 2023
               </div>

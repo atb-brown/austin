@@ -5,6 +5,7 @@ exports[`render NO guest info to match snapshot 1`] = `
   <div
     data-testid="guest-book"
     style="display: flex; min-height: 50%; width: 99%; flex-direction: column; gap: 3px;"
+    title="This component displays everyone who has signed my guest book. It's an exercise in HTTP requests and dependency injection!"
   />
 </DocumentFragment>
 `;
@@ -14,13 +15,14 @@ exports[`render multiple guest info to match snapshot 1`] = `
   <div
     data-testid="guest-book"
     style="display: flex; min-height: 50%; width: 99%; flex-direction: column; gap: 3px;"
+    title="This component displays everyone who has signed my guest book. It's an exercise in HTTP requests and dependency injection!"
   >
     <div
-      style="display: flex; width: 95%; height: 85px;"
+      style="border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-left-radius: 0; border-bottom-right-radius: 0; overflow: hidden; display: flex; width: 95%; height: 85px;"
     >
       <div
         class="Guests-Visual"
-        style="flex: 2; flex-direction: column; border-top-left-radius: 15px; border-bottom-left-radius: 15px; justify-content: space-evenly;"
+        style="flex: 2; flex-direction: column; justify-content: space-evenly;"
       >
         <div
           class="Guests-Text-container"
@@ -48,17 +50,17 @@ exports[`render multiple guest info to match snapshot 1`] = `
       </div>
       <div
         class="Guests-Visual Guests-Text-Container"
-        style="flex: 1; font-size: 60%; border-top-right-radius: 15px; border-bottom-right-radius: 15px;"
+        style="flex: 1; font-size: 60%;"
       >
         2023
       </div>
     </div>
     <div
-      style="display: flex; width: 95%; height: 85px;"
+      style="border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-left-radius: 0; border-bottom-right-radius: 0; overflow: hidden; display: flex; width: 95%; height: 85px;"
     >
       <div
         class="Guests-Visual"
-        style="flex: 2; flex-direction: column; border-top-left-radius: 15px; border-bottom-left-radius: 15px; justify-content: space-evenly;"
+        style="flex: 2; flex-direction: column; justify-content: space-evenly;"
       >
         <div
           class="Guests-Text-container"
@@ -86,17 +88,17 @@ exports[`render multiple guest info to match snapshot 1`] = `
       </div>
       <div
         class="Guests-Visual Guests-Text-Container"
-        style="flex: 1; font-size: 60%; border-top-right-radius: 15px; border-bottom-right-radius: 15px;"
+        style="flex: 1; font-size: 60%;"
       >
         2023-01-02
       </div>
     </div>
     <div
-      style="display: flex; width: 95%; height: 85px;"
+      style="border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-left-radius: 0; border-bottom-right-radius: 0; overflow: hidden; display: flex; width: 95%; height: 85px;"
     >
       <div
         class="Guests-Visual"
-        style="flex: 2; flex-direction: column; border-top-left-radius: 15px; border-bottom-left-radius: 15px; justify-content: space-evenly;"
+        style="flex: 2; flex-direction: column; justify-content: space-evenly;"
       >
         <div
           class="Guests-Text-container"
@@ -124,17 +126,17 @@ exports[`render multiple guest info to match snapshot 1`] = `
       </div>
       <div
         class="Guests-Visual Guests-Text-Container"
-        style="flex: 1; font-size: 60%; border-top-right-radius: 15px; border-bottom-right-radius: 15px;"
+        style="flex: 1; font-size: 60%;"
       >
         2023-01-03
       </div>
     </div>
     <div
-      style="display: flex; width: 95%; height: 85px;"
+      style="border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-left-radius: 0; border-bottom-right-radius: 0; overflow: hidden; display: flex; width: 95%; height: 85px;"
     >
       <div
         class="Guests-Visual"
-        style="flex: 2; flex-direction: column; border-top-left-radius: 15px; border-bottom-left-radius: 15px; justify-content: space-evenly;"
+        style="flex: 2; flex-direction: column; justify-content: space-evenly;"
       >
         <div
           class="Guests-Text-container"
@@ -162,17 +164,17 @@ exports[`render multiple guest info to match snapshot 1`] = `
       </div>
       <div
         class="Guests-Visual Guests-Text-Container"
-        style="flex: 1; font-size: 60%; border-top-right-radius: 15px; border-bottom-right-radius: 15px;"
+        style="flex: 1; font-size: 60%;"
       >
         2023-01-04
       </div>
     </div>
     <div
-      style="display: flex; width: 95%; height: 85px;"
+      style="border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-left-radius: 0; border-bottom-right-radius: 0; overflow: hidden; display: flex; width: 95%; height: 85px;"
     >
       <div
         class="Guests-Visual"
-        style="flex: 2; flex-direction: column; border-top-left-radius: 15px; border-bottom-left-radius: 15px; justify-content: space-evenly;"
+        style="flex: 2; flex-direction: column; justify-content: space-evenly;"
       >
         <div
           class="Guests-Text-container"
@@ -200,17 +202,17 @@ exports[`render multiple guest info to match snapshot 1`] = `
       </div>
       <div
         class="Guests-Visual Guests-Text-Container"
-        style="flex: 1; font-size: 60%; border-top-right-radius: 15px; border-bottom-right-radius: 15px;"
+        style="flex: 1; font-size: 60%;"
       >
         2023-01-05
       </div>
     </div>
     <div
-      style="display: flex; width: 95%; height: 85px;"
+      style="border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-left-radius: 0; border-bottom-right-radius: 0; overflow: hidden; display: flex; width: 95%; height: 85px;"
     >
       <div
         class="Guests-Visual"
-        style="flex: 2; flex-direction: column; border-top-left-radius: 15px; border-bottom-left-radius: 15px; justify-content: space-evenly;"
+        style="flex: 2; flex-direction: column; justify-content: space-evenly;"
       >
         <div
           class="Guests-Text-container"
@@ -238,17 +240,17 @@ exports[`render multiple guest info to match snapshot 1`] = `
       </div>
       <div
         class="Guests-Visual Guests-Text-Container"
-        style="flex: 1; font-size: 60%; border-top-right-radius: 15px; border-bottom-right-radius: 15px;"
+        style="flex: 1; font-size: 60%;"
       >
         2023-01-06
       </div>
     </div>
     <div
-      style="display: flex; width: 95%; height: 85px;"
+      style="border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; overflow: hidden; display: flex; width: 95%; height: 85px;"
     >
       <div
         class="Guests-Visual"
-        style="flex: 2; flex-direction: column; border-top-left-radius: 15px; border-bottom-left-radius: 15px; justify-content: space-evenly;"
+        style="flex: 2; flex-direction: column; justify-content: space-evenly;"
       >
         <div
           class="Guests-Text-container"
@@ -276,7 +278,7 @@ exports[`render multiple guest info to match snapshot 1`] = `
       </div>
       <div
         class="Guests-Visual Guests-Text-Container"
-        style="flex: 1; font-size: 60%; border-top-right-radius: 15px; border-bottom-right-radius: 15px;"
+        style="flex: 1; font-size: 60%;"
       >
         2023-01-07
       </div>
@@ -290,13 +292,14 @@ exports[`render single guest info to match snapshot 1`] = `
   <div
     data-testid="guest-book"
     style="display: flex; min-height: 50%; width: 99%; flex-direction: column; gap: 3px;"
+    title="This component displays everyone who has signed my guest book. It's an exercise in HTTP requests and dependency injection!"
   >
     <div
-      style="display: flex; width: 95%; height: 85px;"
+      style="border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; overflow: hidden; display: flex; width: 95%; height: 85px;"
     >
       <div
         class="Guests-Visual"
-        style="flex: 2; flex-direction: column; border-top-left-radius: 15px; border-bottom-left-radius: 15px; justify-content: space-evenly;"
+        style="flex: 2; flex-direction: column; justify-content: space-evenly;"
       >
         <div
           class="Guests-Text-container"
@@ -324,7 +327,7 @@ exports[`render single guest info to match snapshot 1`] = `
       </div>
       <div
         class="Guests-Visual Guests-Text-Container"
-        style="flex: 1; font-size: 60%; border-top-right-radius: 15px; border-bottom-right-radius: 15px;"
+        style="flex: 1; font-size: 60%;"
       >
         2023
       </div>

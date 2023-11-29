@@ -11,12 +11,20 @@ export const guestEntryGap = 3;
  * @return {GuestEntry}
  */
 export default function GuestEntry(guestEntry: GuestEntryProps) {
+  const { name, website, message, visitDate, isFirst, isLast } = guestEntry;
+
   const bRadius = 15;
-  const { name, website, message, visitDate } = guestEntry;
+  const topRadius = isFirst ? bRadius : 0;
+  const bottomRadius = isLast ? bRadius : 0;
 
   return (
     <div
       style={{
+        borderTopLeftRadius: topRadius,
+        borderTopRightRadius: topRadius,
+        borderBottomLeftRadius: bottomRadius,
+        borderBottomRightRadius: bottomRadius,
+        overflow: "hidden",
         display: "flex",
         width: "95%",
         height: "85px",
@@ -27,8 +35,6 @@ export default function GuestEntry(guestEntry: GuestEntryProps) {
         style={{
           flex: 2,
           flexDirection: "column",
-          borderTopLeftRadius: bRadius,
-          borderBottomLeftRadius: bRadius,
           justifyContent: "space-evenly",
         }}
       >
@@ -73,8 +79,6 @@ export default function GuestEntry(guestEntry: GuestEntryProps) {
         style={{
           flex: 1,
           fontSize: "60%",
-          borderTopRightRadius: bRadius,
-          borderBottomRightRadius: bRadius,
         }}
       >
         {visitDate}
