@@ -1,4 +1,4 @@
-import { GuestBookInfo, GuestInfo } from "../../../hook/guests/guestBookInfo";
+import { GuestInfo } from "../../../hook/guests/guestBookInfo";
 import useGuestBookInfo from "../../../hook/guests/useGuestBookInfo";
 import GuestEntry, { guestEntryGap } from "./GuestEntry";
 import React, { ReactNode } from "react";
@@ -10,20 +10,20 @@ import React, { ReactNode } from "react";
  * @return {ReactNode[]}
  */
 function createGuestEntries(guests: GuestInfo[]): ReactNode[] {
-  let allGuestEntries: ReactNode[] = [];
+  const allGuestEntries: ReactNode[] = [];
   const lastGuestIndex = guests.length - 1;
 
   for (let guestIndex = 0; guestIndex < guests.length; guestIndex++) {
     const guestInfo = guests[guestIndex];
     allGuestEntries.push(
       <GuestEntry
+        isFirst={guestIndex === 0}
+        isLast={guestIndex === lastGuestIndex}
         key={guestInfo?.name}
         message={guestInfo?.message}
         name={guestInfo?.name}
         visitDate={guestInfo?.visitDate}
         website={guestInfo?.website}
-        isFirst={guestIndex === 0}
-        isLast={guestIndex === lastGuestIndex}
       />
     );
   }
@@ -42,7 +42,6 @@ export default function GuestBook() {
   // TODO: Add a button to "sign my guest book"
   return (
     <div
-      title="This component displays everyone who has signed my guest book. It's an exercise in HTTP requests and dependency injection!"
       data-testid="guest-book"
       style={{
         display: "flex",
@@ -51,6 +50,7 @@ export default function GuestBook() {
         flexDirection: "column",
         gap: guestEntryGap,
       }}
+      title="This component displays everyone who has signed my guest book. It's an exercise in HTTP requests and dependency injection!"
     >
       {createGuestEntries(guests)}
     </div>
