@@ -12,7 +12,7 @@ export default function PortfolioLinkWithoutIssuer({
   description,
   urlId,
   url,
-}: PortfolioLinkProps) {
+}: PortfolioLinkProps): JSX.Element {
   return (
     <div className="App-text">
       <div>{description}</div>

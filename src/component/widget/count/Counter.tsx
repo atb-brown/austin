@@ -6,7 +6,7 @@ import React, { useCallback } from "react";
  *
  * @return {ReactElement}
  */
-export default function Counter() {
+export default function Counter(): JSX.Element {
   const [count, setCount] = React.useState(0);
   const onClick = useCallback(() => {
     setCount(count + 1);

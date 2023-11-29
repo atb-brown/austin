@@ -8,7 +8,7 @@ import React, { useCallback } from "react";
  *
  * @return {ReactElement} React Component
  */
-export default function Stats() {
+export default function Stats(): JSX.Element {
   const [showResults, setShowResults] = React.useState(true);
   const onClick = useCallback(() => {
     setShowResults(!showResults);

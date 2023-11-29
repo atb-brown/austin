@@ -8,7 +8,7 @@ import React from "react";
  *
  * @return {ReactElement}
  */
-export default function AppTitle() {
+export default function AppTitle(): JSX.Element {
   const title = "Austin's React Website";
 
   return (

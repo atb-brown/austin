@@ -22,7 +22,7 @@ const useWindowDimensions = (): WindowDimensions => {
     height: 0,
   });
 
-  const handleResize = () => {
+  const handleResize: () => void = () => {
     setWindowDimensions(getWindowDimensions());
   };
 

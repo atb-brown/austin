@@ -6,7 +6,7 @@ import React from "react";
  *
  * @return {ReactElement}
  */
-export default function TestComponentUseWindowDimension() {
+export default function TestComponentUseWindowDimension(): JSX.Element {
   const { height, width } = useWindowDimensions();
 
   return <div>{"width: " + width + " / height: " + height}</div>;

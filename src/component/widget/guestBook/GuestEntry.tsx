@@ -10,7 +10,7 @@ export const guestEntryGap = 3;
  * @param {GuestEntryProps} guestEntry The properties/data of a single guest.
  * @return {GuestEntry}
  */
-export default function GuestEntry(guestEntry: GuestEntryProps) {
+export default function GuestEntry(guestEntry: GuestEntryProps): JSX.Element {
   const { name, website, message, visitDate, isFirst, isLast } = guestEntry;
 
   const bRadius = 15;
