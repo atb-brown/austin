@@ -1,7 +1,7 @@
 import { GuestInfo } from "../../../hook/guests/guestBookInfo";
 import useGuestBookInfo from "../../../hook/guests/useGuestBookInfo";
 import GuestEntry, { guestEntryGap } from "./GuestEntry";
-import React, { ReactNode } from "react";
+import React from "react";
 
 /**
  * Create a list of GuestEntry components that will be in the GuestBook.
@@ -9,8 +9,8 @@ import React, { ReactNode } from "react";
  * @param {GuestInfo[]} guests The information for each guest.
  * @return {ReactNode[]}
  */
-function createGuestEntries(guests: GuestInfo[]): ReactNode[] {
-  const allGuestEntries: ReactNode[] = [];
+function createGuestEntries(guests: GuestInfo[]): JSX.Element[] {
+  const allGuestEntries: JSX.Element[] = [];
   const lastGuestIndex = guests.length - 1;
 
   for (let guestIndex = 0; guestIndex < guests.length; guestIndex++) {
@@ -36,7 +36,7 @@ function createGuestEntries(guests: GuestInfo[]): ReactNode[] {
  *
  * @return {ReactElement}
  */
-export default function GuestBook() {
+export default function GuestBook(): JSX.Element {
   const { guests } = useGuestBookInfo();
 
   // TODO: Add a button to "sign my guest book"

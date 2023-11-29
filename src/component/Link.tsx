@@ -6,7 +6,7 @@ import React from "react";
  * @param {LinkProps} props Properties.
  * @return {ReactElement} The link component.
  */
-export default function Link({ description, url }: LinkProps) {
+export default function Link({ description, url }: LinkProps): JSX.Element {
   return (
     <a className="App-link" href={url}>
       {description}

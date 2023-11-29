@@ -15,7 +15,7 @@ export default function PortfolioLink({
   urlId,
   issuerDescription,
   issuerUrl,
-}: PortfolioLinkProps) {
+}: PortfolioLinkProps): JSX.Element {
   if (issuerDescription && issuerUrl) {
     return (
       <PortfolioLinkWithIssuer

@@ -8,7 +8,7 @@ import React from "react";
  *
  * @return {ReactElement} React Component
  */
-export default function Stats({ onClick }: HiddenStatsProps) {
+export default function Stats({ onClick }: HiddenStatsProps): JSX.Element {
   const leftArrow = "◀";
   return (
     <div className="Stats Stats-Container disable-text-selection">

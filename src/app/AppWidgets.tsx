@@ -7,7 +7,7 @@ import React from "react";
  *
  * @return {ReactElement}
  */
-export default function AppWidgets() {
+export default function AppWidgets(): JSX.Element {
   return (
     <div
       style={{

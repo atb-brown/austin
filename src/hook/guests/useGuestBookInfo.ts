@@ -19,7 +19,10 @@ const useGuestBookInfo = (): GuestBookInfo => {
   );
 
   useEffect(() => {
-    provider().then((d) => setGuestBookInfo(d));
+    provider().then(
+      (d) => setGuestBookInfo(d),
+      () => {}
+    );
   }, [provider]);
 
   return guestBookInfo;

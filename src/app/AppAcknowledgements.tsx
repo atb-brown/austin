@@ -6,7 +6,7 @@ import React from "react";
  *
  * @return {ReactElement}
  */
-export default function AppAcknowledgements() {
+export default function AppAcknowledgements(): JSX.Element {
   const period = ".";
 
   return (

@@ -7,7 +7,7 @@ import React from "react";
  *
  * @return {ReactElement}
  */
-export default function AppBody() {
+export default function AppBody(): JSX.Element {
   return (
     <div style={{ display: "flex", width: "100%" }}>
       <div style={{ display: "flex", flex: 1 }}>

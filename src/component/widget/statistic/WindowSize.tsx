@@ -6,7 +6,7 @@ import React from "react";
  *
  * @return {ReactElement} React Component
  */
-export default function WindowSize() {
+export default function WindowSize(): JSX.Element {
   const { width, height } = useWindowDimensions();
   const title = "Window Size";
   const fontSize = Math.max(10, width / 130);

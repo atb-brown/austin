@@ -21,7 +21,10 @@ export default abstract class ProviderRegistry {
    * @param {ProviderKey} providerKey The unique key of the provider that is being registered/injected.
    * @param {Provider} providerImpl The actual implementation that is to be injected.
    */
-  public static register(providerKey: ProviderKey, providerImpl: Provider) {
+  public static register(
+    providerKey: ProviderKey,
+    providerImpl: Provider
+  ): void {
     ProviderRegistry.registry.set(providerKey, providerImpl);
   }
 
