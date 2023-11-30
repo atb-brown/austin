@@ -5,7 +5,7 @@ it("Test window width and height.", () => {
   // Set the size
   setScreenSize(1000, 800);
   const initialFragment = render(
-    <TestComponentUseWindowDimension />
+    <TestComponentUseWindowDimension />,
   ).asFragment;
 
   expect(initialFragment()).toMatchSnapshot();
@@ -13,7 +13,7 @@ it("Test window width and height.", () => {
   // Set a new size and re-render
   setScreenSize(500, 400);
   const reRenderedFragment = render(
-    <TestComponentUseWindowDimension />
+    <TestComponentUseWindowDimension />,
   ).asFragment;
 
   expect(reRenderedFragment()).toMatchSnapshot();

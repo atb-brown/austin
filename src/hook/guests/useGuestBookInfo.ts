@@ -15,13 +15,13 @@ const useGuestBookInfo = (): GuestBookInfo => {
 
   const provider = Providers.get<() => Promise<GuestBookInfo>>(
     ProviderKey.useGuestBookInfo,
-    retrieveGuestBookInfo
+    retrieveGuestBookInfo,
   );
 
   useEffect(() => {
     provider().then(
       (d) => setGuestBookInfo(d),
-      () => {}
+      () => {},
     );
   }, [provider]);
 

@@ -11,7 +11,7 @@ it("renders to match snapshot", () => {
       website="https://atb-brown.github.io/austin/"
       isFirst={true}
       isLast={true}
-    />
+    />,
   );
 
   expect(tree).toMatchSnapshot();
@@ -26,7 +26,7 @@ it("top row entry", () => {
       website="https://atb-brown.github.io/austin/"
       isFirst={true}
       isLast={false}
-    />
+    />,
   );
 
   expect(tree).toMatchSnapshot();
@@ -41,7 +41,7 @@ it("bottom row entry", () => {
       website="https://atb-brown.github.io/austin/"
       isFirst={false}
       isLast={true}
-    />
+    />,
   );
 
   expect(tree).toMatchSnapshot();

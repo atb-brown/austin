@@ -1,7 +1,7 @@
 import { ReportHandler } from "web-vitals";
 
 const reportWebVitals: (onPerfEntry?: ReportHandler) => void = (
-  onPerfEntry?: ReportHandler
+  onPerfEntry?: ReportHandler,
 ) => {
   if (onPerfEntry && onPerfEntry instanceof Function) {
     import("web-vitals").then(
@@ -12,7 +12,7 @@ const reportWebVitals: (onPerfEntry?: ReportHandler) => void = (
         getLCP(onPerfEntry);
         getTTFB(onPerfEntry);
       },
-      () => {}
+      () => {},
     );
   }
 };

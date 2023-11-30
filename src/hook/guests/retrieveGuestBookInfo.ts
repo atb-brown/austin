@@ -21,7 +21,7 @@ type ExpectedFields = {
 const retrieveGuestBookInfo = (): Promise<GuestBookInfo> => {
   return axios
     .get(
-      "https://raw.githubusercontent.com/atb-brown/guest-book/main/guests.json"
+      "https://raw.githubusercontent.com/atb-brown/guest-book/main/guests.json",
     )
     .then((v): GuestBookInfo => {
       return {
