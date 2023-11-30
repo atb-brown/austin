@@ -8,7 +8,7 @@ it("renders to match snapshot", () => {
         description="description Field"
         url="https://example.com"
         urlId="linkId Field"
-      />
+      />,
     )
     .toJSON();
 

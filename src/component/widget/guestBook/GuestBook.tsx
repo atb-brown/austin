@@ -24,7 +24,7 @@ function createGuestEntries(guests: GuestInfo[]): JSX.Element[] {
         name={guestInfo?.name}
         visitDate={guestInfo?.visitDate}
         website={guestInfo?.website}
-      />
+      />,
     );
   }
 

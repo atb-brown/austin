@@ -43,6 +43,6 @@ function useGuestBookInfoMockProvider(numOfGuestInfoEntries = 1) {
 export function registerMockProvider(numOfGuestInfoEntries = 1) {
   ProviderRegistry.register(
     ProviderKey.useGuestBookInfo,
-    useGuestBookInfoMockProvider(numOfGuestInfoEntries)
+    useGuestBookInfoMockProvider(numOfGuestInfoEntries),
   );
 }

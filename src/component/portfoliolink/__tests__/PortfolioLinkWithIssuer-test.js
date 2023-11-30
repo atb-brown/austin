@@ -10,7 +10,7 @@ it("renders to match snapshot", () => {
         urlId="linkId Field"
         issuerDescription="issuer description field"
         issuerUrl="https://https://github.com/atb-brown"
-      />
+      />,
     )
     .toJSON();
 

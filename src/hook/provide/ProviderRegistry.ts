@@ -23,7 +23,7 @@ export default abstract class ProviderRegistry {
    */
   public static register(
     providerKey: ProviderKey,
-    providerImpl: Provider
+    providerImpl: Provider,
   ): void {
     ProviderRegistry.registry.set(providerKey, providerImpl);
   }
@@ -38,7 +38,7 @@ export default abstract class ProviderRegistry {
    */
   public static get<Provider>(
     providerKey: ProviderKey,
-    realProvider: Provider
+    realProvider: Provider,
   ): Provider {
     return (
       ProviderRegistry.registry.has(providerKey)
