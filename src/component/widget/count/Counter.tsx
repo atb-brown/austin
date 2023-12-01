@@ -8,7 +8,7 @@ import React, { useCallback } from "react";
  */
 export default function Counter(): JSX.Element {
   const [count, setCount] = React.useState(0);
-  const onClick = useCallback(() => {
+  const onClick: () => void = useCallback(() => {
     setCount(count + 1);
   }, [count, setCount]);
 
