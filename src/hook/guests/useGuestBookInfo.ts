@@ -1,4 +1,4 @@
-import Providers, { ProviderKey } from "../provide/ProviderRegistry";
+import { ProviderKey, get } from "../provide/ProviderRegistry";
 import { GuestBookInfo } from "./guestBookInfo";
 import retrieveGuestBookInfo from "./retrieveGuestBookInfo";
 import { useState, useEffect } from "react";
@@ -8,19 +8,21 @@ import { useState, useEffect } from "react";
  *
  * @return {GuestBookInfo}
  */
-const useGuestBookInfo = (): GuestBookInfo => {
+const useGuestBookInfo: () => GuestBookInfo = (): GuestBookInfo => {
   const [guestBookInfo, setGuestBookInfo] = useState<GuestBookInfo>({
     guests: [],
   });
 
-  const provider = Providers.get<() => Promise<GuestBookInfo>>(
+  const provider = get<() => Promise<GuestBookInfo>>(
     ProviderKey.useGuestBookInfo,
     retrieveGuestBookInfo,
   );
 
   useEffect(() => {
     provider().then(
-      (d) => setGuestBookInfo(d),
+      (d) => {
+        setGuestBookInfo(d);
+      },
       () => {},
     );
   }, [provider]);

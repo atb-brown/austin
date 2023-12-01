@@ -1,6 +1,4 @@
-import ProviderRegistry, {
-  ProviderKey,
-} from "../../../hook/provide/ProviderRegistry";
+import { ProviderKey, register } from "../../../hook/provide/ProviderRegistry";
 
 /**
  * Create a mocked implementation of a "GuestInfo" provider.
@@ -41,7 +39,7 @@ function useGuestBookInfoMockProvider(numOfGuestInfoEntries = 1) {
  * @param {number} numOfGuestInfoEntries The number of "GuestInfo" objects that will be returned by the provider.
  */
 export function registerMockProvider(numOfGuestInfoEntries = 1) {
-  ProviderRegistry.register(
+  register(
     ProviderKey.useGuestBookInfo,
     useGuestBookInfoMockProvider(numOfGuestInfoEntries),
   );

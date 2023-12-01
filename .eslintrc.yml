@@ -23,7 +23,7 @@ overrides:
           "eslint:recommended",
           "plugin:react/all",
           "plugin:react-hooks/recommended",
-          "plugin:@typescript-eslint/recommended-type-checked",
+          "plugin:@typescript-eslint/strict-type-checked",
         ],
       "parserOptions": { "project": ["./tsconfig.json"] },
       "rules": {

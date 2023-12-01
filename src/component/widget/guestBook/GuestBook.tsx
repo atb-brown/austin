@@ -14,16 +14,16 @@ function createGuestEntries(guests: GuestInfo[]): JSX.Element[] {
   const lastGuestIndex = guests.length - 1;
 
   for (let guestIndex = 0; guestIndex < guests.length; guestIndex++) {
-    const guestInfo = guests[guestIndex];
+    const guestInfo: GuestInfo = guests[guestIndex];
     allGuestEntries.push(
       <GuestEntry
         isFirst={guestIndex === 0}
         isLast={guestIndex === lastGuestIndex}
-        key={guestInfo?.name}
-        message={guestInfo?.message}
-        name={guestInfo?.name}
-        visitDate={guestInfo?.visitDate}
-        website={guestInfo?.website}
+        key={guestInfo.name}
+        message={guestInfo.message}
+        name={guestInfo.name}
+        visitDate={guestInfo.visitDate}
+        website={guestInfo.website}
       />,
     );
   }
