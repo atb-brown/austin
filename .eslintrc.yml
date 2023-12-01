@@ -37,6 +37,8 @@ overrides:
           "react/jsx-max-props-per-line": "off",
           # Style rule, unneeded with Prettier
           "react/jsx-newline": "off",
+          "sort-keys-fix/sort-keys-fix":
+            ["error", "asc", { "caseSensitive": false }],
         },
     },
   ]
@@ -59,3 +61,5 @@ settings:
   react:
     pragma: React
     version: detect
+plugins:
+  - sort-keys-fix
