@@ -18,14 +18,14 @@ export default function Counter() {
       data-testid="counter"
       onClick={onClick}
       style={{
+        alignItems: "center",
+        backgroundColor: "steelblue",
+        borderRadius: 10,
         display: "flex",
         fontSize: 20,
-        backgroundColor: "steelblue",
-        alignItems: "center",
+        height: 60,
         justifyContent: "center",
         width: "25%",
-        height: 60,
-        borderRadius: 10,
       }}
       title="This component counts the number of times it has been clicked. It's an exercise in handling clicks and component state!"
     >

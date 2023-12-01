@@ -36,10 +36,10 @@ export default function GuestBook() {
       data-testid="guest-book"
       style={{
         display: "flex",
-        minHeight: "50%",
-        width: "99%",
         flexDirection: "column",
         gap: guestEntryGap,
+        minHeight: "50%",
+        width: "99%",
       }}
     >
       {guests?.map((g) => mapComponent(g))}

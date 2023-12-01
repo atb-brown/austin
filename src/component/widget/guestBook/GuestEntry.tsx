@@ -19,18 +19,18 @@ export default function GuestEntry(guestEntry: GuestEntryProps) {
     <div
       style={{
         display: "flex",
-        width: "95%",
         height: "85px",
+        width: "95%",
       }}
     >
       <div
         style={{
+          backgroundColor: bgColor,
+          borderBottomLeftRadius: bRadius,
+          borderTopLeftRadius: bRadius,
+          display: "flex",
           flex: 2,
           flexDirection: "column",
-          display: "flex",
-          backgroundColor: bgColor,
-          borderTopLeftRadius: bRadius,
-          borderBottomLeftRadius: bRadius,
           justifyContent: "space-evenly",
         }}
       >
@@ -44,8 +44,8 @@ export default function GuestEntry(guestEntry: GuestEntryProps) {
         </div>
         <div
           style={{
-            justifyContent: "center",
             fontSize: "50%",
+            justifyContent: "center",
           }}
         >
           {website}
@@ -53,19 +53,19 @@ export default function GuestEntry(guestEntry: GuestEntryProps) {
       </div>
       <div
         style={{
-          flex: 7,
-          display: "flex",
-          justifyContent: "center",
           backgroundColor: bgColor,
+          display: "flex",
+          flex: 7,
+          justifyContent: "center",
           marginLeft: guestEntryGap,
           marginRight: guestEntryGap,
         }}
       >
         <div
           style={{
-            fontSize: "75%",
-            display: "flex",
             alignItems: "center",
+            display: "flex",
+            fontSize: "75%",
             height: "100%",
             width: "98%",
           }}
@@ -75,14 +75,14 @@ export default function GuestEntry(guestEntry: GuestEntryProps) {
       </div>
       <div
         style={{
-          flex: 1,
-          backgroundColor: bgColor,
-          fontSize: "60%",
-          display: "flex",
           alignItems: "center",
-          justifyContent: "center",
-          borderTopRightRadius: bRadius,
+          backgroundColor: bgColor,
           borderBottomRightRadius: bRadius,
+          borderTopRightRadius: bRadius,
+          display: "flex",
+          flex: 1,
+          fontSize: "60%",
+          justifyContent: "center",
         }}
       >
         {visitDate}
