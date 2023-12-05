@@ -6,6 +6,7 @@
 .Stats-Visual {
   background-color: rebeccapurple;
   border-radius: 10px;
+  cursor: pointer;
   height: 100%;
 }
 
