@@ -2,7 +2,9 @@ import { GuestEntryProps } from "./GuestEntryProps";
 import "./Guests.css";
 import React from "react";
 
+export const guestEntryBRadius = 15;
 export const guestEntryGap = 3;
+export const guestEntryHeight = "85px";
 
 /**
  * This component is a single entry for a single guest. Multiple entries will make up a guest book.
@@ -13,21 +15,19 @@ export const guestEntryGap = 3;
 export default function GuestEntry(guestEntry: GuestEntryProps): JSX.Element {
   const { name, website, message, visitDate, isFirst, isLast } = guestEntry;
 
-  const bRadius = 15;
-  const topRadius = isFirst ? bRadius : 0;
-  const bottomRadius = isLast ? bRadius : 0;
+  const topRadius = isFirst ? guestEntryBRadius : 0;
+  const bottomRadius = isLast ? guestEntryBRadius : 0;
 
   return (
     <div
       style={{
         borderBottomLeftRadius: bottomRadius,
-        borderBottomRightRadius: bottomRadius,
         borderTopLeftRadius: topRadius,
         borderTopRightRadius: topRadius,
         display: "flex",
-        height: "85px",
+        height: guestEntryHeight,
         overflow: "hidden",
-        width: "95%",
+        width: "100%",
       }}
     >
       <div

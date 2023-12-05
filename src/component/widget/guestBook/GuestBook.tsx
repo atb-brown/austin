@@ -2,6 +2,7 @@ import { GuestInfo } from "../../../hook/guests/guestBookInfo";
 import useGuestBookInfo from "../../../hook/guests/useGuestBookInfo";
 import GuestEntry, { guestEntryGap } from "./GuestEntry";
 import React from "react";
+import SignGuestBook from "./SignGuestBook";
 
 /**
  * Create a list of GuestEntry components that will be in the GuestBook.
@@ -53,6 +54,7 @@ export default function GuestBook(): JSX.Element {
       title="This component displays everyone who has signed my guest book. It's an exercise in HTTP requests and dependency injection!"
     >
       {createGuestEntries(guests)}
+      <SignGuestBook />
     </div>
   );
 }

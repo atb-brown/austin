@@ -39,7 +39,7 @@ export default function AppWidgets(): JSX.Element {
           flex: 8,
           flexDirection: "column",
           justifyContent: "center",
-          width: "100%",
+          width: "95%",
         }}
       >
         <GuestBook />

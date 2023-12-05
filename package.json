@@ -21,7 +21,7 @@
   },
   "scripts": {
     "lint": "eslint src --ext .ts,.tsx,.js",
-    "fix": "eslint src --fix --ext .ts,.tsx,.js",
+    "lintFix": "eslint src --fix --ext .ts,.tsx,.js",
     "prettyCheck": "prettier --check .",
     "pretty": "prettier --write .",
     "sca": "yarn prettyCheck && yarn tsc && yarn lint && yarn audit",
