@@ -4,7 +4,7 @@ exports[`renders to match snapshot 1`] = `
 <DocumentFragment>
   <div
     class="App"
-    style="min-width: 1024px; max-width: 1024px; min-height: 768px; max-height: 768px;"
+    style="max-height: 768px; max-width: 1024px; min-height: 768px; min-width: 1024px;"
   >
     <header
       class="App-header"
@@ -18,7 +18,7 @@ exports[`renders to match snapshot 1`] = `
           style="width: 10%;"
         >
           <div
-            style="font-size: 10px; display: flex; flex-direction: column;"
+            style="display: flex; flex-direction: column; font-size: 10px;"
           >
             <div>
               Window Size
@@ -55,7 +55,7 @@ exports[`renders to match snapshot 1`] = `
           style="display: flex; flex: 1;"
         >
           <div
-            style="display: flex; flex: 1; flex-direction: column; align-items: center;"
+            style="align-items: center; display: flex; flex: 1; flex-direction: column;"
           >
             <h1>
               Links
@@ -168,30 +168,30 @@ exports[`renders to match snapshot 1`] = `
           style="display: flex; flex: 3;"
         >
           <div
-            style="width: 100%; flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px;"
+            style="align-items: center; display: flex; flex: 1; flex-direction: column; gap: 10px; justify-content: center; width: 100%;"
           >
             <div
-              style="width: 100%; flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;"
+              style="align-items: center; display: flex; flex: 1; flex-direction: column; justify-content: center; width: 100%;"
             >
               <div
                 class="disable-text-selection"
                 data-testid="counter"
-                style="display: flex; font-size: 20px; background-color: steelblue; align-items: center; justify-content: center; width: 25%; height: 60px; border-radius: 10px;"
+                style="align-items: center; background-color: steelblue; border-radius: 10px; display: flex; font-size: 20px; height: 60px; justify-content: center; width: 25%;"
                 title="This component counts the number of times it has been clicked. It's an exercise in handling clicks and component state!"
               >
                 0
               </div>
             </div>
             <div
-              style="width: 100%; flex: 8; display: flex; flex-direction: column; align-items: center; justify-content: center;"
+              style="align-items: center; display: flex; flex: 8; flex-direction: column; justify-content: center; width: 100%;"
             >
               <div
                 data-testid="guest-book"
-                style="display: flex; min-height: 50%; width: 99%; flex-direction: column; gap: 3px;"
+                style="display: flex; flex-direction: column; gap: 3px; min-height: 50%; width: 99%;"
                 title="This component displays everyone who has signed my guest book. It's an exercise in HTTP requests and dependency injection!"
               >
                 <div
-                  style="border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; overflow: hidden; display: flex; width: 95%; height: 85px;"
+                  style="border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; border-top-left-radius: 15px; border-top-right-radius: 15px; display: flex; height: 85px; overflow: hidden; width: 95%;"
                 >
                   <div
                     class="Guests-Visual"
@@ -205,7 +205,7 @@ exports[`renders to match snapshot 1`] = `
                     </div>
                     <div
                       class="Guests-Text-container"
-                      style="font-size: 50%;"
+                      style="font-size: 50%; justify-content: center;"
                     >
                       www.example.com
                     </div>
@@ -234,7 +234,7 @@ exports[`renders to match snapshot 1`] = `
         </div>
       </div>
       <div
-        style="display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-end; width: 100%; margin-right: 3%;"
+        style="align-items: flex-end; display: flex; flex-direction: column; justify-content: flex-end; margin-right: 3%; width: 100%;"
       >
         <div
           class="App-soft-text"

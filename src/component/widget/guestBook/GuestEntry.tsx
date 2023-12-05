@@ -20,13 +20,13 @@ export default function GuestEntry(guestEntry: GuestEntryProps): JSX.Element {
   return (
     <div
       style={{
-        borderTopLeftRadius: topRadius,
-        borderTopRightRadius: topRadius,
         borderBottomLeftRadius: bottomRadius,
         borderBottomRightRadius: bottomRadius,
-        overflow: "hidden",
+        borderTopLeftRadius: topRadius,
+        borderTopRightRadius: topRadius,
         display: "flex",
         height: "85px",
+        overflow: "hidden",
         width: "95%",
       }}
     >
