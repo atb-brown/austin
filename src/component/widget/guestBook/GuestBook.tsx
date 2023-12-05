@@ -45,10 +45,10 @@ export default function GuestBook(): JSX.Element {
       data-testid="guest-book"
       style={{
         display: "flex",
-        minHeight: "50%",
-        width: "99%",
         flexDirection: "column",
         gap: guestEntryGap,
+        minHeight: "50%",
+        width: "99%",
       }}
       title="This component displays everyone who has signed my guest book. It's an exercise in HTTP requests and dependency injection!"
     >

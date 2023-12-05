@@ -11,35 +11,35 @@ export default function AppWidgets(): JSX.Element {
   return (
     <div
       style={{
-        width: "100%",
-        flex: 1,
-        display: "flex",
-        flexDirection: "column",
         alignItems: "center",
-        justifyContent: "center",
+        display: "flex",
+        flex: 1,
+        flexDirection: "column",
         gap: 10,
+        justifyContent: "center",
+        width: "100%",
       }}
     >
       <div
         style={{
-          width: "100%",
-          flex: 1,
-          display: "flex",
-          flexDirection: "column",
           alignItems: "center",
+          display: "flex",
+          flex: 1,
+          flexDirection: "column",
           justifyContent: "center",
+          width: "100%",
         }}
       >
         <Counter />
       </div>
       <div
         style={{
-          width: "100%",
-          flex: 8,
-          display: "flex",
-          flexDirection: "column",
           alignItems: "center",
+          display: "flex",
+          flex: 8,
+          flexDirection: "column",
           justifyContent: "center",
+          width: "100%",
         }}
       >
         <GuestBook />

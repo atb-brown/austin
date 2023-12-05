@@ -17,10 +17,10 @@ function App(): JSX.Element {
     <div
       className="App"
       style={{
-        minWidth: width,
+        maxHeight: height,
         maxWidth: width,
         minHeight: height,
-        maxHeight: height,
+        minWidth: width,
       }}
     >
       <header className="App-header">

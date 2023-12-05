@@ -12,7 +12,7 @@ export default function WindowSize(): JSX.Element {
   const fontSize = Math.max(10, width / 130);
   return (
     <div
-      style={{ fontSize: fontSize, display: "flex", flexDirection: "column" }}
+      style={{ display: "flex", flexDirection: "column", fontSize: fontSize }}
     >
       <div>{title}</div>
       <div>{width + " x " + height}</div>

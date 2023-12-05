@@ -32,8 +32,8 @@ const retrieveGuestBookInfo = (): Promise<GuestBookInfo> => {
         // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-member-access
         guests: v.data.guests.map((gi: ExpectedFields) => {
           return {
-            name: gi[_1],
             message: gi[_2],
+            name: gi[_1],
             visitDate: gi[_3],
             website: gi[_4],
           };
