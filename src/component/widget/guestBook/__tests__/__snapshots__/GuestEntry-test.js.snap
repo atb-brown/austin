@@ -5,13 +5,12 @@ exports[`bottom row entry 1`] = `
   style={
     {
       "borderBottomLeftRadius": 15,
-      "borderBottomRightRadius": 15,
       "borderTopLeftRadius": 0,
       "borderTopRightRadius": 0,
       "display": "flex",
       "height": "85px",
       "overflow": "hidden",
-      "width": "95%",
+      "width": "100%",
     }
   }
 >
@@ -89,13 +88,12 @@ exports[`renders to match snapshot 1`] = `
   style={
     {
       "borderBottomLeftRadius": 15,
-      "borderBottomRightRadius": 15,
       "borderTopLeftRadius": 15,
       "borderTopRightRadius": 15,
       "display": "flex",
       "height": "85px",
       "overflow": "hidden",
-      "width": "95%",
+      "width": "100%",
     }
   }
 >
@@ -173,13 +171,12 @@ exports[`renders without properties 1`] = `
   style={
     {
       "borderBottomLeftRadius": 0,
-      "borderBottomRightRadius": 0,
       "borderTopLeftRadius": 0,
       "borderTopRightRadius": 0,
       "display": "flex",
       "height": "85px",
       "overflow": "hidden",
-      "width": "95%",
+      "width": "100%",
     }
   }
 >
@@ -249,13 +246,12 @@ exports[`top row entry 1`] = `
   style={
     {
       "borderBottomLeftRadius": 0,
-      "borderBottomRightRadius": 0,
       "borderTopLeftRadius": 15,
       "borderTopRightRadius": 15,
       "display": "flex",
       "height": "85px",
       "overflow": "hidden",
-      "width": "95%",
+      "width": "100%",
     }
   }
 >
