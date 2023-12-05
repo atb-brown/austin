@@ -10,8 +10,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Install
-        run: npm install
-      - name: Deploy react app to github pages
-        # Use commit until v.1.0.2 is released: https://github.com/tanwanimohit/deploy-react-to-ghpages/issues/6
-        uses: tanwanimohit/deploy-react-to-ghpages@c3fd37aa52fe2c6365bd9cc35d88c912cae5e34f
+      - name: Install Project
+        run: yarn install
+      - name: Build Site
+        run: yarn siteBuild
+        shell: bash
+      - name: git - Configure Username
+        run: git config user.name github-actions
+        shell: bash
+      - name: git - Configure Email
+        run: git config user.email github-actions@github.com
+        shell: bash
+      - name: git - Add the Built Content
+        run: git --work-tree build add --all
+        shell: bash
+      - name: git - Commit the Built Content
+        run: git commit -m "Automatic Deploy action run by github-actions"
+        shell: bash
+      - name: git - Build
+        run: git push origin HEAD:gh-pages --force
+        shell: bash
