@@ -12,10 +12,10 @@ export default function AppLinks(): JSX.Element {
   return (
     <div
       style={{
+        alignItems: "center",
         display: "flex",
         flex: 1,
         flexDirection: "column",
-        alignItems: "center",
       }}
     >
       <h1>{linksHdr}</h1>

@@ -11,15 +11,15 @@ const getWindowDimensions = (): WindowDimensions => {
   const { innerWidth, innerHeight } = window;
 
   return {
-    width: innerWidth,
     height: innerHeight,
+    width: innerWidth,
   };
 };
 
 const useWindowDimensions = (): WindowDimensions => {
   const [windowDimensions, setWindowDimensions] = useState<WindowDimensions>({
-    width: 0,
     height: 0,
+    width: 0,
   });
 
   const handleResize: () => void = () => {

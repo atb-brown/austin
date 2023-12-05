@@ -12,12 +12,12 @@ export default function AppAcknowledgements(): JSX.Element {
   return (
     <div
       style={{
+        alignItems: "flex-end",
         display: "flex",
         flexDirection: "column",
         justifyContent: "flex-end",
-        alignItems: "flex-end",
-        width: "100%",
         marginRight: "3%",
+        width: "100%",
       }}
     >
       <div className="App-soft-text" style={{ fontSize: 20, paddingLeft: 50 }}>

@@ -20,14 +20,14 @@ export default function GuestEntry(guestEntry: GuestEntryProps): JSX.Element {
   return (
     <div
       style={{
-        borderTopLeftRadius: topRadius,
-        borderTopRightRadius: topRadius,
         borderBottomLeftRadius: bottomRadius,
         borderBottomRightRadius: bottomRadius,
-        overflow: "hidden",
+        borderTopLeftRadius: topRadius,
+        borderTopRightRadius: topRadius,
         display: "flex",
-        width: "95%",
         height: "85px",
+        overflow: "hidden",
+        width: "95%",
       }}
     >
       <div
@@ -50,6 +50,7 @@ export default function GuestEntry(guestEntry: GuestEntryProps): JSX.Element {
           className="Guests-Text-container"
           style={{
             fontSize: "50%",
+            justifyContent: "center",
           }}
         >
           {website}

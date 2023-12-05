@@ -4,7 +4,7 @@ exports[`render NO guest info to match snapshot 1`] = `
 <DocumentFragment>
   <div
     data-testid="guest-book"
-    style="display: flex; min-height: 50%; width: 99%; flex-direction: column; gap: 3px;"
+    style="display: flex; flex-direction: column; gap: 3px; min-height: 50%; width: 99%;"
     title="This component displays everyone who has signed my guest book. It's an exercise in HTTP requests and dependency injection!"
   />
 </DocumentFragment>
@@ -14,11 +14,11 @@ exports[`render multiple guest info to match snapshot 1`] = `
 <DocumentFragment>
   <div
     data-testid="guest-book"
-    style="display: flex; min-height: 50%; width: 99%; flex-direction: column; gap: 3px;"
+    style="display: flex; flex-direction: column; gap: 3px; min-height: 50%; width: 99%;"
     title="This component displays everyone who has signed my guest book. It's an exercise in HTTP requests and dependency injection!"
   >
     <div
-      style="border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-left-radius: 0; border-bottom-right-radius: 0; overflow: hidden; display: flex; width: 95%; height: 85px;"
+      style="border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-top-left-radius: 15px; border-top-right-radius: 15px; display: flex; height: 85px; overflow: hidden; width: 95%;"
     >
       <div
         class="Guests-Visual"
@@ -32,7 +32,7 @@ exports[`render multiple guest info to match snapshot 1`] = `
         </div>
         <div
           class="Guests-Text-container"
-          style="font-size: 50%;"
+          style="font-size: 50%; justify-content: center;"
         >
           www.example.com
         </div>
@@ -56,7 +56,7 @@ exports[`render multiple guest info to match snapshot 1`] = `
       </div>
     </div>
     <div
-      style="border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-left-radius: 0; border-bottom-right-radius: 0; overflow: hidden; display: flex; width: 95%; height: 85px;"
+      style="border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-top-left-radius: 0; border-top-right-radius: 0; display: flex; height: 85px; overflow: hidden; width: 95%;"
     >
       <div
         class="Guests-Visual"
@@ -70,7 +70,7 @@ exports[`render multiple guest info to match snapshot 1`] = `
         </div>
         <div
           class="Guests-Text-container"
-          style="font-size: 50%;"
+          style="font-size: 50%; justify-content: center;"
         >
           website2.com
         </div>
@@ -94,7 +94,7 @@ exports[`render multiple guest info to match snapshot 1`] = `
       </div>
     </div>
     <div
-      style="border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-left-radius: 0; border-bottom-right-radius: 0; overflow: hidden; display: flex; width: 95%; height: 85px;"
+      style="border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-top-left-radius: 0; border-top-right-radius: 0; display: flex; height: 85px; overflow: hidden; width: 95%;"
     >
       <div
         class="Guests-Visual"
@@ -108,7 +108,7 @@ exports[`render multiple guest info to match snapshot 1`] = `
         </div>
         <div
           class="Guests-Text-container"
-          style="font-size: 50%;"
+          style="font-size: 50%; justify-content: center;"
         >
           website3.com
         </div>
@@ -132,7 +132,7 @@ exports[`render multiple guest info to match snapshot 1`] = `
       </div>
     </div>
     <div
-      style="border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-left-radius: 0; border-bottom-right-radius: 0; overflow: hidden; display: flex; width: 95%; height: 85px;"
+      style="border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-top-left-radius: 0; border-top-right-radius: 0; display: flex; height: 85px; overflow: hidden; width: 95%;"
     >
       <div
         class="Guests-Visual"
@@ -146,7 +146,7 @@ exports[`render multiple guest info to match snapshot 1`] = `
         </div>
         <div
           class="Guests-Text-container"
-          style="font-size: 50%;"
+          style="font-size: 50%; justify-content: center;"
         >
           website4.com
         </div>
@@ -170,7 +170,7 @@ exports[`render multiple guest info to match snapshot 1`] = `
       </div>
     </div>
     <div
-      style="border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-left-radius: 0; border-bottom-right-radius: 0; overflow: hidden; display: flex; width: 95%; height: 85px;"
+      style="border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-top-left-radius: 0; border-top-right-radius: 0; display: flex; height: 85px; overflow: hidden; width: 95%;"
     >
       <div
         class="Guests-Visual"
@@ -184,7 +184,7 @@ exports[`render multiple guest info to match snapshot 1`] = `
         </div>
         <div
           class="Guests-Text-container"
-          style="font-size: 50%;"
+          style="font-size: 50%; justify-content: center;"
         >
           website5.com
         </div>
@@ -208,7 +208,7 @@ exports[`render multiple guest info to match snapshot 1`] = `
       </div>
     </div>
     <div
-      style="border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-left-radius: 0; border-bottom-right-radius: 0; overflow: hidden; display: flex; width: 95%; height: 85px;"
+      style="border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-top-left-radius: 0; border-top-right-radius: 0; display: flex; height: 85px; overflow: hidden; width: 95%;"
     >
       <div
         class="Guests-Visual"
@@ -222,7 +222,7 @@ exports[`render multiple guest info to match snapshot 1`] = `
         </div>
         <div
           class="Guests-Text-container"
-          style="font-size: 50%;"
+          style="font-size: 50%; justify-content: center;"
         >
           website6.com
         </div>
@@ -246,7 +246,7 @@ exports[`render multiple guest info to match snapshot 1`] = `
       </div>
     </div>
     <div
-      style="border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; overflow: hidden; display: flex; width: 95%; height: 85px;"
+      style="border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; border-top-left-radius: 0; border-top-right-radius: 0; display: flex; height: 85px; overflow: hidden; width: 95%;"
     >
       <div
         class="Guests-Visual"
@@ -260,7 +260,7 @@ exports[`render multiple guest info to match snapshot 1`] = `
         </div>
         <div
           class="Guests-Text-container"
-          style="font-size: 50%;"
+          style="font-size: 50%; justify-content: center;"
         >
           website7.com
         </div>
@@ -291,11 +291,11 @@ exports[`render single guest info to match snapshot 1`] = `
 <DocumentFragment>
   <div
     data-testid="guest-book"
-    style="display: flex; min-height: 50%; width: 99%; flex-direction: column; gap: 3px;"
+    style="display: flex; flex-direction: column; gap: 3px; min-height: 50%; width: 99%;"
     title="This component displays everyone who has signed my guest book. It's an exercise in HTTP requests and dependency injection!"
   >
     <div
-      style="border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; overflow: hidden; display: flex; width: 95%; height: 85px;"
+      style="border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; border-top-left-radius: 15px; border-top-right-radius: 15px; display: flex; height: 85px; overflow: hidden; width: 95%;"
     >
       <div
         class="Guests-Visual"
@@ -309,7 +309,7 @@ exports[`render single guest info to match snapshot 1`] = `
         </div>
         <div
           class="Guests-Text-container"
-          style="font-size: 50%;"
+          style="font-size: 50%; justify-content: center;"
         >
           www.example.com
         </div>

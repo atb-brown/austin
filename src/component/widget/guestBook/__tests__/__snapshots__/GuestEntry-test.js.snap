@@ -40,6 +40,7 @@ exports[`bottom row entry 1`] = `
       style={
         {
           "fontSize": "50%",
+          "justifyContent": "center",
         }
       }
     >
@@ -123,6 +124,7 @@ exports[`renders to match snapshot 1`] = `
       style={
         {
           "fontSize": "50%",
+          "justifyContent": "center",
         }
       }
     >
@@ -204,6 +206,7 @@ exports[`renders without properties 1`] = `
       style={
         {
           "fontSize": "50%",
+          "justifyContent": "center",
         }
       }
     />
@@ -281,6 +284,7 @@ exports[`top row entry 1`] = `
       style={
         {
           "fontSize": "50%",
+          "justifyContent": "center",
         }
       }
     >
