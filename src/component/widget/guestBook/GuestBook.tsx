@@ -4,21 +4,31 @@ import GuestEntry, { guestEntryGap } from "./GuestEntry";
 import React from "react";
 
 /**
- * Create a single GuestEntry component.
+ * Create a list of GuestEntry components that will be in the GuestBook.
  *
- * @param {GuestInfo} guestInfo The information of a single guest.
- * @return {GuestEntry}
+ * @param {GuestInfo[]} guests The information for each guest.
+ * @return {ReactNode[]}
  */
-function mapComponent(guestInfo: GuestInfo) {
-  return (
-    <GuestEntry
-      key={guestInfo?.name}
-      message={guestInfo?.message}
-      name={guestInfo?.name}
-      visitDate={guestInfo?.visitDate}
-      website={guestInfo?.website}
-    />
-  );
+function createGuestEntries(guests: GuestInfo[]): JSX.Element[] {
+  const allGuestEntries: JSX.Element[] = [];
+  const lastGuestIndex = guests.length - 1;
+
+  for (let guestIndex = 0; guestIndex < guests.length; guestIndex++) {
+    const guestInfo: GuestInfo = guests[guestIndex];
+    allGuestEntries.push(
+      <GuestEntry
+        isFirst={guestIndex === 0}
+        isLast={guestIndex === lastGuestIndex}
+        key={guestInfo.name}
+        message={guestInfo.message}
+        name={guestInfo.name}
+        visitDate={guestInfo.visitDate}
+        website={guestInfo.website}
+      />,
+    );
+  }
+
+  return allGuestEntries;
 }
 
 /**
@@ -26,11 +36,10 @@ function mapComponent(guestInfo: GuestInfo) {
  *
  * @return {ReactElement}
  */
-export default function GuestBook() {
+export default function GuestBook(): JSX.Element {
   const { guests } = useGuestBookInfo();
 
   // TODO: Add a button to "sign my guest book"
-  // TODO: Add logic so that only the top row and the bottom row have rounded corners.
   return (
     <div
       data-testid="guest-book"
@@ -41,8 +50,9 @@ export default function GuestBook() {
         minHeight: "50%",
         width: "99%",
       }}
+      title="This component displays everyone who has signed my guest book. It's an exercise in HTTP requests and dependency injection!"
     >
-      {guests?.map((g) => mapComponent(g))}
+      {createGuestEntries(guests)}
     </div>
   );
 }

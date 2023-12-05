@@ -6,7 +6,7 @@ import React from "react";
  *
  * @return {ReactElement}
  */
-export default function AppLinks() {
+export default function AppLinks(): JSX.Element {
   const linksHdr = "Links";
 
   return (

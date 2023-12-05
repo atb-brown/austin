@@ -11,7 +11,7 @@ import React from "react";
  *
  * @return {ReactElement} React Component
  */
-function App() {
+function App(): JSX.Element {
   const { width, height } = useWindowDimensions();
   return (
     <div

@@ -22,14 +22,16 @@ const useWindowDimensions = (): WindowDimensions => {
     width: 0,
   });
 
-  const handleResize = () => {
+  const handleResize: () => void = () => {
     setWindowDimensions(getWindowDimensions());
   };
 
   useEffect(() => {
     handleResize();
     window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   return windowDimensions;

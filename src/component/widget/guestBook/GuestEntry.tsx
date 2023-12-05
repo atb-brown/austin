@@ -1,4 +1,5 @@
 import { GuestEntryProps } from "./GuestEntryProps";
+import "./Guests.css";
 import React from "react";
 
 export const guestEntryGap = 3;
@@ -9,40 +10,44 @@ export const guestEntryGap = 3;
  * @param {GuestEntryProps} guestEntry The properties/data of a single guest.
  * @return {GuestEntry}
  */
-export default function GuestEntry(guestEntry: GuestEntryProps) {
-  const bgColor = "SteelBlue";
-  const bRadius = 15;
-  const { name, website, message, visitDate } = guestEntry;
+export default function GuestEntry(guestEntry: GuestEntryProps): JSX.Element {
+  const { name, website, message, visitDate, isFirst, isLast } = guestEntry;
 
-  // TODO: Create a CSS class for the common style options.
+  const bRadius = 15;
+  const topRadius = isFirst ? bRadius : 0;
+  const bottomRadius = isLast ? bRadius : 0;
+
   return (
     <div
       style={{
+        borderTopLeftRadius: topRadius,
+        borderTopRightRadius: topRadius,
+        borderBottomLeftRadius: bottomRadius,
+        borderBottomRightRadius: bottomRadius,
+        overflow: "hidden",
         display: "flex",
         height: "85px",
         width: "95%",
       }}
     >
       <div
+        className="Guests-Visual"
         style={{
-          backgroundColor: bgColor,
-          borderBottomLeftRadius: bRadius,
-          borderTopLeftRadius: bRadius,
-          display: "flex",
           flex: 2,
           flexDirection: "column",
           justifyContent: "space-evenly",
         }}
       >
         <div
+          className="Guests-Text-container"
           style={{
             fontSize: "75%",
-            justifyContent: "center",
           }}
         >
           {name}
         </div>
         <div
+          className="Guests-Text-container"
           style={{
             fontSize: "50%",
             justifyContent: "center",
@@ -52,19 +57,16 @@ export default function GuestEntry(guestEntry: GuestEntryProps) {
         </div>
       </div>
       <div
+        className="Guests-Visual Guests-Text-Container"
         style={{
-          backgroundColor: bgColor,
-          display: "flex",
           flex: 7,
-          justifyContent: "center",
           marginLeft: guestEntryGap,
           marginRight: guestEntryGap,
         }}
       >
         <div
+          className="Guests-Text-Container"
           style={{
-            alignItems: "center",
-            display: "flex",
             fontSize: "75%",
             height: "100%",
             width: "98%",
@@ -74,15 +76,10 @@ export default function GuestEntry(guestEntry: GuestEntryProps) {
         </div>
       </div>
       <div
+        className="Guests-Visual Guests-Text-Container"
         style={{
-          alignItems: "center",
-          backgroundColor: bgColor,
-          borderBottomRightRadius: bRadius,
-          borderTopRightRadius: bRadius,
-          display: "flex",
           flex: 1,
           fontSize: "60%",
-          justifyContent: "center",
         }}
       >
         {visitDate}

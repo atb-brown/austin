@@ -3,4 +3,6 @@ export type GuestEntryProps = {
   message: string;
   visitDate: string;
   website: string;
+  isFirst: boolean;
+  isLast: boolean;
 };

@@ -1,22 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders to match snapshot 1`] = `
+exports[`bottom row entry 1`] = `
 <div
   style={
     {
+      "borderBottomLeftRadius": 15,
+      "borderBottomRightRadius": 15,
+      "borderTopLeftRadius": 0,
+      "borderTopRightRadius": 0,
       "display": "flex",
       "height": "85px",
+      "overflow": "hidden",
       "width": "95%",
     }
   }
 >
   <div
+    className="Guests-Visual"
     style={
       {
-        "backgroundColor": "SteelBlue",
-        "borderBottomLeftRadius": 15,
-        "borderTopLeftRadius": 15,
-        "display": "flex",
         "flex": 2,
         "flexDirection": "column",
         "justifyContent": "space-evenly",
@@ -24,20 +26,20 @@ exports[`renders to match snapshot 1`] = `
     }
   >
     <div
+      className="Guests-Text-container"
       style={
         {
           "fontSize": "75%",
-          "justifyContent": "center",
         }
       }
     >
       austin
     </div>
     <div
+      className="Guests-Text-container"
       style={
         {
           "fontSize": "50%",
-          "justifyContent": "center",
         }
       }
     >
@@ -45,22 +47,19 @@ exports[`renders to match snapshot 1`] = `
     </div>
   </div>
   <div
+    className="Guests-Visual Guests-Text-Container"
     style={
       {
-        "backgroundColor": "SteelBlue",
-        "display": "flex",
         "flex": 7,
-        "justifyContent": "center",
         "marginLeft": 3,
         "marginRight": 3,
       }
     }
   >
     <div
+      className="Guests-Text-Container"
       style={
         {
-          "alignItems": "center",
-          "display": "flex",
           "fontSize": "75%",
           "height": "100%",
           "width": "98%",
@@ -71,16 +70,94 @@ exports[`renders to match snapshot 1`] = `
     </div>
   </div>
   <div
+    className="Guests-Visual Guests-Text-Container"
     style={
       {
-        "alignItems": "center",
-        "backgroundColor": "SteelBlue",
-        "borderBottomRightRadius": 15,
-        "borderTopRightRadius": 15,
-        "display": "flex",
         "flex": 1,
         "fontSize": "60%",
-        "justifyContent": "center",
+      }
+    }
+  >
+    2023-11-26
+  </div>
+</div>
+`;
+
+exports[`renders to match snapshot 1`] = `
+<div
+  style={
+    {
+      "borderBottomLeftRadius": 15,
+      "borderBottomRightRadius": 15,
+      "borderTopLeftRadius": 15,
+      "borderTopRightRadius": 15,
+      "display": "flex",
+      "height": "85px",
+      "overflow": "hidden",
+      "width": "95%",
+    }
+  }
+>
+  <div
+    className="Guests-Visual"
+    style={
+      {
+        "flex": 2,
+        "flexDirection": "column",
+        "justifyContent": "space-evenly",
+      }
+    }
+  >
+    <div
+      className="Guests-Text-container"
+      style={
+        {
+          "fontSize": "75%",
+        }
+      }
+    >
+      austin
+    </div>
+    <div
+      className="Guests-Text-container"
+      style={
+        {
+          "fontSize": "50%",
+        }
+      }
+    >
+      https://atb-brown.github.io/austin/
+    </div>
+  </div>
+  <div
+    className="Guests-Visual Guests-Text-Container"
+    style={
+      {
+        "flex": 7,
+        "marginLeft": 3,
+        "marginRight": 3,
+      }
+    }
+  >
+    <div
+      className="Guests-Text-Container"
+      style={
+        {
+          "fontSize": "75%",
+          "height": "100%",
+          "width": "98%",
+        }
+      }
+    >
+      Hello World!
+    </div>
+  </div>
+  <div
+    className="Guests-Visual Guests-Text-Container"
+    style={
+      {
+        "flex": 1,
+        "fontSize": "60%",
       }
     }
   >
@@ -93,19 +170,21 @@ exports[`renders without properties 1`] = `
 <div
   style={
     {
+      "borderBottomLeftRadius": 0,
+      "borderBottomRightRadius": 0,
+      "borderTopLeftRadius": 0,
+      "borderTopRightRadius": 0,
       "display": "flex",
       "height": "85px",
+      "overflow": "hidden",
       "width": "95%",
     }
   }
 >
   <div
+    className="Guests-Visual"
     style={
       {
-        "backgroundColor": "SteelBlue",
-        "borderBottomLeftRadius": 15,
-        "borderTopLeftRadius": 15,
-        "display": "flex",
         "flex": 2,
         "flexDirection": "column",
         "justifyContent": "space-evenly",
@@ -113,39 +192,36 @@ exports[`renders without properties 1`] = `
     }
   >
     <div
+      className="Guests-Text-container"
       style={
         {
           "fontSize": "75%",
-          "justifyContent": "center",
         }
       }
     />
     <div
+      className="Guests-Text-container"
       style={
         {
           "fontSize": "50%",
-          "justifyContent": "center",
         }
       }
     />
   </div>
   <div
+    className="Guests-Visual Guests-Text-Container"
     style={
       {
-        "backgroundColor": "SteelBlue",
-        "display": "flex",
         "flex": 7,
-        "justifyContent": "center",
         "marginLeft": 3,
         "marginRight": 3,
       }
     }
   >
     <div
+      className="Guests-Text-Container"
       style={
         {
-          "alignItems": "center",
-          "display": "flex",
           "fontSize": "75%",
           "height": "100%",
           "width": "98%",
@@ -154,18 +230,96 @@ exports[`renders without properties 1`] = `
     />
   </div>
   <div
+    className="Guests-Visual Guests-Text-Container"
     style={
       {
-        "alignItems": "center",
-        "backgroundColor": "SteelBlue",
-        "borderBottomRightRadius": 15,
-        "borderTopRightRadius": 15,
-        "display": "flex",
         "flex": 1,
         "fontSize": "60%",
-        "justifyContent": "center",
       }
     }
   />
+</div>
+`;
+
+exports[`top row entry 1`] = `
+<div
+  style={
+    {
+      "borderBottomLeftRadius": 0,
+      "borderBottomRightRadius": 0,
+      "borderTopLeftRadius": 15,
+      "borderTopRightRadius": 15,
+      "display": "flex",
+      "height": "85px",
+      "overflow": "hidden",
+      "width": "95%",
+    }
+  }
+>
+  <div
+    className="Guests-Visual"
+    style={
+      {
+        "flex": 2,
+        "flexDirection": "column",
+        "justifyContent": "space-evenly",
+      }
+    }
+  >
+    <div
+      className="Guests-Text-container"
+      style={
+        {
+          "fontSize": "75%",
+        }
+      }
+    >
+      austin
+    </div>
+    <div
+      className="Guests-Text-container"
+      style={
+        {
+          "fontSize": "50%",
+        }
+      }
+    >
+      https://atb-brown.github.io/austin/
+    </div>
+  </div>
+  <div
+    className="Guests-Visual Guests-Text-Container"
+    style={
+      {
+        "flex": 7,
+        "marginLeft": 3,
+        "marginRight": 3,
+      }
+    }
+  >
+    <div
+      className="Guests-Text-Container"
+      style={
+        {
+          "fontSize": "75%",
+          "height": "100%",
+          "width": "98%",
+        }
+      }
+    >
+      Hello World!
+    </div>
+  </div>
+  <div
+    className="Guests-Visual Guests-Text-Container"
+    style={
+      {
+        "flex": 1,
+        "fontSize": "60%",
+      }
+    }
+  >
+    2023-11-26
+  </div>
 </div>
 `;

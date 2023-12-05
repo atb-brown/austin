@@ -14,7 +14,7 @@ export default function PortfolioLinkWithIssuer({
   urlId,
   issuerDescription = "",
   issuerUrl = "",
-}: PortfolioLinkProps) {
+}: PortfolioLinkProps): JSX.Element {
   return (
     <div className="App-text">
       <div>{description}</div>

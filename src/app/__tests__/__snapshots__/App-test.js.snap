@@ -188,35 +188,42 @@ exports[`renders to match snapshot 1`] = `
               <div
                 data-testid="guest-book"
                 style="display: flex; min-height: 50%; width: 99%; flex-direction: column; gap: 3px;"
+                title="This component displays everyone who has signed my guest book. It's an exercise in HTTP requests and dependency injection!"
               >
                 <div
-                  style="display: flex; width: 95%; height: 85px;"
+                  style="border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; overflow: hidden; display: flex; width: 95%; height: 85px;"
                 >
                   <div
-                    style="flex: 2; flex-direction: column; display: flex; background-color: SteelBlue; border-top-left-radius: 15px; border-bottom-left-radius: 15px; justify-content: space-evenly;"
+                    class="Guests-Visual"
+                    style="flex: 2; flex-direction: column; justify-content: space-evenly;"
                   >
                     <div
-                      style="font-size: 75%; justify-content: center;"
+                      class="Guests-Text-container"
+                      style="font-size: 75%;"
                     >
                       austin
                     </div>
                     <div
-                      style="justify-content: center; font-size: 50%;"
+                      class="Guests-Text-container"
+                      style="font-size: 50%;"
                     >
                       www.example.com
                     </div>
                   </div>
                   <div
-                    style="flex: 7; display: flex; justify-content: center; background-color: SteelBlue; margin-left: 3px; margin-right: 3px;"
+                    class="Guests-Visual Guests-Text-Container"
+                    style="flex: 7; margin-left: 3px; margin-right: 3px;"
                   >
                     <div
-                      style="font-size: 75%; display: flex; align-items: center; height: 100%; width: 98%;"
+                      class="Guests-Text-Container"
+                      style="font-size: 75%; height: 100%; width: 98%;"
                     >
                       info loaded
                     </div>
                   </div>
                   <div
-                    style="flex: 1; background-color: SteelBlue; font-size: 60%; display: flex; align-items: center; justify-content: center; border-top-right-radius: 15px; border-bottom-right-radius: 15px;"
+                    class="Guests-Visual Guests-Text-Container"
+                    style="flex: 1; font-size: 60%;"
                   >
                     2023
                   </div>
