@@ -161,7 +161,11 @@ exports[`renders to match snapshot 1`] = `
                   class="Guests-Text-container"
                   style="font-size: 50%; justify-content: center;"
                 >
-                  www.example.com
+                  <a
+                    href="www.example.com"
+                  >
+                    www.example.com
+                  </a>
                 </div>
               </div>
               <div

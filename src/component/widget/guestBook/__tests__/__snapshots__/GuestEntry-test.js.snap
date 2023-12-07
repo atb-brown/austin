@@ -43,7 +43,11 @@ exports[`bottom row entry 1`] = `
         }
       }
     >
-      https://atb-brown.github.io/austin/
+      <a
+        href="https://atb-brown.github.io/austin/"
+      >
+        https://atb-brown.github.io/austin/
+      </a>
     </div>
   </div>
   <div
@@ -126,7 +130,11 @@ exports[`renders to match snapshot 1`] = `
         }
       }
     >
-      https://atb-brown.github.io/austin/
+      <a
+        href="https://atb-brown.github.io/austin/"
+      >
+        https://atb-brown.github.io/austin/
+      </a>
     </div>
   </div>
   <div
@@ -206,7 +214,9 @@ exports[`renders without properties 1`] = `
           "justifyContent": "center",
         }
       }
-    />
+    >
+      <a />
+    </div>
   </div>
   <div
     className="Guests-Visual Guests-Text-Container"
@@ -284,7 +294,11 @@ exports[`top row entry 1`] = `
         }
       }
     >
-      https://atb-brown.github.io/austin/
+      <a
+        href="https://atb-brown.github.io/austin/"
+      >
+        https://atb-brown.github.io/austin/
+      </a>
     </div>
   </div>
   <div
