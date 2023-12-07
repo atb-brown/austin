@@ -46,15 +46,7 @@ export default function GuestEntry(guestEntry: GuestEntryProps): JSX.Element {
         >
           {name}
         </div>
-        <div
-          className="Guests-Text-container"
-          style={{
-            fontSize: "50%",
-            justifyContent: "center",
-          }}
-        >
-          {website}
-        </div>
+        {websiteComponent(website)}
       </div>
       <div
         className="Guests-Visual Guests-Text-Container"
@@ -84,6 +76,26 @@ export default function GuestEntry(guestEntry: GuestEntryProps): JSX.Element {
       >
         {visitDate}
       </div>
+    </div>
+  );
+}
+
+/**
+ * Create a component to display the website.
+ *
+ * @param {string} website
+ * @return {JSX.Element}
+ */
+function websiteComponent(website: string): JSX.Element {
+  return (
+    <div
+      className="Guests-Text-container"
+      style={{
+        fontSize: "50%",
+        justifyContent: "center",
+      }}
+    >
+      <a href={website}>{website}</a>
     </div>
   );
 }

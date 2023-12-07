@@ -41,7 +41,11 @@ exports[`render multiple guest info to match snapshot 1`] = `
           class="Guests-Text-container"
           style="font-size: 50%; justify-content: center;"
         >
-          www.example.com
+          <a
+            href="www.example.com"
+          >
+            www.example.com
+          </a>
         </div>
       </div>
       <div
@@ -79,7 +83,11 @@ exports[`render multiple guest info to match snapshot 1`] = `
           class="Guests-Text-container"
           style="font-size: 50%; justify-content: center;"
         >
-          website2.com
+          <a
+            href="website2.com"
+          >
+            website2.com
+          </a>
         </div>
       </div>
       <div
@@ -117,7 +125,11 @@ exports[`render multiple guest info to match snapshot 1`] = `
           class="Guests-Text-container"
           style="font-size: 50%; justify-content: center;"
         >
-          website3.com
+          <a
+            href="website3.com"
+          >
+            website3.com
+          </a>
         </div>
       </div>
       <div
@@ -155,7 +167,11 @@ exports[`render multiple guest info to match snapshot 1`] = `
           class="Guests-Text-container"
           style="font-size: 50%; justify-content: center;"
         >
-          website4.com
+          <a
+            href="website4.com"
+          >
+            website4.com
+          </a>
         </div>
       </div>
       <div
@@ -193,7 +209,11 @@ exports[`render multiple guest info to match snapshot 1`] = `
           class="Guests-Text-container"
           style="font-size: 50%; justify-content: center;"
         >
-          website5.com
+          <a
+            href="website5.com"
+          >
+            website5.com
+          </a>
         </div>
       </div>
       <div
@@ -231,7 +251,11 @@ exports[`render multiple guest info to match snapshot 1`] = `
           class="Guests-Text-container"
           style="font-size: 50%; justify-content: center;"
         >
-          website6.com
+          <a
+            href="website6.com"
+          >
+            website6.com
+          </a>
         </div>
       </div>
       <div
@@ -269,7 +293,11 @@ exports[`render multiple guest info to match snapshot 1`] = `
           class="Guests-Text-container"
           style="font-size: 50%; justify-content: center;"
         >
-          website7.com
+          <a
+            href="website7.com"
+          >
+            website7.com
+          </a>
         </div>
       </div>
       <div
@@ -324,7 +352,11 @@ exports[`render single guest info to match snapshot 1`] = `
           class="Guests-Text-container"
           style="font-size: 50%; justify-content: center;"
         >
-          www.example.com
+          <a
+            href="www.example.com"
+          >
+            www.example.com
+          </a>
         </div>
       </div>
       <div
