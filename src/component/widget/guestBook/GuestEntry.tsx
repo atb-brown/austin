@@ -7,7 +7,8 @@ export const guestEntryGap = 3;
 export const guestEntryHeight = "85px";
 
 /**
- * This component is a single entry for a single guest. Multiple entries will make up a guest book.
+ * This component is a single entry for a single guest. Multiple entries will
+ * make up a guest book.
  *
  * @param {GuestEntryProps} guestEntry The properties/data of a single guest.
  * @return {GuestEntry}

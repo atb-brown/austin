@@ -17,7 +17,14 @@ overrides:
     },
     {
       "files": ["**/*.tsx", "**/*.ts"],
-      "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"],
+      "plugins":
+        [
+          "react",
+          "react-hooks",
+          "@typescript-eslint",
+          "prettier",
+          "@stylistic",
+        ],
       "extends":
         [
           "eslint:recommended",
@@ -27,6 +34,7 @@ overrides:
         ],
       "parserOptions": { "project": ["./tsconfig.json"] },
       "rules": {
+          "@stylistic/max-len": ["error", { "code": 80, "ignoreUrls": true }],
           "@typescript-eslint/explicit-function-return-type": "error",
           "react/jsx-filename-extension": ["error", { "extensions": [".tsx"] }],
           # Style rule, unneeded with Prettier

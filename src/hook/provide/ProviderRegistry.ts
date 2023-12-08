@@ -3,14 +3,18 @@ type Provider = () => unknown;
 const registry: Map<ProviderKey, Provider> = new Map();
 
 /**
- * Register a provider; this will override the real implementation of services that use this class the check for registered providers.
+ * Register a provider; this will override the real implementation of services
+ *  that use this class the check for registered providers.
  *
- * This function should NOT be used/called in any deployed code; this should only be used for testing.
+ * This function should NOT be used/called in any deployed code; this should
+ * only be used for testing.
  *
  * TODO: Create an eslint rule to ensure this is not called in deployed code. https://eslint.org/docs/latest/extend/custom-rule-tutorial
  *
- * @param {ProviderKey} providerKey The unique key of the provider that is being registered/injected.
- * @param {Provider} providerImpl The actual implementation that is to be injected.
+ * @param {ProviderKey} providerKey The unique key of the provider that is
+ * being registered/injected.
+ * @param {Provider} providerImpl The actual implementation that is to be
+ * injected.
  */
 export function register(
   providerKey: ProviderKey,
@@ -20,10 +24,13 @@ export function register(
 }
 
 /**
- * Get the registered provider. If no provider has been registered, the real implementation will be used.
+ * Get the registered provider. If no provider has been registered, the real
+ * implementation will be used.
  *
- * @param {ProviderKey} providerKey The unique key of the provider that is being registered/injected.
- * @param {Provider} realProvider The real implementation that will be used if an alternative provider has not been registered.
+ * @param {ProviderKey} providerKey The unique key of the provider that is
+ *  being registered/injected.
+ * @param {Provider} realProvider The real implementation that will be used if
+ * an alternative provider has not been registered.
  *
  * @return {Provider}
  */
@@ -36,7 +43,8 @@ export function get<Provider>(
   ) as Provider;
 }
 /**
- * All of the possible implementations that might need alternative provider implementations
+ * All of the possible implementations that might need alternative provider
+ *  implementations
  * for testing.
  */
 export enum ProviderKey {

@@ -33,14 +33,18 @@ function createGuestEntries(guests: GuestInfo[]): JSX.Element[] {
 }
 
 /**
- * This component is a "guest book" that displays people that have visited my website and have signed the guest book.
+ * This component is a "guest book" that displays people that have visited my
+ * website and have signed the guest book.
  *
  * @return {ReactElement}
  */
 export default function GuestBook(): JSX.Element {
   const { guests } = useGuestBookInfo();
 
-  // TODO: Add a button to "sign my guest book"
+  const title =
+    "This component displays everyone who has signed my guest" +
+    " book. It's an exercise in HTTP requests and dependency injection!";
+
   return (
     <div
       data-testid="guest-book"
@@ -51,7 +55,7 @@ export default function GuestBook(): JSX.Element {
         minHeight: "50%",
         width: "99%",
       }}
-      title="This component displays everyone who has signed my guest book. It's an exercise in HTTP requests and dependency injection!"
+      title={title}
     >
       {createGuestEntries(guests)}
       <SignGuestBook />
