@@ -2,7 +2,8 @@ import useGuestBookInfo from "../useGuestBookInfo";
 import React from "react";
 
 /**
- * This component is intended for test use only. It's just used to test the useGuestBookInfo hook.
+ * This component is intended for test use only. It's just used to test the
+ * useGuestBookInfo hook.
  *
  * @return {ReactElement}
  */

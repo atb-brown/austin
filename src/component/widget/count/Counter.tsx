@@ -12,6 +12,10 @@ export default function Counter(): JSX.Element {
     setCount(count + 1);
   }, [count, setCount]);
 
+  const title =
+    "This component counts the number of times it has been clicked. It's an" +
+    " exercise in handling clicks and component state!";
+
   return (
     <div
       className="disable-text-selection"
@@ -27,7 +31,7 @@ export default function Counter(): JSX.Element {
         justifyContent: "center",
         width: "25%",
       }}
-      title="This component counts the number of times it has been clicked. It's an exercise in handling clicks and component state!"
+      title={title}
     >
       {count}
     </div>

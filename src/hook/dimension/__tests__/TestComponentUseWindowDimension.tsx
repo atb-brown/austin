@@ -2,7 +2,8 @@ import useWindowDimensions from "../useWindowDimensions";
 import React from "react";
 
 /**
- * This component is intended for test use only. It just displays the window's width and height.
+ * This component is intended for test use only. It just displays the window's
+ * width and height.
  *
  * @return {ReactElement}
  */
