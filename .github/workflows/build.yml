@@ -8,8 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Set up Node
-        run: |
-          npm install -g yarn
+        run: npm install -g yarn
       - name: Install Yarn Dependencies
         run: yarn install
       - name: Check Formatting
@@ -36,3 +35,16 @@ jobs:
         # Run coverage separately; longer build, but when there's a failure it'll be easier to understand why.
       - name: Unit Test Coverage
         run: yarn test --coverage
+  compile:
+    name: Build/Compile
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Node
+        run: npm install -g yarn
+      - name: Install Yarn Dependencies
+        run: yarn install
+      - name: Compile Check
+        run: yarn tsc
+      - name: Site Build
+        run: yarn siteBuild
