@@ -44,3 +44,12 @@ export function registerMockProvider(numOfGuestInfoEntries = 1) {
     useGuestBookInfoMockProvider(numOfGuestInfoEntries),
   );
 }
+/**
+ * Register/inject a provider that will return a promise that rejects. This
+ * is useful for testing the rejection handling.
+ */
+export function registerMockProviderRejection() {
+  register(ProviderKey.useGuestBookInfo, () =>
+    Promise.reject(new Error("For Testing")),
+  );
+}

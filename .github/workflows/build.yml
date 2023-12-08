@@ -20,6 +20,8 @@ jobs:
         run: yarn lint
       - name: Dependency Audit
         run: yarn audit
+      - name: Site Build
+        run: yarn siteBuild
   test:
     name: Test
     runs-on: ubuntu-latest
