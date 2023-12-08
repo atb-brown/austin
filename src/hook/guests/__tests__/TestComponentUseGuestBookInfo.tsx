@@ -10,7 +10,7 @@ export default function TestComponentUseWindowDimension(): JSX.Element {
   const { guests } = useGuestBookInfo();
 
   return (
-    <div>
+    <div data-testid="test-component">
       <div>{"guestCount: " + guests.length}</div>
       <div>{"all guests: " + JSON.stringify(guests)}</div>
       <div>{"name: " + guests[0]?.name}</div>

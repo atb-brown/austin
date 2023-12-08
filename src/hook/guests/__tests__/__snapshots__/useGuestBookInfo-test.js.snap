@@ -2,7 +2,9 @@
 
 exports[`Basic Render 1`] = `
 <DocumentFragment>
-  <div>
+  <div
+    data-testid="test-component"
+  >
     <div>
       guestCount: 1
     </div>
@@ -20,6 +22,33 @@ exports[`Basic Render 1`] = `
     </div>
     <div>
       website: www.example.com
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Data Provider Rejects 1`] = `
+<DocumentFragment>
+  <div
+    data-testid="test-component"
+  >
+    <div>
+      guestCount: 0
+    </div>
+    <div>
+      all guests: []
+    </div>
+    <div>
+      name: undefined
+    </div>
+    <div>
+      message: undefined
+    </div>
+    <div>
+      visitDate: undefined
+    </div>
+    <div>
+      website: undefined
     </div>
   </div>
 </DocumentFragment>
