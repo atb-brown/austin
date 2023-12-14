@@ -3,13 +3,13 @@
 exports[`renders to match snapshot 1`] = `
 <DocumentFragment>
   <div
-    style="display: flex; flex-direction: column; font-size: 40%;"
+    style="display: flex; flex-direction: column; font-size: 50%;"
   >
     <div>
-      Window Size
+      Browser
     </div>
     <div>
-      1024 x 768
+      WebKit
     </div>
   </div>
 </DocumentFragment>

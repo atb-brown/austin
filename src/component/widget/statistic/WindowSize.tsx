@@ -9,11 +9,8 @@ import React from "react";
 export default function WindowSize(): JSX.Element {
   const { width, height } = useWindowDimensions();
   const title = "Window Size";
-  const fontSize = Math.max(10, width / 130);
   return (
-    <div
-      style={{ display: "flex", flexDirection: "column", fontSize: fontSize }}
-    >
+    <div style={{ display: "flex", flexDirection: "column", fontSize: "40%" }}>
       <div>{title}</div>
       <div>{width + " x " + height}</div>
     </div>

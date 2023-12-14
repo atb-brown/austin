@@ -1,3 +1,4 @@
+import Browser from "./Browser";
 import HiddenStats from "./HiddenStats";
 import "./Stats.css";
 import WindowSize from "./WindowSize";
@@ -27,6 +28,9 @@ export default function Stats(): JSX.Element {
             width: "10%",
           }}
         >
+          {separate()}
+          <Browser />
+          {separate()}
           <WindowSize />
         </div>
       </div>
@@ -34,4 +38,14 @@ export default function Stats(): JSX.Element {
   } else {
     return <HiddenStats onClick={onClick} />;
   }
+}
+
+/**
+ * A horizontal separator component to put some spacing between two other
+ * components.
+ *
+ * @return {JSX.Element}
+ */
+function separate(): JSX.Element {
+  return <div>{"\u00A0|\u00A0"}</div>;
 }
