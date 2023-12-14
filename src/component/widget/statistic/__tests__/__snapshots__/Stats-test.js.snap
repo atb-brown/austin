@@ -26,8 +26,24 @@ exports[`initial view renders to match snapshot 1`] = `
       class="Stats"
       style="width: 10%;"
     >
+      <div>
+         | 
+      </div>
       <div
-        style="display: flex; flex-direction: column; font-size: 10px;"
+        style="display: flex; flex-direction: column; font-size: 50%;"
+      >
+        <div>
+          Browser
+        </div>
+        <div>
+          WebKit
+        </div>
+      </div>
+      <div>
+         | 
+      </div>
+      <div
+        style="display: flex; flex-direction: column; font-size: 40%;"
       >
         <div>
           Window Size
