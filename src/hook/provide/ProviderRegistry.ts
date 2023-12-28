@@ -1,3 +1,5 @@
+import { failInProd } from "../prod/useProdMode";
+
 type Provider = () => unknown;
 
 const registry: Map<ProviderKey, Provider> = new Map();
@@ -9,8 +11,6 @@ const registry: Map<ProviderKey, Provider> = new Map();
  * This function should NOT be used/called in any deployed code; this should
  * only be used for testing.
  *
- * TODO: Create an eslint rule to ensure this is not called in deployed code. https://eslint.org/docs/latest/extend/custom-rule-tutorial
- *
  * @param {ProviderKey} providerKey The unique key of the provider that is
  * being registered/injected.
  * @param {Provider} providerImpl The actual implementation that is to be
@@ -20,6 +20,7 @@ export function register(
   providerKey: ProviderKey,
   providerImpl: Provider,
 ): void {
+  failInProd("inject a provider implementation");
   registry.set(providerKey, providerImpl);
 }
 

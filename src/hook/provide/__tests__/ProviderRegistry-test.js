@@ -1,3 +1,4 @@
+import { mockProd, unmockProd } from "../../../test/mock/hook/mockUseProdMode";
 import { get, register } from "../ProviderRegistry";
 
 const mocked = "mocked";
@@ -15,4 +16,16 @@ it("Alternative Provider Is Registered", () => {
   register(fakeProviderKey, () => mocked);
   const provider = get(fakeProviderKey, realProviderImpl);
   expect(provider()).toBe(mocked);
+});
+
+it("Fails in ProdMode", () => {
+  mockProd();
+
+  const failingFunctionCall = () => register(fakeProviderKey, () => mocked);
+  expect(failingFunctionCall).toThrow(Error);
+  expect(failingFunctionCall).toThrow(
+    "You cannot inject a provider implementation in prod mode.",
+  );
+
+  unmockProd();
 });
