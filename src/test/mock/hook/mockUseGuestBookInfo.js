@@ -1,4 +1,5 @@
-import { ProviderKey, register } from "../../../hook/provide/ProviderRegistry";
+import { Provider } from "../../../hook/guests/useGuestBookInfo";
+import { jest } from "@jest/globals";
 
 /**
  * Create a mocked implementation of a "GuestInfo" provider.
@@ -32,24 +33,22 @@ function useGuestBookInfoMockProvider(numOfGuestInfoEntries = 1) {
     });
 }
 
+const mockUseGuestBookInfo = jest.spyOn(Provider.prototype, "get");
+
 /**
  * Register/inject a provider that will be used in place of implementations
  * of units that are aware of registered providers.
  *
  * @param {number} numOfGuestInfoEntries The number of "GuestInfo" objects that will be returned by the provider.
  */
-export function registerMockProvider(numOfGuestInfoEntries = 1) {
-  register(
-    ProviderKey.useGuestBookInfo,
-    useGuestBookInfoMockProvider(numOfGuestInfoEntries),
-  );
-}
-/**
- * Register/inject a provider that will return a promise that rejects. This
- * is useful for testing the rejection handling.
- */
-export function registerMockProviderRejection() {
-  register(ProviderKey.useGuestBookInfo, () =>
-    Promise.reject(new Error("For Testing")),
-  );
+export function mockProvider(numOfGuestInfoEntries = 1) {
+  if (numOfGuestInfoEntries === "error") {
+    mockUseGuestBookInfo.mockImplementation(() =>
+      Promise.reject(new Error("For Testing")),
+    );
+  } else {
+    mockUseGuestBookInfo.mockImplementation(
+      useGuestBookInfoMockProvider(numOfGuestInfoEntries),
+    );
+  }
 }

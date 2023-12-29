@@ -1,11 +1,11 @@
 import { wait as guestBook } from "../../../../test/component/GuestBookTestUtils";
-import { registerMockProvider } from "../../../../test/mock/hook/mockUseGuestBookInfo";
+import { mockProvider } from "../../../../test/mock/hook/mockUseGuestBookInfo";
 import GuestBook from "../GuestBook";
 import "@testing-library/jest-dom";
 import { render } from "@testing-library/react";
 
 it("render single guest info to match snapshot", async () => {
-  registerMockProvider();
+  mockProvider();
   const renderResult = render(<GuestBook />);
 
   await guestBook(renderResult);
@@ -14,7 +14,7 @@ it("render single guest info to match snapshot", async () => {
 });
 
 it("render multiple guest info to match snapshot", async () => {
-  registerMockProvider(7);
+  mockProvider(7);
   const renderResult = render(<GuestBook />);
 
   await guestBook(renderResult);
@@ -23,10 +23,14 @@ it("render multiple guest info to match snapshot", async () => {
 });
 
 it("render NO guest info to match snapshot", async () => {
-  registerMockProvider(0);
+  mockProvider(0);
   const renderResult = render(<GuestBook />);
 
   await guestBook(renderResult);
 
   expect(renderResult.asFragment()).toMatchSnapshot();
+});
+
+afterEach(() => {
+  jest.resetAllMocks();
 });

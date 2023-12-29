@@ -1,7 +1,4 @@
-import {
-  registerMockProvider,
-  registerMockProviderRejection,
-} from "../../../test/mock/hook/mockUseGuestBookInfo";
+import { mockProvider } from "../../../test/mock/hook/mockUseGuestBookInfo";
 import TestComponentUseGuestBookInfo from "./TestComponentUseGuestBookInfo";
 import { render, waitFor } from "@testing-library/react";
 
@@ -10,7 +7,7 @@ async function testComp(renderResult) {
 }
 
 it("Basic Render", async () => {
-  registerMockProvider();
+  mockProvider();
   const renderResult = render(<TestComponentUseGuestBookInfo />);
   const fragment = renderResult.asFragment;
 
@@ -20,11 +17,15 @@ it("Basic Render", async () => {
 });
 
 it("Data Provider Rejects", async () => {
-  registerMockProviderRejection();
+  mockProvider("error");
   const renderResult = render(<TestComponentUseGuestBookInfo />);
   const fragment = renderResult.asFragment;
 
   await testComp(renderResult);
 
   expect(fragment()).toMatchSnapshot();
+});
+
+afterEach(() => {
+  jest.resetAllMocks();
 });
