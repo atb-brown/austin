@@ -1,7 +1,7 @@
 /**
  * @jest-environment node
  */
-import retrieveGuestBookInfo from "../retrieveGuestBookInfo";
+import retrieveGuestBookInfo from "../../retrieveGuestBookInfo";
 
 it("Get Guest Book", async () => {
   const response = await retrieveGuestBookInfo();

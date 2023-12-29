@@ -1,4 +1,3 @@
-import { ProviderKey, get } from "../provide/ProviderRegistry";
 import { GuestBookInfo } from "./guestBookInfo";
 import retrieveGuestBookInfo from "./retrieveGuestBookInfo";
 import { useState, useEffect } from "react";
@@ -13,21 +12,31 @@ const useGuestBookInfo: () => GuestBookInfo = (): GuestBookInfo => {
     guests: [],
   });
 
-  const provider = get<() => Promise<GuestBookInfo>>(
-    ProviderKey.useGuestBookInfo,
-    retrieveGuestBookInfo,
-  );
-
   useEffect(() => {
-    provider().then(
+    new Provider().get().then(
       (d) => {
         setGuestBookInfo(d);
       },
       () => {},
     );
-  }, [provider]);
+  }, []);
 
   return guestBookInfo;
 };
+
+/**
+ * Create a class that defines methods in order to provide mock implementations
+ * for testing.
+ */
+export class Provider {
+  /**
+   * Retrieve the guest book info.
+   *
+   * @return {Promise<GuestBookInfo>}
+   */
+  get(): Promise<GuestBookInfo> {
+    return retrieveGuestBookInfo();
+  }
+}
 
 export default useGuestBookInfo;

@@ -1,5 +1,4 @@
 import App from "./app/App";
-import ProdMode from "./hook/prod/ProdMode";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import React from "react";
@@ -10,7 +9,6 @@ const root: ReactDOM.Root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <ProdMode />
     <App />
   </React.StrictMode>,
 );
