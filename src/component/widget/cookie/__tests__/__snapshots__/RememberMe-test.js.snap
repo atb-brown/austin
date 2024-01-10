@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders to match snapshot with cookie 1`] = `
+<div
+  data-testid="remember-me"
+  onClick={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "rebeccapurple",
+      "borderRadius": 10,
+      "cursor": "pointer",
+      "display": "flex",
+      "fontSize": "50%",
+      "height": 60,
+      "justifyContent": "center",
+      "width": "25%",
+    }
+  }
+  title="This component allows the site to remember a user. It's an exercise in handling cookies and component state!"
+>
+  Welcome back! Click me if you want me to forget.
+</div>
+`;
+
+exports[`renders to match snapshot without cookie 1`] = `
+<div
+  data-testid="remember-me"
+  onClick={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "rebeccapurple",
+      "borderRadius": 10,
+      "cursor": "pointer",
+      "display": "flex",
+      "fontSize": "50%",
+      "height": 60,
+      "justifyContent": "center",
+      "width": "25%",
+    }
+  }
+  title="This component allows the site to remember a user. It's an exercise in handling cookies and component state!"
+>
+  Welcome back! Click me if you want me to forget.
+</div>
+`;

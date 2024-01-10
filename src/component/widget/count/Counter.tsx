@@ -25,6 +25,7 @@ export default function Counter(): JSX.Element {
         alignItems: "center",
         backgroundColor: "steelblue",
         borderRadius: 10,
+        cursor: "pointer",
         display: "flex",
         fontSize: 20,
         height: 60,
