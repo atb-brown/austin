@@ -10,6 +10,7 @@ exports[`renders to match snapshot 1`] = `
       "alignItems": "center",
       "backgroundColor": "steelblue",
       "borderRadius": 10,
+      "cursor": "pointer",
       "display": "flex",
       "fontSize": 20,
       "height": 60,

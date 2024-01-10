@@ -1,3 +1,4 @@
+import RememberMe from "../component/widget/cookie/RememberMe";
 import Counter from "../component/widget/count/Counter";
 import GuestBook from "../component/widget/guestBook/GuestBook";
 import React from "react";
@@ -25,11 +26,12 @@ export default function AppWidgets(): JSX.Element {
           alignItems: "center",
           display: "flex",
           flex: 1,
-          flexDirection: "column",
-          justifyContent: "center",
+          flexDirection: "row",
+          justifyContent: "space-evenly",
           width: "100%",
         }}
       >
+        <RememberMe />
         <Counter />
       </div>
       <div

@@ -125,12 +125,19 @@ exports[`renders to match snapshot 1`] = `
         style="align-items: center; display: flex; flex: 1; flex-direction: column; gap: 10px; justify-content: center; width: 100%;"
       >
         <div
-          style="align-items: center; display: flex; flex: 1; flex-direction: column; justify-content: center; width: 100%;"
+          style="align-items: center; display: flex; flex: 1; flex-direction: row; justify-content: space-evenly; width: 100%;"
         >
+          <div
+            data-testid="remember-me"
+            style="align-items: center; background-color: rebeccapurple; border-radius: 10px; cursor: pointer; display: flex; font-size: 50%; height: 60px; justify-content: center; width: 25%;"
+            title="This component allows the site to remember a user. It's an exercise in handling cookies and component state!"
+          >
+            Click me if you want me to remember you!
+          </div>
           <div
             class="disable-text-selection"
             data-testid="counter"
-            style="align-items: center; background-color: steelblue; border-radius: 10px; display: flex; font-size: 20px; height: 60px; justify-content: center; width: 25%;"
+            style="align-items: center; background-color: steelblue; border-radius: 10px; cursor: pointer; display: flex; font-size: 20px; height: 60px; justify-content: center; width: 25%;"
             title="This component counts the number of times it has been clicked. It's an exercise in handling clicks and component state!"
           >
             0
