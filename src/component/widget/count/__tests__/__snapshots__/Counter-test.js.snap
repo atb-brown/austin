@@ -2,15 +2,13 @@
 
 exports[`renders to match snapshot 1`] = `
 <div
-  className="disable-text-selection"
+  className="disable-text-selection clickable"
   data-testid="counter"
   onClick={[Function]}
   style={
     {
       "alignItems": "center",
-      "backgroundColor": "steelblue",
       "borderRadius": 10,
-      "cursor": "pointer",
       "display": "flex",
       "fontSize": 20,
       "height": 60,

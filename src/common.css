@@ -5,3 +5,8 @@
   -ms-user-select: none; /* IE*/
   user-select: none; /* Standard syntax */
 }
+
+.clickable {
+  background-color: rebeccapurple;
+  cursor: pointer;
+}

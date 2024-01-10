@@ -8,8 +8,9 @@ exports[`render NO guest info to match snapshot 1`] = `
     title="This component displays everyone who has signed my guest book. It's an exercise in HTTP requests and dependency injection!"
   >
     <a
+      class="clickable"
       href="https://github.com/atb-brown/guest-book/edit/main/guests.json"
-      style="align-items: center; align-self: flex-end; background-color: rebeccapurple; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; border-top-left-radius: 15px; color: white; display: flex; font-size: 80%; height: 85px; justify-content: center; text-decoration: none; width: 15%;"
+      style="align-items: center; align-self: flex-end; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; border-top-left-radius: 15px; color: white; display: flex; font-size: 80%; height: 85px; justify-content: center; text-decoration: none; width: 15%;"
     >
       Sign my guest book!
     </a>
@@ -319,8 +320,9 @@ exports[`render multiple guest info to match snapshot 1`] = `
       </div>
     </div>
     <a
+      class="clickable"
       href="https://github.com/atb-brown/guest-book/edit/main/guests.json"
-      style="align-items: center; align-self: flex-end; background-color: rebeccapurple; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; border-top-left-radius: 15px; color: white; display: flex; font-size: 80%; height: 85px; justify-content: center; text-decoration: none; width: 15%;"
+      style="align-items: center; align-self: flex-end; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; border-top-left-radius: 15px; color: white; display: flex; font-size: 80%; height: 85px; justify-content: center; text-decoration: none; width: 15%;"
     >
       Sign my guest book!
     </a>
@@ -378,8 +380,9 @@ exports[`render single guest info to match snapshot 1`] = `
       </div>
     </div>
     <a
+      class="clickable"
       href="https://github.com/atb-brown/guest-book/edit/main/guests.json"
-      style="align-items: center; align-self: flex-end; background-color: rebeccapurple; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; border-top-left-radius: 15px; color: white; display: flex; font-size: 80%; height: 85px; justify-content: center; text-decoration: none; width: 15%;"
+      style="align-items: center; align-self: flex-end; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; border-top-left-radius: 15px; color: white; display: flex; font-size: 80%; height: 85px; justify-content: center; text-decoration: none; width: 15%;"
     >
       Sign my guest book!
     </a>

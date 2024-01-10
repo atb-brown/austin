@@ -1,5 +1,6 @@
 import { guestEntryBRadius, guestEntryHeight } from "./GuestEntry";
 import React from "react";
+import "../../../common.css";
 
 /**
  * This component is a button that guests can click to sign my guest book.
@@ -10,11 +11,11 @@ export default function SignGuestBook(): JSX.Element {
   const message = "Sign my guest book!";
   return (
     <a
+      className="clickable"
       href="https://github.com/atb-brown/guest-book/edit/main/guests.json"
       style={{
         alignItems: "center",
         alignSelf: "flex-end",
-        backgroundColor: "rebeccapurple",
         borderBottomLeftRadius: guestEntryBRadius,
         borderBottomRightRadius: guestEntryBRadius,
         borderTopLeftRadius: guestEntryBRadius,

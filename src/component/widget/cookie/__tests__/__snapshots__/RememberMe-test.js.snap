@@ -2,14 +2,13 @@
 
 exports[`renders to match snapshot with cookie 1`] = `
 <div
+  className="clickable"
   data-testid="remember-me"
   onClick={[Function]}
   style={
     {
       "alignItems": "center",
-      "backgroundColor": "rebeccapurple",
       "borderRadius": 10,
-      "cursor": "pointer",
       "display": "flex",
       "fontSize": "50%",
       "height": 60,
@@ -25,14 +24,13 @@ exports[`renders to match snapshot with cookie 1`] = `
 
 exports[`renders to match snapshot without cookie 1`] = `
 <div
+  className="clickable"
   data-testid="remember-me"
   onClick={[Function]}
   style={
     {
       "alignItems": "center",
-      "backgroundColor": "rebeccapurple",
       "borderRadius": 10,
-      "cursor": "pointer",
       "display": "flex",
       "fontSize": "50%",
       "height": 60,

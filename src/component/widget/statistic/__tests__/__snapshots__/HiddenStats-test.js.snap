@@ -6,7 +6,7 @@ exports[`initial view renders to match snapshot 1`] = `
     class="Stats Stats-Container disable-text-selection"
   >
     <div
-      class="Stats Stats-Visual"
+      class="Stats Stats-Visual clickable"
       data-testid="stats-ribbon-hidden"
       style="justify-content: center;"
     >
@@ -22,7 +22,7 @@ exports[`onClick is invoked when component is clicked 1`] = `
     class="Stats Stats-Container disable-text-selection"
   >
     <div
-      class="Stats Stats-Visual"
+      class="Stats Stats-Visual clickable"
       data-testid="stats-ribbon-hidden"
       style="justify-content: center;"
     >

@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect } from "react";
 import { useCookies } from "react-cookie";
+import "../../../common.css";
 
 const clickMeToRemember = "Click me if you want me to remember you!";
 const clickMeToForget = "Welcome back! Click me if you want me to forget.";
@@ -54,14 +55,12 @@ export default function RememberMe(): JSX.Element {
   }, [cookies]);
   return (
     <div
+      className="clickable"
       data-testid="remember-me"
       onClick={onClick}
       style={{
         alignItems: "center",
-        // TODO: Create a "clickable" CSS class
-        backgroundColor: "rebeccapurple",
         borderRadius: 10,
-        cursor: "pointer",
         display: "flex",
         fontSize: "50%",
         height: 60,
