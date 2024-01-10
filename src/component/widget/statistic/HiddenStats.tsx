@@ -13,7 +13,7 @@ export default function Stats({ onClick }: HiddenStatsProps): JSX.Element {
   return (
     <div className="Stats Stats-Container disable-text-selection">
       <div
-        className="Stats Stats-Visual"
+        className="Stats Stats-Visual clickable"
         data-testid="stats-ribbon-hidden"
         onClick={onClick}
         style={{

@@ -18,7 +18,7 @@ export default function Stats(): JSX.Element {
   if (showResults) {
     return (
       <div
-        className="Stats Stats-Visual Stats-Container"
+        className="Stats Stats-Visual Stats-Container clickable"
         data-testid="stats-ribbon"
         onClick={onClick}
       >

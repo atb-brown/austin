@@ -18,14 +18,12 @@ export default function Counter(): JSX.Element {
 
   return (
     <div
-      className="disable-text-selection"
+      className="disable-text-selection clickable"
       data-testid="counter"
       onClick={onClick}
       style={{
         alignItems: "center",
-        backgroundColor: "steelblue",
         borderRadius: 10,
-        cursor: "pointer",
         display: "flex",
         fontSize: 20,
         height: 60,

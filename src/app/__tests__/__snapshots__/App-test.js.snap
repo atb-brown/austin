@@ -10,7 +10,7 @@ exports[`renders to match snapshot 1`] = `
       class="App-header"
     >
       <div
-        class="Stats Stats-Visual Stats-Container"
+        class="Stats Stats-Visual Stats-Container clickable"
         data-testid="stats-ribbon"
       >
         <div
@@ -190,16 +190,17 @@ exports[`renders to match snapshot 1`] = `
               style="align-items: center; display: flex; flex: 1; flex-direction: row; justify-content: space-evenly; width: 100%;"
             >
               <div
+                class="clickable"
                 data-testid="remember-me"
-                style="align-items: center; background-color: rebeccapurple; border-radius: 10px; cursor: pointer; display: flex; font-size: 50%; height: 60px; justify-content: center; width: 25%;"
+                style="align-items: center; border-radius: 10px; display: flex; font-size: 50%; height: 60px; justify-content: center; width: 25%;"
                 title="This component allows the site to remember a user. It's an exercise in handling cookies and component state!"
               >
                 Click me if you want me to remember you!
               </div>
               <div
-                class="disable-text-selection"
+                class="disable-text-selection clickable"
                 data-testid="counter"
-                style="align-items: center; background-color: steelblue; border-radius: 10px; cursor: pointer; display: flex; font-size: 20px; height: 60px; justify-content: center; width: 25%;"
+                style="align-items: center; border-radius: 10px; display: flex; font-size: 20px; height: 60px; justify-content: center; width: 25%;"
                 title="This component counts the number of times it has been clicked. It's an exercise in handling clicks and component state!"
               >
                 0
@@ -256,8 +257,9 @@ exports[`renders to match snapshot 1`] = `
                   </div>
                 </div>
                 <a
+                  class="clickable"
                   href="https://github.com/atb-brown/guest-book/edit/main/guests.json"
-                  style="align-items: center; align-self: flex-end; background-color: rebeccapurple; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; border-top-left-radius: 15px; color: white; display: flex; font-size: 80%; height: 85px; justify-content: center; text-decoration: none; width: 15%;"
+                  style="align-items: center; align-self: flex-end; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; border-top-left-radius: 15px; color: white; display: flex; font-size: 80%; height: 85px; justify-content: center; text-decoration: none; width: 15%;"
                 >
                   Sign my guest book!
                 </a>
