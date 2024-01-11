@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect } from "react";
 import { useCookies } from "react-cookie";
 import "../../../common.css";
+import { Cookies } from "../../../hook/cookie/Cookies";
 
 const clickMeToRemember = "Click me if you want me to remember you!";
 const clickMeToForget = "Welcome back! Click me if you want me to forget.";
@@ -10,7 +11,6 @@ const confirmRememberTxt =
 const confirmForgetTxt =
   "This will remove the cookie from your computer" + clickOk;
 
-const cookieName = "remembered";
 const title =
   "This component allows the site to remember a user. It's an exercise" +
   " in handling cookies and component state!";
@@ -21,9 +21,9 @@ const title =
  * @return {JSX.Element}
  */
 export default function RememberMe(): JSX.Element {
-  const [cookies, setCookie, removeCookie] = useCookies([cookieName]);
+  const [cookies, setCookie, removeCookie] = useCookies([Cookies.Remembered]);
   const [remember, setRemember] = React.useState(
-    Object.hasOwn(cookies, cookieName),
+    Object.hasOwn(cookies, Cookies.Remembered),
   );
   const [buttonTxt, setButtonTxt] = React.useState(
     remember ? clickMeToRemember : clickMeToForget,
@@ -35,15 +35,15 @@ export default function RememberMe(): JSX.Element {
   const onClick: () => void = useCallback(() => {
     if (confirm(confirmTxt)) {
       if (!remember) {
-        setCookie(cookieName, "true");
+        setCookie(Cookies.Remembered, "true");
       } else {
-        removeCookie(cookieName);
+        removeCookie(Cookies.Remembered);
       }
     }
   }, [confirmTxt, removeCookie, remember, setCookie]);
 
   useEffect(() => {
-    if (Object.hasOwn(cookies, cookieName)) {
+    if (Object.hasOwn(cookies, Cookies.Remembered)) {
       setRemember(true);
       setButtonTxt(clickMeToForget);
       setConfirmTxt(confirmForgetTxt);
