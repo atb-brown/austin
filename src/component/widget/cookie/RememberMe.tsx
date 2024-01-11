@@ -37,6 +37,7 @@ export default function RememberMe(): JSX.Element {
       if (!remember) {
         setCookie(Cookies.Remembered, "true");
       } else {
+        // TODO: Need to iterate and remove all cookies.
         removeCookie(Cookies.Remembered);
       }
     }

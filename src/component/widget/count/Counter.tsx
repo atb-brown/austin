@@ -1,20 +1,39 @@
+import { useCookies } from "react-cookie";
 import "../../../common.css";
-import React, { useCallback } from "react";
+import React, { useCallback, useEffect } from "react";
+import { Cookies } from "../../../hook/cookie/Cookies";
+
+const title =
+  "This component counts the number of times it has been clicked. It's an" +
+  " exercise in handling clicks, component state, and cookie management!";
 
 /**
  * This button is counts the number of times the user clicks it.
  *
- * @return {ReactElement}
+ * @return {JSX.Element}
  */
 export default function Counter(): JSX.Element {
-  const [count, setCount] = React.useState(0);
+  const [cookies, setCookie, removeCookie] = useCookies([
+    Cookies.Remembered,
+    Cookies.Count,
+  ]);
+  const [count, setCount] = React.useState(
+    Object.hasOwn(cookies, Cookies.Count)
+      ? (cookies[Cookies.Count] as number)
+      : 0,
+  );
+
   const onClick: () => void = useCallback(() => {
     setCount(count + 1);
   }, [count, setCount]);
 
-  const title =
-    "This component counts the number of times it has been clicked. It's an" +
-    " exercise in handling clicks and component state!";
+  useEffect(() => {
+    if (Object.hasOwn(cookies, Cookies.Remembered)) {
+      setCookie(Cookies.Count, count);
+    } else {
+      removeCookie(Cookies.Count);
+    }
+  }, [count, cookies, setCookie, removeCookie]);
 
   return (
     <div
