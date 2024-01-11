@@ -1,7 +1,10 @@
 import React, { useCallback, useEffect } from "react";
 import { useCookies } from "react-cookie";
 import "../../../common.css";
-import { Cookies } from "../../../hook/cookie/Cookies";
+import {
+  Cookies,
+  forEach as forEachCookie,
+} from "../../../hook/cookie/Cookies";
 
 const clickMeToRemember = "Click me if you want me to remember you!";
 const clickMeToForget = "Welcome back! Click me if you want me to forget.";
@@ -21,7 +24,8 @@ const title =
  * @return {JSX.Element}
  */
 export default function RememberMe(): JSX.Element {
-  const [cookies, setCookie, removeCookie] = useCookies([Cookies.Remembered]);
+  const [cookies, setCookie] = useCookies([Cookies.Remembered]);
+  const removeCookie = useCookies(Object.keys(Cookies))[2];
   const [remember, setRemember] = React.useState(
     Object.hasOwn(cookies, Cookies.Remembered),
   );
@@ -37,8 +41,7 @@ export default function RememberMe(): JSX.Element {
       if (!remember) {
         setCookie(Cookies.Remembered, "true");
       } else {
-        // TODO: Need to iterate and remove all cookies.
-        removeCookie(Cookies.Remembered);
+        forEachCookie(removeCookie);
       }
     }
   }, [confirmTxt, removeCookie, remember, setCookie]);

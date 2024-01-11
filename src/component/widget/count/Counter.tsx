@@ -13,10 +13,7 @@ const title =
  * @return {JSX.Element}
  */
 export default function Counter(): JSX.Element {
-  const [cookies, setCookie, removeCookie] = useCookies([
-    Cookies.Remembered,
-    Cookies.Count,
-  ]);
+  const [cookies, setCookie] = useCookies([Cookies.Remembered, Cookies.Count]);
   const [count, setCount] = React.useState(
     Object.hasOwn(cookies, Cookies.Count)
       ? (cookies[Cookies.Count] as number)
@@ -30,10 +27,8 @@ export default function Counter(): JSX.Element {
   useEffect(() => {
     if (Object.hasOwn(cookies, Cookies.Remembered)) {
       setCookie(Cookies.Count, count);
-    } else {
-      removeCookie(Cookies.Count);
     }
-  }, [count, cookies, setCookie, removeCookie]);
+  }, [count, cookies, setCookie]);
 
   return (
     <div
