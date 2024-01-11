@@ -139,7 +139,7 @@ exports[`renders to match snapshot 1`] = `
             class="disable-text-selection clickable"
             data-testid="counter"
             style="align-items: center; border-radius: 10px; display: flex; font-size: 20px; height: 60px; justify-content: center; width: 25%;"
-            title="This component counts the number of times it has been clicked. It's an exercise in handling clicks and component state!"
+            title="This component counts the number of times it has been clicked. It's an exercise in handling clicks, component state, and cookie management!"
           >
             0
           </div>
