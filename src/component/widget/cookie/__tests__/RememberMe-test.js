@@ -2,9 +2,10 @@ import RememberMe from "../RememberMe";
 import "@testing-library/jest-dom";
 import { screen, render, fireEvent } from "@testing-library/react";
 import renderer from "react-test-renderer";
-import { Cookies } from "react-cookie";
+import { Cookies as ReactCookies } from "react-cookie";
+import { Cookies } from "../../../../hook/cookie/Cookies";
 
-const cookies = new Cookies();
+const cookies = new ReactCookies();
 const confirmSpy = jest.spyOn(window, "confirm");
 
 function confirmOk() {
@@ -18,7 +19,6 @@ function confirmCancel() {
 const testId = "remember-me";
 const notRememberedTxt = "Click me if you want me to remember you!";
 const rememberedTxt = "Welcome back! Click me if you want me to forget.";
-const cookieName = "remembered";
 
 beforeEach(() => {
   confirmOk();
@@ -30,13 +30,13 @@ it("renders to match snapshot without cookie", () => {
 });
 
 it("renders to match snapshot with cookie", () => {
-  cookies.set(cookieName, true);
+  cookies.set(Cookies.Remembered, true);
 
   const tree = renderer.create(<RememberMe />);
 
   expect(tree).toMatchSnapshot();
 
-  cookies.remove(cookieName);
+  cookies.remove(Cookies.Remembered);
 });
 
 it("changes text when clicked and confirmed", () => {
@@ -79,15 +79,15 @@ it("cookie saved when not remembered and button clicked and confirmed", () => {
   expect(rememberMeComp).toBeDefined();
 
   // At first, there shouldn't be a cookie
-  expect(cookies.get(cookieName)).toBeUndefined();
+  expect(cookies.get(Cookies.Remembered)).toBeUndefined();
 
   // After clicking and confirming, the cookie should be there.
   fireEvent.click(rememberMeComp);
-  expect(cookies.get(cookieName)).toBe(true);
+  expect(cookies.get(Cookies.Remembered)).toBe(true);
 
   // And if you click again, the cookie should be removed.
   fireEvent.click(rememberMeComp);
-  expect(cookies.get(cookieName)).toBeUndefined();
+  expect(cookies.get(Cookies.Remembered)).toBeUndefined();
 });
 
 it("cookie is not saved when not remembered and button clicked and canceled", () => {
@@ -98,9 +98,9 @@ it("cookie is not saved when not remembered and button clicked and canceled", ()
   expect(rememberMeComp).toBeDefined();
 
   // At first, there shouldn't be a cookie
-  expect(cookies.get(cookieName)).toBeUndefined();
+  expect(cookies.get(Cookies.Remembered)).toBeUndefined();
 
   // After clicking and canceling, the cookie should still not be there.
   fireEvent.click(rememberMeComp);
-  expect(cookies.get(cookieName)).toBeUndefined();
+  expect(cookies.get(Cookies.Remembered)).toBeUndefined();
 });
